@@ -11,6 +11,20 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
+const ogImage = `/images/og/blog--${post.id}.png`;
+const blogPosting = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  inLanguage: 'sq',
+  author: { '@type': 'Organization', name: post.data.author },
+  publisher: { '@type': 'Organization', name: 'LB STUDIO' },
+  articleSection: post.data.category,
+  wordCount: post.data.wordCount,
+  image: ogImage,
+};
+
 // Related posts from manifest
 const relatedSlugs: Record<string, string[]> = {
   'sa-kushton-nje-faqe-interneti-per-biznes': ['instagram-apo-website-per-biznes', 'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti'],
@@ -22,6 +36,20 @@ const allPosts = await getCollection('blog');
 const related = (relatedSlugs[post.id] ?? []).map((s) => allPosts.find((p) => p.id === s)).filter(Boolean);
 ---
 <BlogBase title={post.data.seoTitle} description={post.data.description}>
+  <Fragment slot="head">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content={post.data.seoTitle} />
+    <meta property="og:description" content={post.data.description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="sq_AL" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={post.data.seoTitle} />
+    <meta name="twitter:description" content={post.data.description} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(blogPosting).replace(/</g, '\\u003c')} />
+  </Fragment>
   <article class="wrap article-wrap">
     <header class="article-head">
       <a class="back-link" href="/blog"><Arrow dir="left" /> Të gjithë artikujt</a>

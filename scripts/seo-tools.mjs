@@ -32,13 +32,17 @@ function imageNode(r,c){
   return {'@type':'ImageObject','@id':absolute(c.siteUrl,r.path)+'#primaryimage',url:absolute(c.siteUrl,image.path),contentUrl:absolute(c.siteUrl,image.path),caption:image.alt,...(image.width?{width:image.width,height:image.height}: {})};
 }
 function org(c){
-  const o={'@type':'Organization','@id':absolute(c.siteUrl,'/#organization'),name:c.brand,url:absolute(c.siteUrl,'/'),description:c.brandDescription,areaServed:c.areaServed.map(a=>({'@type':'Country',name:countries[a.code]}))};
+  const o={'@type':['Organization','LocalBusiness'],'@id':absolute(c.siteUrl,'/#organization'),name:c.brand,url:absolute(c.siteUrl,'/'),description:c.brandDescription,areaServed:c.areaServed.map(a=>({'@type':'Country',name:countries[a.code]})),priceRange:'$$',knowsAbout:['Web design','Web development','Online booking systems','Digital menus','E-commerce'],knowsLanguage:['sq','en']};
   if(c.logoPath&&c.confirmedAssets.includes(c.logoPath))o.logo={'@type':'ImageObject',url:absolute(c.siteUrl,c.logoPath)};
   if(c.publicEmail)o.email=c.publicEmail;
   if(c.publicPhone)o.telephone=c.publicPhone;
   if(c.socialProfiles.length)o.sameAs=c.socialProfiles;
   if(c.publicEmail||c.publicPhone)o.contactPoint=[{'@type':'ContactPoint',contactType:'project enquiries',...(c.publicEmail?{email:c.publicEmail}:{}),...(c.publicPhone?{telephone:c.publicPhone}:{}),availableLanguage:['sq']}];
   return o;
+}
+function faqSchema(items,pageUrl){
+  if(!items||!items.length)return null;
+  return {'@type':'FAQPage','@id':pageUrl+'#faq',mainEntity:items.map(item=>({'@type':'Question',name:item.question,acceptedAnswer:{'@type':'Answer',text:item.answer}}))};
 }
 function crumbs(r,c){
   const list=[['Kreu','/']];
@@ -63,11 +67,15 @@ export function makeSeo(routePath,c,{production=false}={}){
     const s=content.services.find(s=>s.path===r.path),id=url+'#service';
     page.mainEntity={'@id':id};
     graph.push({'@type':'Service','@id':id,name:s.name,serviceType:s.name,description:s.intro,url,provider:{'@id':orgId},areaServed:c.areaServed.map(a=>({'@type':'Country',name:countries[a.code]})),...(primary?{image:primary.url}:{}),mainEntityOfPage:{'@id':page['@id']}});
+    const faq=faqSchema(s.faq,url);if(faq)graph.push(faq);
   }
   if(r.kind==='project'){
     const p=content.projects.find(p=>p.path===r.path),id=url+'#portfolio-presentation';
     page.mainEntity={'@id':id};
     graph.push({'@type':'CreativeWork','@id':id,name:p.name,description:p.intro,url,inLanguage:'sq',publisher:{'@id':orgId},mainEntityOfPage:{'@id':page['@id']},...(primary?{image:primary.url}:{})});
+  }
+  if(r.kind==='home'){
+    const faq=faqSchema(content.home.faq,url);if(faq)graph.push(faq);
   }
   if(r.kind==='collection'){
     const items=(r.path==='/sherbimet'?content.services:content.projects).filter(it=>!production||c.publishablePaths.includes(it.path));

@@ -311,7 +311,7 @@
   {
     "path": "/projektet/thethi-guide",
     "kind": "project",
-    "title": "Thethi Guide | Projekt LB STUDIO",
+    "title": "Thethi Guide — Website turistik me hartë dhe AI | LB STUDIO",
     "description": "Prezantimi i Thethi Guide: destinacione, hartë interaktive dhe asistent AI për Alpet Shqiptare. Shiko strukturën dhe pamjet e projektit.",
     "h1": "Thethi Guide",
     "language": "sq",
@@ -335,7 +335,7 @@
   {
     "path": "/projektet/gjecaj-guesthouse-restaurant",
     "kind": "project",
-    "title": "Gjeçaj — Guesthouse & Restaurant | Projekt LB STUDIO",
+    "title": "Gjeçaj — Website bujtine dhe restoranti në Theth | LB STUDIO",
     "description": "Website i Gjeçaj në Theth me prezantimin e bujtinës dhe restorantit. Shiko pamjet dhe organizimin e përmbajtjes në portofolin e LB STUDIO.",
     "h1": "Gjeçaj — Guesthouse & Restaurant",
     "language": "sq",
@@ -359,7 +359,7 @@
   {
     "path": "/projektet/gjecaj-rezervime",
     "kind": "project",
-    "title": "Gjeçaj — Sistemi i rezervimeve | Projekt LB STUDIO",
+    "title": "Gjeçaj — Sistem rezervimesh online me dashboard | LB STUDIO",
     "description": "Sistemi i rezervimeve Gjeçaj me zgjedhje date, orari, numri vizitorësh dhe zone. Shiko prezantimin e aplikacionit web në portofolin e LB STUDIO.",
     "h1": "Gjeçaj — Sistemi i rezervimeve",
     "language": "sq",
@@ -383,7 +383,7 @@
   {
     "path": "/projektet/baby-gifts-albania",
     "kind": "project",
-    "title": "Baby Gifts Albania | Projekt LB STUDIO",
+    "title": "Baby Gifts Albania — Website dhuratash të punuara me dorë | LB STUDIO",
     "description": "Website i Baby Gifts Albania me katalog dhuratash të personalizuara për bebe, çmime dhe porosi përmes WhatsApp. Shiko prezantimin në portofolin e LB STUDIO.",
     "h1": "Baby Gifts Albania",
     "language": "sq",
@@ -407,7 +407,7 @@
   {
     "path": "/projektet/aleks-bzhetaj",
     "kind": "project",
-    "title": "Av. Aleks Bzhetaj | Projekt LB STUDIO",
+    "title": "Av. Aleks Bzhetaj — Website zyrë avokatie | LB STUDIO",
     "description": "Website për shërbimet ligjore të Av. Aleks Bzhetaj, me faqe shërbimesh dhe kontakt për konsultime. Projekt në portofolin e LB STUDIO.",
     "h1": "Av. Aleks Bzhetaj",
     "language": "sq",
@@ -431,7 +431,7 @@
   {
     "path": "/projektet/mb-cartongesso",
     "kind": "project",
-    "title": "M.B Cartongesso | Projekt LB STUDIO",
+    "title": "M.B Cartongesso — Website artizanat dhe ndriçim interier | LB STUDIO",
     "description": "Website i M.B Cartongesso me shërbime në kartongesso, ndriçim LED dhe galeri punimesh. Shiko pamjet e projektit në portofolin e LB STUDIO.",
     "h1": "M.B Cartongesso",
     "language": "sq",
@@ -455,7 +455,7 @@
   {
     "path": "/projektet/gjecaj-menu-online",
     "kind": "project",
-    "title": "Gjeçaj — Menu online | Projekt LB STUDIO",
+    "title": "Gjeçaj — Menu online digjitale për restorant | LB STUDIO",
     "description": "Menuja online Gjeçaj me kategori, foto, përshkrime dhe çmime, në shqip dhe anglisht. Shiko pamjet për desktop dhe telefon të projektit.",
     "h1": "Gjeçaj — Menu online",
     "language": "sq",
