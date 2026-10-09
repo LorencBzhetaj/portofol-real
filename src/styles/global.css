@@ -1,4 +1,5 @@
-@import '@fontsource-variable/inter';
+/* Cabinet Grotesk from Fontshare — free, self-hostable later */
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800,500,400&display=swap');
 
 :root {
   --ivory: #f7f3ec;
@@ -17,7 +18,7 @@
   --shadow: 0 1px 2px rgb(17 17 17 / 4%), 0 12px 32px -18px rgb(17 17 17 / 18%);
   --wrap: 1200px;
   --gutter: clamp(20px, 4vw, 40px);
-  --font: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font: 'Cabinet Grotesk', system-ui, -apple-system, Arial, sans-serif;
   color-scheme: light;
 }
 

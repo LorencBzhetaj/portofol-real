@@ -16,7 +16,8 @@ const servicesHub = L('/sherbimet');
 <header class="site-header">
   <div class="wrap bar">
     <a class="brand" href={L('/')} aria-label={t.brandHome}>
-      <img src="/images/brand/lb-studio-lockup.svg" alt="LB STUDIO" width="356" height="100" />
+      <svg class="brand-mark" viewBox="-16 -16 250 243" aria-hidden="true" focusable="false"><g fill="currentColor"><path d="M0 0H32V99C32 108 39 115 48 115H138A16 16 0 0 1 138 147H48C21 147 0 126 0 99Z"/><path d="M63 53H138C182 53 218 88 218 132C218 176 182 211 138 211H48C22 211 4 191 0 165H32C35 174 40 179 49 179H138C164 179 186 158 186 132C186 106 164 85 138 85H63Z"/></g></svg>
+      <span class="brand-name">LB STUDIO</span>
     </a>
     <div class="bar-end">
       <a class="lang lang--bar" href={switchHref} hreflang={otherLang} lang={otherLang} aria-label={t.switchLabel}>{t.switchShort}</a>
@@ -113,8 +114,9 @@ const servicesHub = L('/sherbimet');
     backdrop-filter: saturate(1.4) blur(10px);
   }
   .bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 76px; }
-  .brand { display: block; flex: none; }
-  .brand img { width: 150px; height: auto; }
+  .brand { display: flex; align-items: center; gap: 9px; flex: none; text-decoration: none; color: inherit; }
+  .brand-mark { width: 22px; height: 22px; flex: none; }
+  .brand-name { font-size: 0.82rem; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; }
   .bar-end { display: none; }
   .top { display: flex; align-items: center; gap: 30px; margin: 0; padding: 0; list-style: none; }
   .top > li > a:not(.btn):not(.lang), .sub-head > a { font-size: 0.97rem; font-weight: 500; text-decoration: none; padding: 6px 0; border-bottom: 1.5px solid transparent; }
