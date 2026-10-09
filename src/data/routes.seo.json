@@ -1,0 +1,524 @@
+[
+  {
+    "path": "/",
+    "kind": "home",
+    "title": "Dizajn web dhe zgjidhje online për biznese | LB STUDIO",
+    "description": "LB STUDIO ndërton faqe web, dyqane online, rezervime dhe menu QR. Shiko projektet dhe diskuto një zgjidhje për biznesin tënd në Shqipëri ose jashtë saj.",
+    "h1": "Faqe web të menduara për biznesin tënd.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "ndertim faqe web Shqiperi",
+      "dizajn web",
+      "faqe web per biznese",
+      "LB STUDIO"
+    ],
+    "featuredImage": {
+      "path": "/images/lb-studio-hero-corrected.png",
+      "alt": "Kompozim vizual me ekranet Thethi Guide, Gjeçaj dhe konceptin e klinikës të shënuar DEMO.",
+      "status": "edited_composition_review_before_publish",
+      "ogPath": "/images/og/home.png",
+      "width": 1808,
+      "height": 870,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Faqe web të menduara për biznesin tënd. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet",
+    "kind": "collection",
+    "title": "Shërbime web dhe zgjidhje digjitale | LB STUDIO",
+    "description": "Zbulo shërbimet e LB STUDIO: faqe web, dyqane online, rezervime, chatbot, SEO, integrime, gjuhë, landing pages dhe menu QR.",
+    "h1": "Zgjidhje web për mënyrën si punon biznesi yt.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "sherbime web",
+      "zgjidhje digjitale per biznese"
+    ],
+    "featuredImage": {
+      "path": "/images/og/sherbimet.png",
+      "alt": "Kartë LB STUDIO me titullin: Zgjidhje web për mënyrën si punon biznesi yt.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Zgjidhje web për mënyrën si punon biznesi yt. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet",
+    "kind": "collection",
+    "title": "Projekte web dhe aplikacione | Portofoli LB STUDIO",
+    "description": "Shiko projektet e LB STUDIO: websites turizmi, avokatie dhe interieri, dhurata, rezervime dhe menu online. Pamje dhe përshkrime për secilin.",
+    "h1": "Punë të ndërtuara rreth nevojave të biznesit.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "portofol web design",
+      "projekte LB STUDIO"
+    ],
+    "featuredImage": {
+      "path": "/images/og/projektet.png",
+      "alt": "Kartë LB STUDIO me titullin: Punë të ndërtuara rreth nevojave të biznesit.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Punë të ndërtuara rreth nevojave të biznesit. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/dizajn-zhvillim-web",
+    "kind": "service",
+    "title": "Dizajn dhe zhvillim faqesh web | LB STUDIO",
+    "description": "Faqe web për biznese, me strukturë të qartë, dizajn për telefon dhe përmbajtje që ndihmon vizitorët të kontaktojnë. Shiko punën e LB STUDIO.",
+    "h1": "Dizajn dhe zhvillim web për biznesin tënd.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "ndertim faqe web",
+      "dizajn faqe web",
+      "zhvillim web",
+      "faqe web per biznese",
+      "krijim faqe web ne Shqiperi"
+    ],
+    "featuredImage": {
+      "path": "/images/services/dizajn-zhvillim-web.svg",
+      "alt": "Ilustrim i strukturës së një faqeje web në desktop dhe telefon.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--dizajn-zhvillim-web.png",
+      "width": 1200,
+      "height": 750,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Dizajn dhe zhvillim web për biznesin tënd. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/dyqane-online",
+    "kind": "service",
+    "title": "Ndërtim dyqanesh online | LB STUDIO",
+    "description": "Ndërtojmë dyqane online me produkte, kategori dhe proces porosie të përshtatur për biznesin. Diskuto me LB STUDIO pagesat dhe menaxhimin.",
+    "h1": "Dyqani yt online, nga produkti te porosia.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "ndertim dyqani online",
+      "krijim ecommerce",
+      "website shitje online",
+      "dyqan online Shqiperi"
+    ],
+    "featuredImage": {
+      "path": "/images/services/dyqane-online.png",
+      "alt": "Koncept i një dyqani online me markën Bogdani, katalog veshjesh dhe modele.",
+      "status": "edited_concept_review_before_publish",
+      "ogPath": "/images/og/sherbimet--dyqane-online.png",
+      "width": 1710,
+      "height": 920,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Dyqani yt online, nga produkti te porosia. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/rezervime-web-apps",
+    "kind": "service",
+    "title": "Sisteme rezervimi dhe web apps | LB STUDIO",
+    "description": "Sisteme rezervimi dhe aplikacione web me formularë, rregulla disponueshmërie dhe panel menaxhimi. Shiko shembullin Gjeçaj dhe diskuto projektin.",
+    "h1": "Rezervime dhe menaxhim sipas mënyrës si punon.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "sistem rezervimi online",
+      "rezervime restoranti",
+      "aplikacione web per biznese",
+      "zhvillim web app"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/gjecaj-rezervime.jpg",
+      "alt": "Formulari publik i rezervimit të tavolinës Gjeçaj.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--rezervime-web-apps.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Rezervime dhe menaxhim sipas mënyrës si punon. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/seo-mirembajtje",
+    "kind": "service",
+    "title": "SEO teknik dhe mirëmbajtje web | LB STUDIO",
+    "description": "Kontroll dhe përmirësim i strukturës, indeksimit dhe performancës së faqes. SEO teknik dhe mirëmbajtje sipas nevojave të biznesit me LB STUDIO.",
+    "h1": "Një faqe e kuptueshme, e kontrolluar dhe e mirëmbajtur.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "seo teknik",
+      "mirembajtje faqe web",
+      "optimizim faqe web",
+      "seo per biznese Shqiperi"
+    ],
+    "featuredImage": {
+      "path": "/images/services/seo-mirembajtje.svg",
+      "alt": "Ilustrim i përmbajtjes, strukturës dhe kontrollit teknik.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--seo-mirembajtje.png",
+      "width": 1200,
+      "height": 750,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Një faqe e kuptueshme, e kontrolluar dhe e mirëmbajtur. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/chatbot-custom",
+    "kind": "service",
+    "title": "Chatbot AI për faqen e biznesit | LB STUDIO",
+    "description": "Chatbot custom që përgjigjet sipas përmbajtjes së biznesit dhe orienton vizitorët te shërbimet ose kontakti. Shiko shembullin Thethi Guide.",
+    "h1": "Një chatbot që njeh përmbajtjen e biznesit tënd.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "chatbot AI per website",
+      "chatbot custom",
+      "asistent virtual per biznese",
+      "chatbot Shqiperi"
+    ],
+    "featuredImage": {
+      "path": "/images/services/chatbot-custom.jpg",
+      "alt": "Asistenti AI në pamjen e ridizajnimit Thethi Guide.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--chatbot-custom.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Një chatbot që njeh përmbajtjen e biznesit tënd. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/integrime-automatizime",
+    "kind": "service",
+    "title": "Integrime dhe automatizime për biznese | LB STUDIO",
+    "description": "Lidhim formularët, email-in, kalendarët dhe mjetet e biznesit. Automatizime të përcaktuara sipas procesit dhe mundësive reale të integrimit.",
+    "h1": "Mjetet e biznesit tënd, të lidhura me një proces të qartë.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "automatizime per biznese",
+      "integrime API",
+      "integrim formular email",
+      "automatizim kerkesa klientesh"
+    ],
+    "featuredImage": {
+      "path": "/images/services/integrime-automatizime.svg",
+      "alt": "Ilustrim i rrjedhës nga formulari te sistemi dhe njoftimi.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--integrime-automatizime.png",
+      "width": 1200,
+      "height": 750,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Mjetet e biznesit tënd, të lidhura me një proces të qartë. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/faqe-shumegjuheshe",
+    "kind": "service",
+    "title": "Faqe web shumëgjuhëshe | LB STUDIO",
+    "description": "Faqe web në disa gjuhë me navigim të qartë, URL të veçanta dhe konfigurim hreflang. Për klientë vendas dhe ndërkombëtarë me LB STUDIO.",
+    "h1": "Biznesi yt, i kuptueshëm në gjuhën e klientit.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "faqe web shumegjuheshe",
+      "website shqip anglisht",
+      "website ne disa gjuhe",
+      "hreflang website"
+    ],
+    "featuredImage": {
+      "path": "/images/services/faqe-shumegjuheshe.svg",
+      "alt": "Ilustrim i përmbajtjes në shqip, anglisht dhe italisht.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--faqe-shumegjuheshe.png",
+      "width": 1200,
+      "height": 750,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Biznesi yt, i kuptueshëm në gjuhën e klientit. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/landing-pages",
+    "kind": "service",
+    "title": "Landing pages për produkte dhe fushata | LB STUDIO",
+    "description": "Landing pages me një mesazh të qartë dhe veprim kryesor për produkte, shërbime ose lançime. Dizajn për telefon dhe matje sipas objektivit.",
+    "h1": "Një faqe e fokusuar te oferta dhe hapi i radhës.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "krijim landing page",
+      "landing page per biznes",
+      "faqe per fushata",
+      "faqe coming soon"
+    ],
+    "featuredImage": {
+      "path": "/images/services/landing-pages.jpg",
+      "alt": "Pamja Coming Soon e Ora e Maleve.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--landing-pages.png",
+      "width": 1363,
+      "height": 936,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Një faqe e fokusuar te oferta dhe hapi i radhës. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/sherbimet/menu-online-qr",
+    "kind": "service",
+    "title": "Menu online dhe QR për restorante | LB STUDIO",
+    "description": "Menu digjitale për restorante me kategori, foto, përshkrime dhe çmime. E përshtatur për telefon dhe e hapur me QR. Shiko shembullin Gjeçaj.",
+    "h1": "Menuja e restorantit, e hapur nga telefoni.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "menu online restoranti",
+      "menu digjitale QR",
+      "menu QR restorant",
+      "krijim menu online"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/gjecaj-menu-online.jpg",
+      "alt": "Menuja publike Gjeçaj me kategori, pjata dhe çmime.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/sherbimet--menu-online-qr.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Menuja e restorantit, e hapur nga telefoni. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/thethi-guide",
+    "kind": "project",
+    "title": "Thethi Guide | Projekt LB STUDIO",
+    "description": "Prezantimi i Thethi Guide: destinacione, hartë interaktive dhe asistent AI për Alpet Shqiptare. Shiko strukturën dhe pamjet e projektit.",
+    "h1": "Thethi Guide",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Thethi Guide",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/thethi-guide.jpg",
+      "alt": "Pamjet e Thethi Guide me destinacione, hartë dhe asistent AI.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--thethi-guide.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Thethi Guide — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/gjecaj-guesthouse-restaurant",
+    "kind": "project",
+    "title": "Gjeçaj — Guesthouse & Restaurant | Projekt LB STUDIO",
+    "description": "Website i Gjeçaj në Theth me prezantimin e bujtinës dhe restorantit. Shiko pamjet dhe organizimin e përmbajtjes në portofolin e LB STUDIO.",
+    "h1": "Gjeçaj — Guesthouse & Restaurant",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Gjeçaj — Guesthouse & Restaurant",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/gjecaj-guesthouse-restaurant.jpg",
+      "alt": "Kryefaqja e Gjeçaj dhe pamjet e restorantit e bujtinës.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--gjecaj-guesthouse-restaurant.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Gjeçaj — Guesthouse & Restaurant — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/gjecaj-rezervime",
+    "kind": "project",
+    "title": "Gjeçaj — Sistemi i rezervimeve | Projekt LB STUDIO",
+    "description": "Sistemi i rezervimeve Gjeçaj me zgjedhje date, orari, numri vizitorësh dhe zone. Shiko prezantimin e aplikacionit web në portofolin e LB STUDIO.",
+    "h1": "Gjeçaj — Sistemi i rezervimeve",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Gjeçaj — Sistemi i rezervimeve",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/gjecaj-rezervime.jpg",
+      "alt": "Formulari publik Gjeçaj me zgjedhje date, orari, zone dhe numri vizitorësh.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--gjecaj-rezervime.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Gjeçaj — Sistemi i rezervimeve — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/baby-gifts-albania",
+    "kind": "project",
+    "title": "Baby Gifts Albania | Projekt LB STUDIO",
+    "description": "Website i Baby Gifts Albania me katalog dhuratash të personalizuara për bebe, çmime dhe porosi përmes WhatsApp. Shiko prezantimin në portofolin e LB STUDIO.",
+    "h1": "Baby Gifts Albania",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Baby Gifts Albania",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/baby-gifts-albania.jpg",
+      "alt": "Pamje e Baby Gifts Albania me shporta dhe kuti dhuratash.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--baby-gifts-albania.png",
+      "width": 1359,
+      "height": 933,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Baby Gifts Albania — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/aleks-bzhetaj",
+    "kind": "project",
+    "title": "Av. Aleks Bzhetaj | Projekt LB STUDIO",
+    "description": "Website për shërbimet ligjore të Av. Aleks Bzhetaj, me faqe shërbimesh dhe kontakt për konsultime. Projekt në portofolin e LB STUDIO.",
+    "h1": "Av. Aleks Bzhetaj",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Av. Aleks Bzhetaj",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/aleks-bzhetaj.jpg",
+      "alt": "Kryefaqja dhe një faqe shërbimi e website-it të Av. Aleks Bzhetaj.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--aleks-bzhetaj.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Av. Aleks Bzhetaj — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/mb-cartongesso",
+    "kind": "project",
+    "title": "M.B Cartongesso | Projekt LB STUDIO",
+    "description": "Website i M.B Cartongesso me shërbime në kartongesso, ndriçim LED dhe galeri punimesh. Shiko pamjet e projektit në portofolin e LB STUDIO.",
+    "h1": "M.B Cartongesso",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "M.B Cartongesso",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/mb-cartongesso.jpg",
+      "alt": "Website-i M.B Cartongesso me shërbime dhe punime ndriçimi LED.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--mb-cartongesso.png",
+      "width": 1357,
+      "height": 932,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "M.B Cartongesso — LB STUDIO"
+    }
+  },
+  {
+    "path": "/projektet/gjecaj-menu-online",
+    "kind": "project",
+    "title": "Gjeçaj — Menu online | Projekt LB STUDIO",
+    "description": "Menuja online Gjeçaj me kategori, foto, përshkrime dhe çmime, në shqip dhe anglisht. Shiko pamjet për desktop dhe telefon të projektit.",
+    "h1": "Gjeçaj — Menu online",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "Gjeçaj — Menu online",
+      "projekt web"
+    ],
+    "featuredImage": {
+      "path": "/images/projects/gjecaj-menu-online.jpg",
+      "alt": "Menuja online Gjeçaj me kategori, foto pjatash dhe çmime.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/projektet--gjecaj-menu-online.png",
+      "width": 1348,
+      "height": 926,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Gjeçaj — Menu online — LB STUDIO"
+    }
+  },
+  {
+    "path": "/kontakt",
+    "kind": "contact",
+    "title": "Diskuto projektin tënd web | Kontakt LB STUDIO",
+    "description": "Na trego për biznesin dhe faqen që dëshiron të ndërtosh. Kontakto LB STUDIO për dizajn web, rezervime, menu online dhe zgjidhje digjitale.",
+    "h1": "Flasim për projektin tënd.",
+    "language": "sq",
+    "indexPolicy": "eligible_after_review",
+    "keywordTargets": [
+      "kontakt LB STUDIO",
+      "kerkese faqe web"
+    ],
+    "featuredImage": {
+      "path": "/images/og/kontakt.png",
+      "alt": "Kartë LB STUDIO me titullin: Flasim për projektin tënd.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/kontakt.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Flasim për projektin tënd. — LB STUDIO"
+    }
+  },
+  {
+    "path": "/privatesia",
+    "kind": "privacy",
+    "title": "Politika e privatësisë | LB STUDIO",
+    "description": "Informacion për të dhënat e kontaktit, përdorimin e formularit dhe privatësinë në LB STUDIO. Politika plotësohet sipas shërbimeve të konfiguruara.",
+    "h1": "Politika e privatësisë",
+    "language": "sq",
+    "indexPolicy": "noindex_until_privacy_completed",
+    "keywordTargets": [],
+    "featuredImage": {
+      "path": "/images/og/privatesia.png",
+      "alt": "Kartë LB STUDIO me titullin: Politika e privatësisë",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/privatesia.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Politika e privatësisë — LB STUDIO"
+    }
+  }
+]

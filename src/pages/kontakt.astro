@@ -1,0 +1,32 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import routes from '../data/routes.seo.json';
+import siteConfig from '../data/site-config.json';
+
+const routeMeta = (routes as any[]).find((r: any) => r.path === '/kontakt');
+---
+<Base
+  title={routeMeta.title}
+  description={routeMeta.description}
+  robots="noindex,nofollow"
+  ogImage={routeMeta.featuredImage.ogPath}
+  ogImageAlt={routeMeta.featuredImage.ogAlt}
+>
+  <div class="container">
+    <div class="page-header">
+      <h1>Flasim për projektin tënd.</h1>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h2>Na kontakto</h2>
+        <p class="contact-phone">
+          <a href={`tel:${siteConfig.publicPhone}`}>{siteConfig.publicPhoneDisplay}</a>
+        </p>
+      </div>
+      <div>
+        <ContactForm />
+      </div>
+    </div>
+  </div>
+</Base>

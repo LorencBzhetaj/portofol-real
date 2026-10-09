@@ -1,0 +1,125 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import ContactForm from '../../components/ContactForm.astro';
+import content from '../../data/content.sq.json';
+import routes from '../../data/routes.seo.json';
+
+export function getStaticPaths() {
+  const slugs = [
+    'dizajn-zhvillim-web',
+    'dyqane-online',
+    'rezervime-web-apps',
+    'seo-mirembajtje',
+    'chatbot-custom',
+    'integrime-automatizime',
+    'faqe-shumegjuheshe',
+    'landing-pages',
+    'menu-online-qr',
+  ];
+  return slugs.map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const service = ((content as any).services as any[]).find((s: any) => s.slug === slug);
+const routeMeta = (routes as any[]).find((r: any) => r.path === `/sherbimet/${slug}`);
+
+if (!service || !routeMeta) {
+  return Astro.redirect('/sherbimet');
+}
+
+const relatedServices = ((content as any).services as any[]).filter((s: any) =>
+  (service.relatedServiceSlugs || []).includes(s.slug)
+);
+---
+<Base
+  title={routeMeta.title}
+  description={routeMeta.description}
+  robots="noindex,nofollow"
+  ogImage={routeMeta.featuredImage.ogPath}
+  ogImageAlt={routeMeta.featuredImage.ogAlt}
+  ogImageWidth={routeMeta.featuredImage.ogWidth}
+  ogImageHeight={routeMeta.featuredImage.ogHeight}
+>
+  <div class="container">
+    <Breadcrumb items={[
+      { label: 'Home', href: '/' },
+      { label: 'Shërbimet', href: '/sherbimet' },
+      { label: service.name },
+    ]} />
+
+    <div class="page-header">
+      <h1>{service.h1}</h1>
+      <p>{service.intro}</p>
+    </div>
+
+    {service.featuredImage && (
+      <img
+        src={service.featuredImage.path}
+        alt={service.featuredImage.alt}
+        width={service.featuredImage.width}
+        height={service.featuredImage.height}
+        loading="lazy"
+        style="border-radius:4px; margin-bottom: 2rem;"
+      />
+    )}
+
+    <div class="service-content">
+      {(service.paragraphs as [string, string][]).map(([title, body]) => (
+        <div class="service-section">
+          <h2>{title}</h2>
+          <p>{body}</p>
+        </div>
+      ))}
+
+      {service.included && (
+        <div class="service-section">
+          <h2>Çfarë përfshihet</h2>
+          <ul class="service-list">
+            {(service.included as string[]).map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      )}
+
+      {service.audience && (
+        <div class="service-section">
+          <h2>Për kë është</h2>
+          <ul class="service-list">
+            {(service.audience as string[]).map((item) => <li>{item}</li>)}
+          </ul>
+        </div>
+      )}
+    </div>
+
+    {service.relatedProjects && service.relatedProjects.length > 0 && (
+      <div class="related-section">
+        <h2 class="section-heading">Projekte të lidhura</h2>
+        <div class="grid-3">
+          {(service.relatedProjects as any[]).map((p) => (
+            <a href={p.href} class="card" style="text-decoration:none">
+              <h3>{p.name}</h3>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {relatedServices.length > 0 && (
+      <div class="related-section">
+        <h2 class="section-heading">Shërbime të lidhura</h2>
+        <div class="grid-3">
+          {relatedServices.map((s: any) => (
+            <a href={`/sherbimet/${s.slug}`} class="card" style="text-decoration:none">
+              <h3>{s.name}</h3>
+              <p>{s.intro}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="section">
+      <ContactForm />
+    </div>
+  </div>
+</Base>

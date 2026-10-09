@@ -1,0 +1,2025 @@
+{
+  "brand": "LB STUDIO",
+  "language": "sq",
+  "home": {
+    "path": "/",
+    "title": "Dizajn web dhe zgjidhje online për biznese | LB STUDIO",
+    "description": "LB STUDIO ndërton faqe web, dyqane online, rezervime dhe menu QR. Shiko projektet dhe diskuto një zgjidhje për biznesin tënd në Shqipëri ose jashtë saj.",
+    "h1": "Faqe web të menduara për biznesin tënd.",
+    "intro": "Dizajnojmë dhe ndërtojmë faqe web, nga prezantimi te rezervimet online.",
+    "keywordTargets": [
+      "ndertim faqe web Shqiperi",
+      "dizajn web",
+      "faqe web per biznese",
+      "LB STUDIO"
+    ],
+    "featuredImage": {
+      "path": "/images/lb-studio-hero-corrected.png",
+      "alt": "Kompozim vizual me ekranet Thethi Guide, Gjeçaj dhe konceptin e klinikës të shënuar DEMO.",
+      "status": "edited_composition_review_before_publish",
+      "ogPath": "/images/og/home.png",
+      "width": 1808,
+      "height": 870,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Faqe web të menduara për biznesin tënd. — LB STUDIO"
+    },
+    "sections": [
+      {
+        "heading": "Një faqe që i shërben biznesit tënd.",
+        "body": "Klienti duhet të kuptojë çfarë ofron, të gjejë shërbimin që kërkon dhe të dijë si të kontaktojë. Organizojmë faqen sipas këtyre hapave dhe lidhim rezervimet ose mjetet e punës kur biznesi ka nevojë për to.",
+        "items": [
+          [
+            "Prezantim i qartë",
+            "Organizojmë shërbimet dhe projektet që klienti të gjejë informacionin që kërkon."
+          ],
+          [
+            "Përmbajtje e organizuar për kërkimin",
+            "Krijojmë faqe të veçanta për shërbimet, me tituj, përshkrime dhe lidhje që ndihmojnë vizitorët dhe motorët e kërkimit të kuptojnë ofertën."
+          ],
+          [
+            "Kontakt dhe rezervime",
+            "Përcaktojmë hapat që lidhin vizitorin me biznesin, nga kërkesa e parë te rezervimi."
+          ],
+          [
+            "Mjete për punën e përditshme",
+            "Kur nevojitet, lidhim faqen me panelin, email-in dhe mjetet që përdor biznesi."
+          ]
+        ]
+      },
+      {
+        "heading": "Punë që flet vetë.",
+        "body": "Një përzgjedhje faqesh dhe zgjidhjesh digjitale për nevoja të ndryshme.",
+        "projectSlugs": [
+          "thethi-guide",
+          "gjecaj-rezervime",
+          "aleks-bzhetaj"
+        ],
+        "cta": {
+          "label": "Shiko të gjitha projektet",
+          "href": "/projektet"
+        }
+      },
+      {
+        "heading": "Çfarë mund të ndërtojmë për ty.",
+        "body": "Zgjedhim zgjidhjen sipas ofertës, përmbajtjes dhe mënyrës si punon biznesi.",
+        "serviceSlugs": [
+          "dizajn-zhvillim-web",
+          "dyqane-online",
+          "rezervime-web-apps",
+          "menu-online-qr",
+          "chatbot-custom",
+          "seo-mirembajtje"
+        ],
+        "cta": {
+          "label": "Shiko të gjitha shërbimet",
+          "href": "/sherbimet"
+        }
+      },
+      {
+        "heading": "Nga ideja te faqja live.",
+        "items": [
+          [
+            "Bisedojmë",
+            "Kuptojmë biznesin, nevojat dhe çfarë duhet të arrijë faqja."
+          ],
+          [
+            "Dizajnojmë",
+            "Përcaktojmë strukturën, përmbajtjen dhe pamjen për desktop e telefon."
+          ],
+          [
+            "Ndërtojmë",
+            "Zhvillojmë funksionet e dakordësuara dhe kontrollojmë mënyrën si përdoren."
+          ],
+          [
+            "Publikojmë",
+            "Kryejmë kontrollet përfundimtare dhe shpjegojmë menaxhimin e faqes."
+          ]
+        ]
+      },
+      {
+        "heading": "Bashkëpunim online, me hapa të qartë.",
+        "body": "LB STUDIO ofron shërbime online për biznese në Shqipëri, Itali, Mbretërinë e Bashkuar dhe SHBA. Diskutimet, materialet dhe miratimet organizohen në distancë. Shqipëria është tregu ynë kryesor."
+      },
+      {
+        "heading": "Le ta kthejmë idenë tënde në një faqe.",
+        "body": "Na trego çfarë bën biznesi, nëse ke një faqe aktuale dhe çfarë dëshiron të ndërtosh. Këto na ndihmojnë të përcaktojmë hapat dhe zgjidhjen e përshtatshme.",
+        "cta": {
+          "label": "Dërgo kërkesën",
+          "href": "/kontakt"
+        }
+      }
+    ],
+    "faq": [
+      {
+        "question": "Sa kohë kërkon ndërtimi i një faqeje?",
+        "answer": "Varet nga numri i faqeve, përmbajtja dhe funksionet. Afati përcaktohet pasi të kemi një përshkrim të qartë të projektit dhe materialet që duhen."
+      },
+      {
+        "question": "Çfarë duhet të përgatis për të filluar?",
+        "answer": "Na duhen informacioni për biznesin, shërbimet ose produktet, logoja dhe materialet që ke. Nëse ka faqe ekzistuese, dërgo lidhjen dhe shpjego çfarë dëshiron të ndryshosh."
+      },
+      {
+        "question": "A mund ta përditësoj vetë faqen?",
+        "answer": "Po, kur projekti përfshin panel ose mënyrë administrimi. Përcaktojmë cilat pjesë do të ndryshosh dhe si do t’i menaxhosh."
+      },
+      {
+        "question": "A ridizajnoni faqe ekzistuese?",
+        "answer": "Po. Kontrollojmë përmbajtjen dhe strukturën aktuale, përcaktojmë çfarë ruhet dhe planifikojmë ndryshimet."
+      },
+      {
+        "question": "A përfshihen domain-i dhe hosting-u?",
+        "answer": "Këto përcaktohen në ofertë dhe mund të kenë kosto të veçanta. Mund të përdorim edhe shërbimet që biznesi ka aktualisht."
+      },
+      {
+        "question": "A ofroni mirëmbajtje pas publikimit?",
+        "answer": "Mund të përcaktojmë një plan mirëmbajtjeje sipas platformës dhe nevojave. Përditësimet, backup-et dhe ndryshimet e përmbajtjes dallohen në marrëveshje."
+      }
+    ],
+    "heroCtas": [
+      {
+        "label": "Shiko projektet",
+        "href": "/#projekte"
+      },
+      {
+        "label": "Flasim për projektin",
+        "href": "/kontakt"
+      }
+    ]
+  },
+  "hubs": [
+    {
+      "path": "/sherbimet",
+      "title": "Shërbime web dhe zgjidhje digjitale | LB STUDIO",
+      "description": "Zbulo shërbimet e LB STUDIO: faqe web, dyqane online, rezervime, chatbot, SEO, integrime, gjuhë, landing pages dhe menu QR.",
+      "h1": "Zgjidhje web për mënyrën si punon biznesi yt.",
+      "intro": "Çdo shërbim nis nga një nevojë konkrete. Shiko çfarë përfshin, për kë është i përshtatshëm dhe si mund të lidhet me projektin tënd.",
+      "keywordTargets": [
+        "sherbime web",
+        "zgjidhje digjitale per biznese"
+      ],
+      "featuredImage": {
+        "path": "/images/og/sherbimet.png",
+        "alt": "Kartë LB STUDIO me titullin: Zgjidhje web për mënyrën si punon biznesi yt.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet.png",
+        "width": 1200,
+        "height": 630,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Zgjidhje web për mënyrën si punon biznesi yt. — LB STUDIO"
+      },
+      "items": [
+        "/sherbimet/dizajn-zhvillim-web",
+        "/sherbimet/dyqane-online",
+        "/sherbimet/rezervime-web-apps",
+        "/sherbimet/seo-mirembajtje",
+        "/sherbimet/chatbot-custom",
+        "/sherbimet/integrime-automatizime",
+        "/sherbimet/faqe-shumegjuheshe",
+        "/sherbimet/landing-pages",
+        "/sherbimet/menu-online-qr"
+      ]
+    },
+    {
+      "path": "/projektet",
+      "title": "Projekte web dhe aplikacione | Portofoli LB STUDIO",
+      "description": "Shiko projektet e LB STUDIO: websites turizmi, avokatie dhe interieri, dhurata, rezervime dhe menu online. Pamje dhe përshkrime për secilin.",
+      "h1": "Punë të ndërtuara rreth nevojave të biznesit.",
+      "intro": "Faqe prezantuese dhe zgjidhje që ndihmojnë rezervimet, informacionin dhe menaxhimin. Çdo projekt tregon një pjesë të ndryshme të punës.",
+      "keywordTargets": [
+        "portofol web design",
+        "projekte LB STUDIO"
+      ],
+      "featuredImage": {
+        "path": "/images/og/projektet.png",
+        "alt": "Kartë LB STUDIO me titullin: Punë të ndërtuara rreth nevojave të biznesit.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet.png",
+        "width": 1200,
+        "height": 630,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Punë të ndërtuara rreth nevojave të biznesit. — LB STUDIO"
+      },
+      "items": [
+        "/projektet/thethi-guide",
+        "/projektet/gjecaj-guesthouse-restaurant",
+        "/projektet/gjecaj-rezervime",
+        "/projektet/baby-gifts-albania",
+        "/projektet/aleks-bzhetaj",
+        "/projektet/mb-cartongesso",
+        "/projektet/gjecaj-menu-online"
+      ]
+    }
+  ],
+  "services": [
+    {
+      "slug": "dizajn-zhvillim-web",
+      "name": "Dizajn & zhvillim web",
+      "path": "/sherbimet/dizajn-zhvillim-web",
+      "title": "Dizajn dhe zhvillim faqesh web | LB STUDIO",
+      "description": "Faqe web për biznese, me strukturë të qartë, dizajn për telefon dhe përmbajtje që ndihmon vizitorët të kontaktojnë. Shiko punën e LB STUDIO.",
+      "h1": "Dizajn dhe zhvillim web për biznesin tënd.",
+      "intro": "Ndërtojmë faqe web që shpjegojnë çfarë ofron biznesi yt dhe e bëjnë të thjeshtë hapin e radhës: një kontakt, kërkesë apo rezervim.",
+      "paragraphs": [
+        [
+          "Një prezantim që fillon nga nevojat e klientit",
+          "Një vizitor kërkon të kuptojë shërbimet, të shohë shembuj dhe të gjejë mënyrën e kontaktit. Struktura e faqes duhet t’i japë këto përgjigje me një rend të qartë. Fillimisht përcaktojmë çfarë duhet të gjejë vizitori dhe cilin veprim duam të lehtësojmë. Mbi këtë bazë ndërtojmë faqet, navigimin dhe përmbajtjen."
+        ],
+        [
+          "Nga përmbajtja te dizajni",
+          "Organizojmë tekstet dhe pamjet që prezantojnë biznesin. Përcaktojmë hierarkinë e titujve, vendosjen e projekteve dhe butonat e kontaktit. Dizajni përshtatet me identitetin e biznesit dhe mënyrën si do të përdoret faqja. Pamja në telefon trajtohet që në fillim, me tekst të lexueshëm dhe kontrolle të lehta për t’u përdorur."
+        ],
+        [
+          "Një bazë për përditësimet e ardhshme",
+          "Faqja mund të zgjerohet me shërbime, projekte apo gjuhë të tjera. Mënyra e përditësimit të përmbajtjes përcaktohet në fillim: mund të jetë përmes një paneli administrimi ose përmes mirëmbajtjes së dakordësuar. Zgjedhja teknike varet nga sa shpesh ndryshon përmbajtja dhe kush do ta menaxhojë."
+        ],
+        [
+          "Ridizajnimi i një faqeje ekzistuese",
+          "Nëse ke një faqe aktuale, kontrollojmë përmbajtjen, lidhjet dhe rrugët që vizitorët përdorin. Identifikojmë çfarë duhet ruajtur dhe çfarë duhet përmirësuar. Kur ndryshojnë URL-të, planifikojmë ridrejtimet që lidhjet e vjetra të çojnë te përmbajtja përkatëse. Publikimi përfshin kontrollin e navigimit dhe funksioneve të dakordësuara."
+        ]
+      ],
+      "audience": [
+        "Biznese shërbimesh që kërkojnë një prezantim profesional.",
+        "Bujtina, restorante dhe operatorë turistikë.",
+        "Studio profesionale dhe biznese që duan të ridizajnojnë faqen aktuale."
+      ],
+      "included": [
+        "Strukturë faqesh dhe navigim sipas ofertës.",
+        "Dizajn i përshtatur për desktop, tablet dhe telefon.",
+        "Faqe të dedikuara për shërbimet dhe kontaktin.",
+        "Formularë dhe lidhje kontakti sipas nevojës.",
+        "Metadata, tituj, lidhje të brendshme dhe bazë teknike SEO.",
+        "Kontroll i funksioneve kryesore para publikimit."
+      ],
+      "optional": [
+        "Panel për përditësimin e përmbajtjes.",
+        "Gjuhë të tjera, rezervime ose integrime.",
+        "Hosting, domain dhe mirëmbajtje sipas marrëveshjes."
+      ],
+      "process": [
+        "Përcaktojmë audiencën, përmbajtjen dhe faqet.",
+        "Miratojmë strukturën dhe pamjen.",
+        "Ndërtojmë dhe kontrollojmë faqen në pajisje të ndryshme.",
+        "Publikojmë dhe shpjegojmë mënyrën e menaxhimit."
+      ],
+      "faq": [
+        {
+          "question": "Sa kushton një faqe web?",
+          "answer": "Kostoja varet nga numri i faqeve, përmbajtja, gjuhët dhe funksionalitetet. Pas diskutimit të nevojave përcaktojmë çfarë përfshihet dhe përgatisim një ofertë për projektin."
+        },
+        {
+          "question": "A mund ta përditësoj vetë?",
+          "answer": "Po, nëse projekti përfshin një mënyrë administrimi për përmbajtjen. Përcaktojmë cilat pjesë do të përditësosh dhe zgjedhim zgjidhjen përkatëse."
+        },
+        {
+          "question": "A mund të përdorni domenin tim?",
+          "answer": "Po. Kontrollojmë konfigurimin dhe akseset e nevojshme për ta lidhur me faqen e re. Ndryshimet te email-i ose shërbimet e tjera planifikohen veçmas."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "seo-mirembajtje",
+        "faqe-shumegjuheshe",
+        "landing-pages"
+      ],
+      "keywordTargets": [
+        "ndertim faqe web",
+        "dizajn faqe web",
+        "zhvillim web",
+        "faqe web per biznese",
+        "krijim faqe web ne Shqiperi"
+      ],
+      "featuredImage": {
+        "path": "/images/services/dizajn-zhvillim-web.svg",
+        "alt": "Ilustrim i strukturës së një faqeje web në desktop dhe telefon.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--dizajn-zhvillim-web.png",
+        "width": 1200,
+        "height": 750,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Dizajn dhe zhvillim web për biznesin tënd. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "thethi-guide",
+        "gjecaj-guesthouse-restaurant",
+        "baby-gifts-albania",
+        "aleks-bzhetaj",
+        "mb-cartongesso"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "thethi-guide",
+          "name": "Thethi Guide",
+          "href": "/projektet/thethi-guide"
+        },
+        {
+          "slug": "gjecaj-guesthouse-restaurant",
+          "name": "Gjeçaj — Guesthouse & Restaurant",
+          "href": "/projektet/gjecaj-guesthouse-restaurant"
+        },
+        {
+          "slug": "baby-gifts-albania",
+          "name": "Baby Gifts Albania",
+          "href": "/projektet/baby-gifts-albania"
+        },
+        {
+          "slug": "aleks-bzhetaj",
+          "name": "Av. Aleks Bzhetaj",
+          "href": "/projektet/aleks-bzhetaj"
+        },
+        {
+          "slug": "mb-cartongesso",
+          "name": "M.B Cartongesso",
+          "href": "/projektet/mb-cartongesso"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për dizajn & zhvillim web.",
+        "selectedService": "dizajn-zhvillim-web",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Ilustrim i dizajnit web; jo screenshot i një projekti tjetër."
+    },
+    {
+      "slug": "dyqane-online",
+      "name": "Dyqane online",
+      "path": "/sherbimet/dyqane-online",
+      "title": "Ndërtim dyqanesh online | LB STUDIO",
+      "description": "Ndërtojmë dyqane online me produkte, kategori dhe proces porosie të përshtatur për biznesin. Diskuto me LB STUDIO pagesat dhe menaxhimin.",
+      "h1": "Dyqani yt online, nga produkti te porosia.",
+      "intro": "Organizojmë produktet dhe procesin e blerjes që klienti të kuptojë ofertën dhe të përfundojë porosinë me hapa të qartë.",
+      "paragraphs": [
+        [
+          "Produkte që klienti mund t’i kuptojë",
+          "Një dyqan online kërkon foto, përshkrime dhe informacion të qartë për variantet e produktit. Përcaktojmë kategoritë dhe mënyrën si klientët kërkojnë produktet. Faqja e produktit duhet të shpjegojë karakteristikat, çmimin dhe informacionin që ndihmon vendimin e blerjes. Përmbajtja përgatitet sipas katalogut real të biznesit."
+        ],
+        [
+          "Porosia sipas mënyrës si punon biznesi",
+          "Procesi përshtatet me dërgesat, zonat ku shet dhe mënyrat e pagesës që mund të përdorësh. Mund të përfshijë pagesa online, pagesë në dorëzim ose kërkesë për porosi, sipas marrëveshjes. Përpara integrimit kontrollojmë nëse ofruesi i pagesave mbështet vendin, subjektin dhe llogarinë e biznesit."
+        ],
+        [
+          "Administrimi i katalogut dhe porosive",
+          "Përcaktojmë kush do të shtojë produkte, të ndryshojë çmime dhe të ndjekë porositë. Paneli i administrimit organizohet rreth këtyre detyrave. Variacionet, stoku dhe njoftimet për porositë përfshihen kur janë pjesë e projektit. Lidhjet me magazinën ose programe të tjera vlerësohen sipas dokumentacionit dhe aksesit që ofrojnë."
+        ],
+        [
+          "Informacioni para publikimit",
+          "Politikat e dërgesës, kthimit dhe privatësisë duhet të pasqyrojnë mënyrën reale të funksionimit të biznesit. Ti konfirmon çmimet dhe kushtet; ne i vendosim në pjesët përkatëse të dyqanit. Kontrollojmë porosinë në mjedis prove dhe sjelljen në telefon. Shërbimet e pagesave dhe transportit mund të kenë tarifa të veçanta."
+        ]
+      ],
+      "audience": [
+        "Biznese me katalog produktesh.",
+        "Marka që shesin veshje, dhurata ose produkte të personalizuara.",
+        "Biznese që duan të kalojnë nga porositë me mesazhe te një proces i organizuar."
+      ],
+      "included": [
+        "Organizim produktesh dhe kategorish.",
+        "Faqe produkti me foto, përshkrime dhe variante të dakordësuara.",
+        "Shportë dhe proces porosie sipas zgjidhjes së zgjedhur.",
+        "Konfigurim i mënyrave të mbështetura të pagesës dhe dërgesës.",
+        "Panel menaxhimi dhe njoftime për porositë.",
+        "Kontroll i rrjedhës së porosisë në mjedis prove."
+      ],
+      "optional": [
+        "Lidhje me magazinë ose sistem menaxhimi.",
+        "Kuponë, gjuhë dhe valuta shtesë.",
+        "Migrim produktesh nga platformë ekzistuese."
+      ],
+      "process": [
+        "Përcaktojmë katalogun dhe rregullat e porosisë.",
+        "Dizajnojmë produktin, kategoritë dhe procesin e blerjes.",
+        "Konfigurojmë pagesat dhe administrimin.",
+        "Kontrollojmë porositë dhe përgatisim publikimin."
+      ],
+      "faq": [
+        {
+          "question": "Cilat pagesa mund të përdor?",
+          "answer": "Varet nga vendi ku është regjistruar biznesi dhe shërbimet që të mbështesin. Kontrollojmë përshtatshmërinë para se të zgjedhim integrimin."
+        },
+        {
+          "question": "A mund të menaxhoj stokun?",
+          "answer": "Po, nëse kjo përfshihet në projekt. Përcaktojmë nëse stoku do të ndryshohet nga paneli apo do të lidhet me një sistem tjetër."
+        },
+        {
+          "question": "A përfshihen tarifat e pagesave?",
+          "answer": "Tarifat e ofruesve të pagesave, transportit dhe shërbimeve të tjera përcaktohen nga ata. Në ofertën e projektit dallohen kostot e zhvillimit dhe shërbimet e jashtme."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "integrime-automatizime",
+        "faqe-shumegjuheshe",
+        "seo-mirembajtje"
+      ],
+      "keywordTargets": [
+        "ndertim dyqani online",
+        "krijim ecommerce",
+        "website shitje online",
+        "dyqan online Shqiperi"
+      ],
+      "featuredImage": {
+        "path": "/images/services/dyqane-online.png",
+        "alt": "Koncept i një dyqani online me markën Bogdani, katalog veshjesh dhe modele.",
+        "status": "edited_concept_review_before_publish",
+        "ogPath": "/images/og/sherbimet--dyqane-online.png",
+        "width": 1710,
+        "height": 920,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Dyqani yt online, nga produkti te porosia. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [],
+      "relatedProjects": [],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për dyqane online.",
+        "selectedService": "dyqane-online",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Koncept Bogdani — pamje demonstrimi pa link publik. Përdorimi i markës dhe fotografive mbetet për konfirmim para publikimit.",
+      "visibleStatusLabel": "Koncept"
+    },
+    {
+      "slug": "rezervime-web-apps",
+      "name": "Rezervime & web apps",
+      "path": "/sherbimet/rezervime-web-apps",
+      "title": "Sisteme rezervimi dhe web apps | LB STUDIO",
+      "description": "Sisteme rezervimi dhe aplikacione web me formularë, rregulla disponueshmërie dhe panel menaxhimi. Shiko shembullin Gjeçaj dhe diskuto projektin.",
+      "h1": "Rezervime dhe menaxhim sipas mënyrës si punon.",
+      "intro": "Ndërtojmë aplikacione web që lidhin kërkesën e klientit me rregullat dhe procesin e biznesit tënd.",
+      "paragraphs": [
+        [
+          "Rregullat e biznesit vijnë të parat",
+          "Një formular rezervimi duhet të mbështetet te rregulla të qarta. Përcaktojmë oraret, kapacitetin, kohëzgjatjen dhe mënyrën e konfirmimit. Për një restorant mund të jenë tavolinat dhe zonat e uljes; për një shërbim tjetër mund të jenë personat ose burimet në dispozicion. Këto rregulla përcaktojnë çfarë mund të zgjedhë klienti."
+        ],
+        [
+          "Përvoja e klientit dhe e stafit",
+          "Klienti zgjedh datën, orarin dhe informacionin e kërkuar. Stafi përdor panelin për të parë dhe menaxhuar kërkesat. Veprimet e mundshme, si ndryshimi apo anulimi, përcaktohen në projekt. Njoftimet duhet të dallojnë kërkesën e marrë nga rezervimi i konfirmuar, që komunikimi të pasqyrojë gjendjen reale."
+        ],
+        [
+          "Aplikacione për detyra të tjera",
+          "Web apps mund të organizojnë edhe kërkesa, formularë të brendshëm apo të dhëna që sot mbahen në disa vende. Fillojmë me detyrat që duhet të kryhen dhe rolet e përdoruesve. Më pas përcaktojmë panelin, akseset dhe integrimet. Funksionet shtesë planifikohen sipas përdorimit real të sistemit."
+        ],
+        [
+          "Kontrolle për rastet që kanë rëndësi",
+          "Për rezervimet kontrollojmë kufijtë e kapacitetit, kërkesat e njëkohshme dhe ndryshimet e gjendjes. Përcaktojmë si sillet sistemi kur një shërbim i jashtëm nuk përgjigjet. Backup-i, akseset dhe mënyra e mirëmbajtjes diskutohen përpara publikimit. Shembulli Gjeçaj tregon lidhjen mes rezervimit, panelit dhe konfirmimit me email."
+        ]
+      ],
+      "audience": [
+        "Restorante dhe biznese me rezervime.",
+        "Biznese shërbimesh me orare dhe kapacitet të kufizuar.",
+        "Ekipe që kërkojnë një panel për organizimin e kërkesave."
+      ],
+      "included": [
+        "Analizë e rrjedhës dhe rregullave të biznesit.",
+        "Formular ose ndërfaqe për klientin.",
+        "Panel për veprimet e dakordësuara.",
+        "Validim i të dhënave dhe kontroll i disponueshmërisë.",
+        "Njoftime për gjendjet përkatëse.",
+        "Teste të rasteve kryesore të përdorimit."
+      ],
+      "optional": [
+        "Pagesa ose depozitë online.",
+        "Kujtesa automatike dhe integrim kalendari.",
+        "Plane tavolinash, raporte dhe role shtesë."
+      ],
+      "process": [
+        "Dokumentojmë rregullat dhe rastet e përdorimit.",
+        "Projektojmë formularin dhe panelin.",
+        "Ndërtojmë funksionet dhe testojmë kufijtë.",
+        "Përgatisim akseset dhe publikimin."
+      ],
+      "faq": [
+        {
+          "question": "A konfirmohet rezervimi automatikisht?",
+          "answer": "Mund të konfirmohet automatikisht ose pas miratimit të stafit. Zgjedhja varet nga rregullat që përcaktojmë për biznesin."
+        },
+        {
+          "question": "A mund ta lidhim me faqen ekzistuese?",
+          "answer": "Po, pasi të kontrollojmë mënyrën si është ndërtuar faqja dhe kufizimet e integrimit. Forma e lidhjes përcaktohet gjatë analizës."
+        },
+        {
+          "question": "A përfshihet çdo funksion i sistemit Gjeçaj?",
+          "answer": "Jo çdo projekt ka të njëjtat nevoja. Shembulli shërben për prezantim; funksionet dhe kufijtë e zgjidhjes tënde përcaktohen në ofertë."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "integrime-automatizime",
+        "menu-online-qr",
+        "dizajn-zhvillim-web"
+      ],
+      "keywordTargets": [
+        "sistem rezervimi online",
+        "rezervime restoranti",
+        "aplikacione web per biznese",
+        "zhvillim web app"
+      ],
+      "featuredImage": {
+        "path": "/images/projects/gjecaj-rezervime.jpg",
+        "alt": "Formulari publik i rezervimit të tavolinës Gjeçaj.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--rezervime-web-apps.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Rezervime dhe menaxhim sipas mënyrës si punon. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "gjecaj-rezervime"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "gjecaj-rezervime",
+          "name": "Gjeçaj — Sistemi i rezervimeve",
+          "href": "/projektet/gjecaj-rezervime"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për rezervime & web apps.",
+        "selectedService": "rezervime-web-apps",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "seo-mirembajtje",
+      "name": "SEO & mirëmbajtje",
+      "path": "/sherbimet/seo-mirembajtje",
+      "title": "SEO teknik dhe mirëmbajtje web | LB STUDIO",
+      "description": "Kontroll dhe përmirësim i strukturës, indeksimit dhe performancës së faqes. SEO teknik dhe mirëmbajtje sipas nevojave të biznesit me LB STUDIO.",
+      "h1": "Një faqe e kuptueshme, e kontrolluar dhe e mirëmbajtur.",
+      "intro": "Kontrollojmë strukturën, përmbajtjen dhe funksionimin e faqes për të identifikuar çfarë ndihmon përdoruesit dhe çfarë pengon kërkimin.",
+      "paragraphs": [
+        [
+          "Fillojmë me gjendjen e faqes",
+          "Përpara ndryshimeve kontrollojmë faqet publike, navigimin, indeksimin dhe problemet e raportuara. Kur ka të dhëna nga Search Console, i përdorim për të kuptuar kërkimet dhe faqet që sjellin vizitorë. Dallojmë problemet teknike nga nevojat e përmbajtjes, që puna të ketë një rend të arsyeshëm."
+        ],
+        [
+          "Përmbajtje dhe strukturë me qëllim",
+          "Çdo faqe duhet të trajtojë një shërbim ose nevojë të kuptueshme. Përcaktojmë titujt, përshkrimet dhe lidhjet që ndihmojnë kalimin te informacioni përkatës. Fjalët kyçe përdoren në mënyrë natyrale. Metadata dhe structured data duhet të përputhen me përmbajtjen e dukshme dhe me të dhënat reale të biznesit."
+        ],
+        [
+          "Performancë dhe kontrolle teknike",
+          "Shikojmë ngarkimin e imazheve, elementet që lëvizin gjatë hapjes dhe funksionimin në telefon. Kontrollojmë URL-të, ridrejtimet, canonical-et dhe sitemap-in. Ndryshimet zgjidhen sipas problemit të gjetur dhe ndikimit që kanë. Matjet e një testi të vetëm trajtohen bashkë me të dhënat reale të përdorimit, kur janë të disponueshme."
+        ],
+        [
+          "Mirëmbajtje e përcaktuar qartë",
+          "Përditësimet, backup-et dhe ndërhyrjet për përmbajtjen varen nga platforma dhe marrëveshja. Përcaktojmë çfarë monitorohet, sa shpesh kryhen kontrollet dhe si raportohen çështjet. SEO është punë që vlerësohet me kohë dhe të dhëna. Nuk premtojmë pozicion të caktuar në Google; dokumentojmë ndryshimet dhe ndjekim rezultatet që mund të maten."
+        ]
+      ],
+      "audience": [
+        "Biznese me faqe ekzistuese që duan të identifikojnë probleme.",
+        "Faqe që po ridizajnohen ose ndryshojnë URL.",
+        "Biznese që kërkojnë kujdes teknik të vazhdueshëm."
+      ],
+      "included": [
+        "Kontroll i strukturës dhe indeksimit.",
+        "Rishikim i titujve dhe meta descriptions.",
+        "Kontroll i lidhjeve, ridrejtimeve dhe sitemap-it.",
+        "Vlerësim i imazheve dhe performancës.",
+        "Structured data kur përputhet me përmbajtjen.",
+        "Raport i ndërhyrjeve të dakordësuara."
+      ],
+      "optional": [
+        "Plan periodik mirëmbajtjeje.",
+        "Përmbajtje e re dhe zgjerim i faqeve.",
+        "Migrim teknik ose ndryshim platforme."
+      ],
+      "process": [
+        "Kontrollojmë gjendjen dhe akseset.",
+        "Përcaktojmë prioritetet.",
+        "Zbatojmë ndryshimet dhe i verifikojmë.",
+        "Ndjekim indeksimin dhe të dhënat e disponueshme."
+      ],
+      "faq": [
+        {
+          "question": "A garantoni vendin e parë në Google?",
+          "answer": "Jo. Renditja varet nga shumë faktorë, përfshirë konkurrencën dhe përmbajtjen. Puna jonë përcakton përmirësime konkrete dhe mënyrën e matjes së tyre."
+        },
+        {
+          "question": "Sa shpejt shihen ndryshimet?",
+          "answer": "Disa përmirësime teknike shihen menjëherë në faqe. Google duhet të rikontrollojë përmbajtjen dhe ndikimi në kërkim mund të kërkojë kohë."
+        },
+        {
+          "question": "A përfshin mirëmbajtja shtimin e faqeve?",
+          "answer": "Varet nga marrëveshja. Ndryshimet e përmbajtjes, zhvillimet e reja dhe kujdesi teknik duhet të dallohen në planin e mirëmbajtjes."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web",
+        "faqe-shumegjuheshe",
+        "landing-pages"
+      ],
+      "keywordTargets": [
+        "seo teknik",
+        "mirembajtje faqe web",
+        "optimizim faqe web",
+        "seo per biznese Shqiperi"
+      ],
+      "featuredImage": {
+        "path": "/images/services/seo-mirembajtje.svg",
+        "alt": "Ilustrim i përmbajtjes, strukturës dhe kontrollit teknik.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--seo-mirembajtje.png",
+        "width": 1200,
+        "height": 750,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Një faqe e kuptueshme, e kontrolluar dhe e mirëmbajtur. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [],
+      "relatedProjects": [],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për seo & mirëmbajtje.",
+        "selectedService": "seo-mirembajtje",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "chatbot-custom",
+      "name": "Chatbot custom",
+      "path": "/sherbimet/chatbot-custom",
+      "title": "Chatbot AI për faqen e biznesit | LB STUDIO",
+      "description": "Chatbot custom që përgjigjet sipas përmbajtjes së biznesit dhe orienton vizitorët te shërbimet ose kontakti. Shiko shembullin Thethi Guide.",
+      "h1": "Një chatbot që njeh përmbajtjen e biznesit tënd.",
+      "intro": "Ndërtojmë një asistent për faqen që ndihmon vizitorët të gjejnë informacion dhe të kalojnë te personi i duhur kur është e nevojshme.",
+      "paragraphs": [
+        [
+          "Përgjigjet bazohen në informacionin që miratohet",
+          "Fillojmë me pyetjet që bëjnë vizitorët dhe materialet që biznesi përdor për t’u përgjigjur. Mund të jenë shërbimet, oraret, faqet e produkteve ose udhëzimet. Përcaktojmë cilat burime përdor asistenti dhe si përditësohen. Përmbajtja duhet të jetë e saktë përpara se të përdoret nga chatboti."
+        ],
+        [
+          "Një rrugë e shkurtër drejt informacionit",
+          "Vizitori mund të pyesë me fjalët e veta, ndërsa asistenti e orienton te faqet përkatëse. Sugjerimet e pyetjeve ndihmojnë në fillimin e bisedës. Kur kërkesa ka nevojë për trajtim personal, ndërfaqja mund të tregojë mënyrën e kontaktit me biznesin. Ky kalim përcaktohet sipas kanaleve që përdor."
+        ],
+        [
+          "Kufij të qartë për atë që mund të bëjë",
+          "Chatboti nuk duhet të shpikë çmime, disponueshmëri apo kushte. Për të dhëna që ndryshojnë në kohë reale kërkohet lidhje me një burim përkatës. Veprime si rezervimi ose ndryshimi i një porosie janë integrime të veçanta. Për rastet e pasigurta përcaktojmë përgjigje që shpjegojnë kufirin dhe drejtojnë te stafi."
+        ],
+        [
+          "Testim dhe kujdes pas publikimit",
+          "Kontrollojmë pyetje të zakonshme, pyetje të paqarta dhe kërkesa jashtë përmbajtjes. Përcaktojmë çfarë të dhënash ruhen dhe cilat duhen shmangur. Kostot e modelit ose ofruesit të jashtëm varen nga përdorimi. Shembulli Thethi Guide prezanton një asistent që orienton vizitorët për informacion turistik dhe kontakt."
+        ]
+      ],
+      "audience": [
+        "Faqe me shumë përmbajtje ose pyetje të përsëritura.",
+        "Biznese turizmi dhe shërbimesh.",
+        "Biznese që duan të orientohen vizitorët drejt faqeve dhe kontaktit."
+      ],
+      "included": [
+        "Përcaktim i pyetjeve dhe burimeve.",
+        "Ndërfaqe chat e përshtatur me faqen.",
+        "Konfigurim i kufijve dhe përgjigjeve kur mungon informacioni.",
+        "Lidhje te përmbajtja dhe kanalet e kontaktit.",
+        "Teste me raste të dakordësuara.",
+        "Udhëzime për përditësimin e informacionit."
+      ],
+      "optional": [
+        "Gjuhë të tjera dhe burime shtesë.",
+        "Lidhje me rezervime, katalog ose CRM.",
+        "Raporte përdorimi sipas nevojës dhe politikës së privatësisë."
+      ],
+      "process": [
+        "Përcaktojmë qëllimin dhe përmbajtjen.",
+        "Ndërtojmë ndërfaqen dhe lidhim burimet.",
+        "Testojmë pyetjet dhe kufijtë.",
+        "Publikojmë dhe planifikojmë përditësimet."
+      ],
+      "faq": [
+        {
+          "question": "A përgjigjet gjithmonë saktë?",
+          "answer": "Një sistem AI mund të gabojë. Kufijtë, burimet dhe testet ndihmojnë të zvogëlohen gabimet, ndërsa ndërfaqja duhet të tregojë kur kërkohet konfirmim nga biznesi."
+        },
+        {
+          "question": "A mund të bëjë rezervime?",
+          "answer": "Po, kur lidhet me një sistem rezervimi dhe përcaktohen autorizimet. Një chatbot që jep informacion nuk përfshin automatikisht këtë funksion."
+        },
+        {
+          "question": "A ka kosto mujore?",
+          "answer": "Mund të ketë kosto të ofruesit AI, hosting-ut dhe mirëmbajtjes. Ato varen nga zgjidhja dhe përdorimi dhe dallohen nga zhvillimi."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "integrime-automatizime",
+        "rezervime-web-apps",
+        "faqe-shumegjuheshe"
+      ],
+      "keywordTargets": [
+        "chatbot AI per website",
+        "chatbot custom",
+        "asistent virtual per biznese",
+        "chatbot Shqiperi"
+      ],
+      "featuredImage": {
+        "path": "/images/services/chatbot-custom.jpg",
+        "alt": "Asistenti AI në pamjen e ridizajnimit Thethi Guide.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--chatbot-custom.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Një chatbot që njeh përmbajtjen e biznesit tënd. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "thethi-guide"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "thethi-guide",
+          "name": "Thethi Guide",
+          "href": "/projektet/thethi-guide"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për chatbot custom.",
+        "selectedService": "chatbot-custom",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "integrime-automatizime",
+      "name": "Integrime & automatizime",
+      "path": "/sherbimet/integrime-automatizime",
+      "title": "Integrime dhe automatizime për biznese | LB STUDIO",
+      "description": "Lidhim formularët, email-in, kalendarët dhe mjetet e biznesit. Automatizime të përcaktuara sipas procesit dhe mundësive reale të integrimit.",
+      "h1": "Mjetet e biznesit tënd, të lidhura me një proces të qartë.",
+      "intro": "Organizojmë kalimin e informacionit mes faqes dhe mjeteve të punës, që kërkesat të arrijnë aty ku duhet.",
+      "paragraphs": [
+        [
+          "Identifikojmë hapat që përsëriten",
+          "Një kërkesë nga faqja mund të kërkojë regjistrim, njoftim dhe ndjekje. Përcaktojmë çfarë ndodh sot, kush e kryen çdo hap dhe ku ruhet informacioni. Më pas zgjedhim cilat veprime mund të automatizohen dhe cilat kërkojnë konfirmim. Qëllimi është një proces i kuptueshëm dhe i kontrollueshëm."
+        ],
+        [
+          "Integrimi varet nga mjetet që përdor",
+          "Kontrollojmë dokumentacionin, API-të dhe lejet që ofron secila platformë. Një formular mund të lidhet me email-in, një tabelë, kalendar ose CRM, nëse mjeti e lejon. Përpara zhvillimit dallojmë çfarë është e mundur dhe çfarë kërkon ndryshim procesi. Nuk supozojmë që çdo program mund të lidhet automatikisht."
+        ],
+        [
+          "Çfarë ndodh kur një hap dështon",
+          "Një automatizim duhet të trajtojë edhe dështimet. Përcaktojmë njoftimet, riprovimet dhe mënyrën e kontrollit të kërkesave që nuk kanë kaluar. Kur të dhënat mund të dërgohen dy herë, planifikojmë mbrojtjen nga përsëritja. Akseset kufizohen sipas nevojës së integrimit."
+        ],
+        [
+          "Një proces që mund të ndiqet",
+          "Dokumentojmë hyrjet, daljet dhe veprimet që kryhen. Ti duhet të kuptosh kur automatizimi funksionon dhe kur duhet të ndërhyjë stafi. Ndryshimet e platformave të jashtme mund të kërkojnë përditësime. Tarifat e mjeteve dhe kufijtë e përdorimit kontrollohen përpara se zgjidhja të bëhet pjesë e punës së përditshme."
+        ]
+      ],
+      "audience": [
+        "Biznese që kopjojnë të dhëna mes disa mjeteve.",
+        "Ekipe që marrin kërkesa nga formularë.",
+        "Biznese që kërkojnë lidhje mes faqes, rezervimeve dhe komunikimit."
+      ],
+      "included": [
+        "Analizë e rrjedhës së punës.",
+        "Kontroll i mundësive teknike të integrimit.",
+        "Lidhje mes mjeteve të dakordësuara.",
+        "Validim dhe trajtim i gabimeve.",
+        "Njoftime dhe kontrolle të nevojshme.",
+        "Dokumentim i procesit."
+      ],
+      "optional": [
+        "Migrim ose pastrim të dhënash.",
+        "Panel kontrolli për gjendjen e integrimeve.",
+        "Rrjedha me disa sisteme dhe autorizime shtesë."
+      ],
+      "process": [
+        "Përcaktojmë procesin dhe mjetet.",
+        "Kontrollojmë akseset dhe kufizimet.",
+        "Ndërtojmë dhe testojmë rrjedhën.",
+        "Dorëzojmë dokumentimin dhe mënyrën e kontrollit."
+      ],
+      "faq": [
+        {
+          "question": "A lidhen të gjitha platformat?",
+          "answer": "Jo gjithmonë. Varet nga API-të, lejet dhe kushtet e platformës. Mundësitë kontrollohen para ofertës përfundimtare."
+        },
+        {
+          "question": "Çfarë ndodh nëse një shërbim nuk përgjigjet?",
+          "answer": "Përcaktojmë trajtimin e gabimit dhe njoftimin. Për procese kritike mund të kërkohet kontroll manual ose rrugë alternative."
+        },
+        {
+          "question": "A duhen llogari të veçanta?",
+          "answer": "Mund të kërkohen llogari ose plane që ofrojnë akses integrimi. Akseset dhe tarifat konfirmohen për secilin mjet."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "rezervime-web-apps",
+        "chatbot-custom",
+        "dyqane-online"
+      ],
+      "keywordTargets": [
+        "automatizime per biznese",
+        "integrime API",
+        "integrim formular email",
+        "automatizim kerkesa klientesh"
+      ],
+      "featuredImage": {
+        "path": "/images/services/integrime-automatizime.svg",
+        "alt": "Ilustrim i rrjedhës nga formulari te sistemi dhe njoftimi.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--integrime-automatizime.png",
+        "width": 1200,
+        "height": 750,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Mjetet e biznesit tënd, të lidhura me një proces të qartë. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "gjecaj-rezervime"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "gjecaj-rezervime",
+          "name": "Gjeçaj — Sistemi i rezervimeve",
+          "href": "/projektet/gjecaj-rezervime"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për integrime & automatizime.",
+        "selectedService": "integrime-automatizime",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "faqe-shumegjuheshe",
+      "name": "Faqe shumëgjuhëshe",
+      "path": "/sherbimet/faqe-shumegjuheshe",
+      "title": "Faqe web shumëgjuhëshe | LB STUDIO",
+      "description": "Faqe web në disa gjuhë me navigim të qartë, URL të veçanta dhe konfigurim hreflang. Për klientë vendas dhe ndërkombëtarë me LB STUDIO.",
+      "h1": "Biznesi yt, i kuptueshëm në gjuhën e klientit.",
+      "intro": "Ndërtojmë versione të faqes në disa gjuhë, me përmbajtje dhe navigim të organizuar për secilën audiencë.",
+      "paragraphs": [
+        [
+          "Çdo gjuhë ka nevojë për përmbajtje të plotë",
+          "Përkthimi duhet të ruajë kuptimin e ofertës, emrat e shërbimeve dhe informacionin që kërkon klienti. Përcaktojmë cilat faqe do të kenë versione të tjera dhe kush do ta kontrollojë përkthimin. Titujt, formularët dhe mesazhet e sistemit duhet të përfshihen në të njëjtin proces."
+        ],
+        [
+          "Navigim i qartë mes versioneve",
+          "Zgjedhja e gjuhës duhet të jetë e dukshme dhe të çojë te faqja përkatëse. Versionet organizohen me URL të veçanta. Nëse një faqe nuk ka përkthim, sjellja përcaktohet qartë dhe nuk krijohet një version bosh. Vizitori duhet të mund të zgjedhë gjuhën pa u ridrejtuar vazhdimisht sipas vendndodhjes."
+        ],
+        [
+          "Përmbajtja dhe SEO për secilën gjuhë",
+          "Çdo version ka titull dhe përshkrim në gjuhën përkatëse. Konfigurojmë lidhjet hreflang mes faqeve ekuivalente dhe canonical-et për secilin version. Fjalët që klientët përdorin mund të ndryshojnë mes tregjeve; përkthimi i drejtpërdrejtë i një shprehjeje nuk zëvendëson kërkimin e kërkesave lokale."
+        ],
+        [
+          "Përditësimet duhet të mbeten të sinkronizuara",
+          "Kur ndryshon një shërbim, çmim apo mënyrë kontakti, duhet të përditësohen versionet përkatëse. Përcaktojmë një mënyrë menaxhimi që e bën të dukshme këtë detyrë. Përkthimi profesional dhe rishikimi gjuhësor mund të organizohen veçmas. Nuk publikojmë automatikisht versione të pakontrolluara."
+        ]
+      ],
+      "audience": [
+        "Biznese që punojnë me klientë vendas dhe të huaj.",
+        "Bujtina, restorante dhe operatorë turistikë.",
+        "Biznese që duan të prezantohen në tregje të tjera."
+      ],
+      "included": [
+        "Strukturë gjuhësh dhe URL-sh.",
+        "Zgjedhës gjuhe në navigim.",
+        "Përmbajtje dhe formularë të organizuar për çdo version.",
+        "Tituj dhe meta descriptions sipas gjuhës.",
+        "Hreflang dhe lidhje mes faqeve ekuivalente.",
+        "Kontroll i navigimit dhe përmbajtjes së përkthyer."
+      ],
+      "optional": [
+        "Përkthim dhe rishikim nga profesionistë gjuhësorë.",
+        "Përmbajtje e përshtatur për tregje të veçanta.",
+        "Migrim nga një sistem ekzistues gjuhësh."
+      ],
+      "process": [
+        "Përcaktojmë gjuhët dhe faqet.",
+        "Përgatisim dhe kontrollojmë përmbajtjen.",
+        "Ndërtojmë navigimin dhe konfigurimin teknik.",
+        "Verifikojmë lidhjet dhe versionet para publikimit."
+      ],
+      "faq": [
+        {
+          "question": "A përfshihet përkthimi?",
+          "answer": "Përkthimi dhe rishikimi gjuhësor përcaktohen në ofertë. Mund të përdorim përmbajtje të përgatitur nga ti ose të organizojmë përgatitjen e saj."
+        },
+        {
+          "question": "A mund të shtojmë gjuhë më vonë?",
+          "answer": "Po, nëse struktura e faqes e mbështet. Planifikojmë përmbajtjen dhe lidhjet që duhen për versionin e ri."
+        },
+        {
+          "question": "A duhet të ketë çdo gjuhë të njëjtat faqe?",
+          "answer": "Jo domosdoshmërisht. Hreflang përdoret mes faqeve që janë versione përkatëse; faqet pa ekuivalent trajtohen veçmas."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web",
+        "seo-mirembajtje",
+        "dyqane-online"
+      ],
+      "keywordTargets": [
+        "faqe web shumegjuheshe",
+        "website shqip anglisht",
+        "website ne disa gjuhe",
+        "hreflang website"
+      ],
+      "featuredImage": {
+        "path": "/images/services/faqe-shumegjuheshe.svg",
+        "alt": "Ilustrim i përmbajtjes në shqip, anglisht dhe italisht.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--faqe-shumegjuheshe.png",
+        "width": 1200,
+        "height": 750,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Biznesi yt, i kuptueshëm në gjuhën e klientit. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "thethi-guide",
+        "gjecaj-guesthouse-restaurant",
+        "gjecaj-menu-online"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "thethi-guide",
+          "name": "Thethi Guide",
+          "href": "/projektet/thethi-guide"
+        },
+        {
+          "slug": "gjecaj-guesthouse-restaurant",
+          "name": "Gjeçaj — Guesthouse & Restaurant",
+          "href": "/projektet/gjecaj-guesthouse-restaurant"
+        },
+        {
+          "slug": "gjecaj-menu-online",
+          "name": "Gjeçaj — Menu online",
+          "href": "/projektet/gjecaj-menu-online"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për faqe shumëgjuhëshe.",
+        "selectedService": "faqe-shumegjuheshe",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "landing-pages",
+      "name": "Landing pages",
+      "path": "/sherbimet/landing-pages",
+      "title": "Landing pages për produkte dhe fushata | LB STUDIO",
+      "description": "Landing pages me një mesazh të qartë dhe veprim kryesor për produkte, shërbime ose lançime. Dizajn për telefon dhe matje sipas objektivit.",
+      "h1": "Një faqe e fokusuar te oferta dhe hapi i radhës.",
+      "intro": "Ndërtojmë landing pages për një produkt, shërbim ose fushatë, me përmbajtje që e orienton vizitorin drejt veprimit të zgjedhur.",
+      "paragraphs": [
+        [
+          "Një qëllim që përcakton faqen",
+          "Përpara dizajnit përcaktojmë çfarë duhet të bëjë vizitori: të kontaktojë, të kërkojë informacion, të regjistrohet ose të shohë një ofertë. Mesazhi i faqes duhet të lidhet me vendin nga vjen vizitori, si një reklamë, email ose profil social. Ky qëllim ndihmon të zgjedhim përmbajtjen që ka vend në faqe."
+        ],
+        [
+          "Përmbajtje që ndihmon vendimin",
+          "Titulli shpjegon ofertën, ndërsa pjesët në vijim japin informacionin që kërkohet për ta vlerësuar. Mund të përfshihen karakteristikat, mënyra e funksionimit dhe pyetjet kryesore. Shembujt, dëshmitë ose rezultatet përdoren vetëm kur janë të vërteta dhe të konfirmuara. CTA-ja mbetet e qartë përgjatë faqes."
+        ],
+        [
+          "Forma të ndryshme për nevoja të ndryshme",
+          "Një landing page mund të prezantojë një shërbim, të mbështesë një fushatë apo të njoftojë një lançim. Pamja Ora e Maleve në portofolin vizual është një faqe Coming Soon. Një faqe e tillë ka rol tjetër nga një faqe që merr kërkesa ose porosi. Struktura dhe matja përcaktohen sipas këtij roli."
+        ],
+        [
+          "Kontroll dhe matje sipas objektivit",
+          "Faqja kontrollohet në telefon dhe në pajisje të tjera. Nëse përfshin formular, verifikojmë marrjen e kërkesës dhe mesazhin e konfirmimit. Eventet e analitikës mund të matin klikimet ose kërkesat e përfunduara, sipas konfigurimit dhe pëlqimit të nevojshëm. Pas publikimit, ndryshimet vlerësohen nga sjellja e vizitorëve dhe cilësia e kërkesave."
+        ]
+      ],
+      "audience": [
+        "Biznese që promovojnë një ofertë të veçantë.",
+        "Produkte ose shërbime në lançim.",
+        "Fushata që kërkojnë një faqe të dedikuar."
+      ],
+      "included": [
+        "Përcaktim i mesazhit dhe veprimit kryesor.",
+        "Strukturë dhe tekst për ofertën.",
+        "Dizajn i përshtatur për telefon.",
+        "Formular ose lidhje për veprimin e zgjedhur.",
+        "Metadata dhe pamje për ndarje në rrjete sociale.",
+        "Kontroll i rrjedhës dhe eventeve të dakordësuara."
+      ],
+      "optional": [
+        "Lidhje me email marketing ose CRM.",
+        "Versione për oferta dhe gjuhë të ndryshme.",
+        "Eksperimente me variante të faqes kur ka trafik të mjaftueshëm."
+      ],
+      "process": [
+        "Përcaktojmë audiencën dhe objektivin.",
+        "Shkruajmë mesazhin dhe organizojmë përmbajtjen.",
+        "Ndërtojmë faqen dhe lidhjet.",
+        "Kontrollojmë dhe ndjekim veprimin kryesor."
+      ],
+      "faq": [
+        {
+          "question": "Çfarë ndryshon nga një website i plotë?",
+          "answer": "Landing page fokusohet te një ofertë dhe një objektiv. Një website i plotë organizon disa shërbime, faqe dhe rrugë navigimi."
+        },
+        {
+          "question": "A mund të përdoret për reklama?",
+          "answer": "Po. Mesazhi dhe formulari përshtaten me fushatën. Menaxhimi dhe buxheti i reklamave nuk përfshihen automatikisht në ndërtimin e faqes."
+        },
+        {
+          "question": "A duhet të indeksohet çdo landing page?",
+          "answer": "Jo gjithmonë. Përcaktojmë nëse ka përmbajtje të qëndrueshme dhe të veçantë për kërkim, apo nëse shërben për një fushatë të përkohshme."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web",
+        "integrime-automatizime",
+        "seo-mirembajtje"
+      ],
+      "keywordTargets": [
+        "krijim landing page",
+        "landing page per biznes",
+        "faqe per fushata",
+        "faqe coming soon"
+      ],
+      "featuredImage": {
+        "path": "/images/services/landing-pages.jpg",
+        "alt": "Pamja Coming Soon e Ora e Maleve.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--landing-pages.png",
+        "width": 1363,
+        "height": 936,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Një faqe e fokusuar te oferta dhe hapi i radhës. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [],
+      "relatedProjects": [],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për landing pages.",
+        "selectedService": "landing-pages",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    },
+    {
+      "slug": "menu-online-qr",
+      "name": "Menu online & QR",
+      "path": "/sherbimet/menu-online-qr",
+      "title": "Menu online dhe QR për restorante | LB STUDIO",
+      "description": "Menu digjitale për restorante me kategori, foto, përshkrime dhe çmime. E përshtatur për telefon dhe e hapur me QR. Shiko shembullin Gjeçaj.",
+      "h1": "Menuja e restorantit, e hapur nga telefoni.",
+      "intro": "Ndërtojmë menu online që prezantojnë pjatat dhe çmimet me një strukturë të qartë. Klienti e hap menunë nga një lidhje ose kod QR.",
+      "paragraphs": [
+        [
+          "Informacioni që klienti kërkon në tavolinë",
+          "Menuja organizohet sipas kategorive që përdor restoranti. Çdo pjatë mund të ketë emrin, përshkrimin, çmimin dhe foton përkatëse. Navigimi duhet ta ndihmojë klientin të kalojë mes pjatave, pijeve dhe pjesëve të tjera të menusë. Pamja në telefon është pjesë kryesore e projektit."
+        ],
+        [
+          "Një lidhje e qëndrueshme për kodin QR",
+          "Kodi QR hap adresën e menusë. Nëse përmbajtja përditësohet në të njëjtën adresë, materiali i printuar mund të vazhdojë të përdoret. Për këtë arsye përcaktojmë URL-në dhe mënyrën e menaxhimit përpara printimit. Kodi funksional testohet në pajisje të ndryshme; pamjet ilustruese të mockup-it nuk përdoren si QR final."
+        ],
+        [
+          "Gjuhë dhe përditësime sipas nevojës",
+          "Menuja mund të ketë versione në gjuhët që përdorin klientët e restorantit. Emrat dhe përshkrimet duhet të kontrollohen nga biznesi. Përditësimi i çmimeve ose fshehja e një pjate mund të bëhet nga paneli, nëse ky funksion përfshihet. Mënyra e administrimit përcaktohet sipas shpeshtësisë së ndryshimeve."
+        ],
+        [
+          "Kufijtë e menusë digjitale",
+          "Një menu që shfaq pjatat nuk përfshin automatikisht porosi, pagesa apo lidhje me POS-in. Këto kërkojnë rrjedha dhe integrime të veçanta. Informacioni për përbërësit dhe alergjenët konfirmohet nga restoranti përpara publikimit. Shembulli Gjeçaj tregon kategori, foto, përshkrime, çmime dhe zgjedhje gjuhe."
+        ]
+      ],
+      "audience": [
+        "Restorante dhe bujtina me restorant.",
+        "Bare dhe kafene.",
+        "Biznese që duan të përditësojnë menunë online."
+      ],
+      "included": [
+        "Kategori dhe strukturë menuje.",
+        "Pjata me tekst, çmim dhe foto të disponueshme.",
+        "Dizajn për telefon.",
+        "URL e qëndrueshme dhe kod QR funksional.",
+        "Gjuhët e dakordësuara.",
+        "Kontroll i lidhjes dhe materialit para printimit."
+      ],
+      "optional": [
+        "Panel për çmimet dhe disponueshmërinë.",
+        "Porosi ose pagesa online.",
+        "Lidhje me sisteme të restorantit kur integrimi lejohet."
+      ],
+      "process": [
+        "Marrim menunë dhe informacionin e konfirmuar.",
+        "Organizojmë kategoritë dhe pamjen.",
+        "Ndërtojmë versionet dhe gjenerojmë QR-në.",
+        "Testojmë në telefon dhe dorëzojmë materialin."
+      ],
+      "faq": [
+        {
+          "question": "A duhet një aplikacion për ta hapur?",
+          "answer": "Menuja web hapet në shfletues. Në shumë telefona kodi QR mund të skanohet nga kamera, pa instaluar një aplikacion të veçantë për menunë."
+        },
+        {
+          "question": "A ndryshon QR-ja kur ndryshoj çmimet?",
+          "answer": "Nëse adresa mbetet e njëjtë, përditësimi i përmbajtjes nuk kërkon QR të ri. Ndryshimi i domenit ose URL-së duhet të planifikohet."
+        },
+        {
+          "question": "A mund të merren porosi?",
+          "answer": "Mund të ndërtohet si funksion shtesë. Menuja informuese dhe sistemi i porosive kanë nevoja të ndryshme dhe përcaktohen veçmas."
+        }
+      ],
+      "relatedServiceSlugs": [
+        "rezervime-web-apps",
+        "faqe-shumegjuheshe",
+        "dizajn-zhvillim-web"
+      ],
+      "keywordTargets": [
+        "menu online restoranti",
+        "menu digjitale QR",
+        "menu QR restorant",
+        "krijim menu online"
+      ],
+      "featuredImage": {
+        "path": "/images/projects/gjecaj-menu-online.jpg",
+        "alt": "Menuja publike Gjeçaj me kategori, pjata dhe çmime.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/sherbimet--menu-online-qr.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Menuja e restorantit, e hapur nga telefoni. — LB STUDIO"
+      },
+      "cta": {
+        "label": "Diskuto këtë shërbim",
+        "href": "#kerkese-projekti"
+      },
+      "relatedProjectSlugs": [
+        "gjecaj-menu-online"
+      ],
+      "relatedProjects": [
+        {
+          "slug": "gjecaj-menu-online",
+          "name": "Gjeçaj — Menu online",
+          "href": "/projektet/gjecaj-menu-online"
+        }
+      ],
+      "projectSectionHeading": "Projekte të lidhura",
+      "form": {
+        "fields": [
+          {
+            "name": "name",
+            "label": "Emri",
+            "required": true
+          },
+          {
+            "name": "email",
+            "label": "Email",
+            "required": true
+          },
+          {
+            "name": "service",
+            "label": "Shërbimi i kërkuar",
+            "required": false
+          },
+          {
+            "name": "message",
+            "label": "Mesazhi",
+            "required": true
+          }
+        ],
+        "submit": "Dërgo kërkesën",
+        "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+        "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+        "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+        "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+        "privacyHref": "/privatesia",
+        "endpoint": null,
+        "recipient": null,
+        "deliveryMode": "disabled_until_configured",
+        "privacyReady": false,
+        "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+        "errors": {
+          "name": "Shkruaj emrin.",
+          "email": "Shkruaj një adresë email të vlefshme.",
+          "message": "Na trego pak për projektin.",
+          "server": "Kërkesa nuk u dërgua. Provo përsëri."
+        },
+        "heading": "Flasim për menu online & qr.",
+        "selectedService": "menu-online-qr",
+        "id": "kerkese-projekti"
+      },
+      "imageCaption": "Shembull vizual i shërbimit; funksionet përcaktohen sipas projektit."
+    }
+  ],
+  "projects": [
+    {
+      "slug": "thethi-guide",
+      "name": "Thethi Guide",
+      "path": "/projektet/thethi-guide",
+      "title": "Thethi Guide | Projekt LB STUDIO",
+      "description": "Prezantimi i Thethi Guide: destinacione, hartë interaktive dhe asistent AI për Alpet Shqiptare. Shiko strukturën dhe pamjet e projektit.",
+      "h1": "Thethi Guide",
+      "intro": "Një website që organizon informacionin për destinacionet dhe udhëtimin në Alpet Shqiptare.",
+      "context": "Vizitori kërkon vende për të eksploruar dhe informacion që e ndihmon të planifikojë udhëtimin. Përmbajtja lidhet me destinacionet, përvojat dhe vendet në hartë.",
+      "solution": "Prezantimi i ridizajnimit bashkon destinacionet, hartën dhe asistentin AI. Pamjet janë nga versioni i ri i përgatitur; butoni i jashtëm hap domainin publik, pamja e të cilit mund të ndryshojë deri në publikimin e ridizajnimit.",
+      "features": [
+        "Organizim i destinacioneve dhe përmbajtjes turistike.",
+        "Hartë me kategori dhe pika interesi.",
+        "Asistent AI me pyetje të sugjeruara dhe lidhje kontakti."
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web",
+        "chatbot-custom",
+        "faqe-shumegjuheshe"
+      ],
+      "externalUrl": "https://thethi-guide.com/",
+      "publicationStatus": "url_supplied_by_owner_review_content",
+      "featuredImage": {
+        "path": "/images/projects/thethi-guide.jpg",
+        "alt": "Pamjet e Thethi Guide me destinacione, hartë dhe asistent AI.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--thethi-guide.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Thethi Guide — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "dizajn-zhvillim-web",
+          "href": "/sherbimet/dizajn-zhvillim-web"
+        },
+        {
+          "slug": "chatbot-custom",
+          "href": "/sherbimet/chatbot-custom"
+        },
+        {
+          "slug": "faqe-shumegjuheshe",
+          "href": "/sherbimet/faqe-shumegjuheshe"
+        }
+      ],
+      "presentationStatus": "redesign_preview_not_current_live_design",
+      "visibleStatusLabel": "Prezantim i ridizajnimit",
+      "visibleImageNotice": "Prezantim i ridizajnimit. Linku i jashtëm hap faqen publike, e cila mund të ketë ende pamjen e mëparshme."
+    },
+    {
+      "slug": "gjecaj-guesthouse-restaurant",
+      "name": "Gjeçaj — Guesthouse & Restaurant",
+      "path": "/projektet/gjecaj-guesthouse-restaurant",
+      "title": "Gjeçaj — Guesthouse & Restaurant | Projekt LB STUDIO",
+      "description": "Website i Gjeçaj në Theth me prezantimin e bujtinës dhe restorantit. Shiko pamjet dhe organizimin e përmbajtjes në portofolin e LB STUDIO.",
+      "h1": "Gjeçaj — Guesthouse & Restaurant",
+      "intro": "Një faqe që prezanton qëndrimin dhe kuzhinën në Theth.",
+      "context": "Bujtina dhe restoranti kanë oferta të lidhura, por vizitori mund të kërkojë informacion për njërën ose tjetrën. Navigimi duhet t’i dallojë dhe të ruajë identitetin e përbashkët.",
+      "solution": "Kryefaqja prezanton mikpritjen dhe orienton drejt restorantit ose bujtinës. Faqet përkatëse përdorin pamjet e vendit dhe lidhjet për kërkesë dhome ose rezervim tavoline.",
+      "features": [
+        "Prezantim i bujtinës dhe restorantit.",
+        "Faqe të veçanta për qëndrimin dhe kuzhinën.",
+        "Lidhje drejt kërkesës së dhomës dhe rezervimit të tavolinës."
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web",
+        "faqe-shumegjuheshe"
+      ],
+      "externalUrl": "https://gjecaj.al/",
+      "publicationStatus": "public_url_verify_before_launch",
+      "featuredImage": {
+        "path": "/images/projects/gjecaj-guesthouse-restaurant.jpg",
+        "alt": "Kryefaqja e Gjeçaj dhe pamjet e restorantit e bujtinës.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--gjecaj-guesthouse-restaurant.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Gjeçaj — Guesthouse & Restaurant — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "dizajn-zhvillim-web",
+          "href": "/sherbimet/dizajn-zhvillim-web"
+        },
+        {
+          "slug": "faqe-shumegjuheshe",
+          "href": "/sherbimet/faqe-shumegjuheshe"
+        }
+      ]
+    },
+    {
+      "slug": "gjecaj-rezervime",
+      "name": "Gjeçaj — Sistemi i rezervimeve",
+      "path": "/projektet/gjecaj-rezervime",
+      "title": "Gjeçaj — Sistemi i rezervimeve | Projekt LB STUDIO",
+      "description": "Sistemi i rezervimeve Gjeçaj me zgjedhje date, orari, numri vizitorësh dhe zone. Shiko prezantimin e aplikacionit web në portofolin e LB STUDIO.",
+      "h1": "Gjeçaj — Sistemi i rezervimeve",
+      "intro": "Nga zgjedhja e datës dhe orarit te menaxhimi i rezervimit.",
+      "context": "Rezervimi lidh kërkesën e klientit me oraret, vendet dhe gjendjen që duhet të ndjekë stafi. Përvoja duhet të jetë e qartë në të dyja anët.",
+      "solution": "Faqja publike lejon zgjedhjen e numrit të vizitorëve, zonës, datës dhe orarit. Prezantimi dallon formularin publik nga paneli i administrimit; pamjet e panelit përdorin vetëm të dhëna demonstrimi.",
+      "features": [
+        "Zgjedhje e numrit të vizitorëve, datës dhe orarit.",
+        "Zgjedhje Indoor, Outdoor ose pa preferencë.",
+        "Përmbledhje e zgjedhjeve para hapit të të dhënave të kontaktit."
+      ],
+      "relatedServiceSlugs": [
+        "rezervime-web-apps",
+        "integrime-automatizime"
+      ],
+      "externalUrl": "https://booking.gjecaj.al/",
+      "publicationStatus": "url_supplied_by_owner_review_content",
+      "featuredImage": {
+        "path": "/images/projects/gjecaj-rezervime.jpg",
+        "alt": "Formulari publik Gjeçaj me zgjedhje date, orari, zone dhe numri vizitorësh.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--gjecaj-rezervime.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Gjeçaj — Sistemi i rezervimeve — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "rezervime-web-apps",
+          "href": "/sherbimet/rezervime-web-apps"
+        },
+        {
+          "slug": "integrime-automatizime",
+          "href": "/sherbimet/integrime-automatizime"
+        }
+      ]
+    },
+    {
+      "slug": "baby-gifts-albania",
+      "name": "Baby Gifts Albania",
+      "path": "/projektet/baby-gifts-albania",
+      "title": "Baby Gifts Albania | Projekt LB STUDIO",
+      "description": "Website i Baby Gifts Albania me katalog dhuratash të personalizuara për bebe, çmime dhe porosi përmes WhatsApp. Shiko prezantimin në portofolin e LB STUDIO.",
+      "h1": "Baby Gifts Albania",
+      "intro": "Një prezantim për dhurata të punuara me dorë dhe të personalizuara për bebe.",
+      "context": "Pamjet e produkteve dhe informacioni për personalizimin janë pjesë kryesore e ofertës. Vizitori duhet të kuptojë çfarë prezantohet dhe si të kërkojë informacion.",
+      "solution": "Faqja prezanton dhurata të personalizuara, një katalog me çmime dhe lidhje për porosi në WhatsApp. Nuk paraqitet si dyqan me shportë, checkout apo pagesë online.",
+      "features": [
+        "Katalog produktesh me pamje dhe çmime.",
+        "Informacion për personalizimin e dhuratave.",
+        "Porosi dhe kontakt përmes WhatsApp."
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web"
+      ],
+      "externalUrl": "https://www.dhurataperbebe.com/",
+      "publicationStatus": "url_supplied_by_owner_review_content",
+      "featuredImage": {
+        "path": "/images/projects/baby-gifts-albania.jpg",
+        "alt": "Pamje e Baby Gifts Albania me shporta dhe kuti dhuratash.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--baby-gifts-albania.png",
+        "width": 1359,
+        "height": 933,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Baby Gifts Albania — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "dizajn-zhvillim-web",
+          "href": "/sherbimet/dizajn-zhvillim-web"
+        }
+      ],
+      "presentationStatus": "publicly_accessible_owner_live_demo_confirmation_pending"
+    },
+    {
+      "slug": "aleks-bzhetaj",
+      "name": "Av. Aleks Bzhetaj",
+      "path": "/projektet/aleks-bzhetaj",
+      "title": "Av. Aleks Bzhetaj | Projekt LB STUDIO",
+      "description": "Website për shërbimet ligjore të Av. Aleks Bzhetaj, me faqe shërbimesh dhe kontakt për konsultime. Projekt në portofolin e LB STUDIO.",
+      "h1": "Av. Aleks Bzhetaj",
+      "intro": "Një website që organizon shërbimet ligjore dhe rrugën drejt konsultimit.",
+      "context": "Vizitori duhet të kuptojë cilat çështje trajton zyra dhe ku mund të gjejë informacion për shërbimin që kërkon.",
+      "solution": "Struktura përfshin kryefaqen, faqet e shërbimeve dhe kontaktin. Pamjet e portofolit prezantojnë kryefaqen dhe faqen e së drejtës familjare, me tipografi serif dhe tone të errëta e ari.",
+      "features": [
+        "Faqe të dedikuara për shërbimet ligjore.",
+        "Prezantim i zyrës dhe mënyrave të kontaktit."
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web"
+      ],
+      "externalUrl": "https://www.aleksbzhetaj.com/",
+      "publicationStatus": "public_url_verify_before_launch",
+      "featuredImage": {
+        "path": "/images/projects/aleks-bzhetaj.jpg",
+        "alt": "Kryefaqja dhe një faqe shërbimi e website-it të Av. Aleks Bzhetaj.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--aleks-bzhetaj.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Av. Aleks Bzhetaj — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "dizajn-zhvillim-web",
+          "href": "/sherbimet/dizajn-zhvillim-web"
+        }
+      ]
+    },
+    {
+      "slug": "mb-cartongesso",
+      "name": "M.B Cartongesso",
+      "path": "/projektet/mb-cartongesso",
+      "title": "M.B Cartongesso | Projekt LB STUDIO",
+      "description": "Website i M.B Cartongesso me shërbime në kartongesso, ndriçim LED dhe galeri punimesh. Shiko pamjet e projektit në portofolin e LB STUDIO.",
+      "h1": "M.B Cartongesso",
+      "intro": "Një prezantim i shërbimeve dhe punimeve në kartongesso e ndriçim LED.",
+      "context": "Fotot e punimeve ndihmojnë vizitorin të kuptojë llojet e zgjidhjeve që ofron biznesi. Shërbimet dhe galeria duhet të lidhen me kërkesën për preventiv.",
+      "solution": "Faqja përdor pamje të interierëve dhe ndriçimit LED, kategori shërbimesh dhe galeri. Lidhjet e kontaktit e drejtojnë vizitorin te kërkesa për projektin e tij.",
+      "features": [
+        "Prezantim i shërbimeve.",
+        "Galeri punimesh dhe pamje interierësh.",
+        "Kontakt për kërkesë preventivi."
+      ],
+      "relatedServiceSlugs": [
+        "dizajn-zhvillim-web"
+      ],
+      "externalUrl": "https://www.mbcartongesso.com/",
+      "publicationStatus": "public_url_verify_before_launch",
+      "featuredImage": {
+        "path": "/images/projects/mb-cartongesso.jpg",
+        "alt": "Website-i M.B Cartongesso me shërbime dhe punime ndriçimi LED.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--mb-cartongesso.png",
+        "width": 1357,
+        "height": 932,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "M.B Cartongesso — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "dizajn-zhvillim-web",
+          "href": "/sherbimet/dizajn-zhvillim-web"
+        }
+      ]
+    },
+    {
+      "slug": "gjecaj-menu-online",
+      "name": "Gjeçaj — Menu online",
+      "path": "/projektet/gjecaj-menu-online",
+      "title": "Gjeçaj — Menu online | Projekt LB STUDIO",
+      "description": "Menuja online Gjeçaj me kategori, foto, përshkrime dhe çmime, në shqip dhe anglisht. Shiko pamjet për desktop dhe telefon të projektit.",
+      "h1": "Gjeçaj — Menu online",
+      "intro": "Pjatat, përshkrimet dhe çmimet në një menu të përshtatur për telefon.",
+      "context": "Klienti duhet të gjejë pjatat dhe informacionin përkatës duke kaluar lehtësisht mes kategorive. Për një restorant me vizitorë të huaj, zgjedhja e gjuhës është gjithashtu e nevojshme.",
+      "solution": "Menuja prezanton kategori, foto të pjatave, përshkrime dhe çmime. Pamjet tregojnë zgjedhjen shqip / anglisht. Hapja me QR mund të lidhet me URL-në përfundimtare të konfirmuar.",
+      "features": [
+        "Kategori dhe nënndarje të menusë.",
+        "Foto, përshkrime dhe çmime.",
+        "Zgjedhje shqip / anglisht dhe pamje për telefon."
+      ],
+      "relatedServiceSlugs": [
+        "menu-online-qr",
+        "faqe-shumegjuheshe"
+      ],
+      "externalUrl": "https://menu.gjecaj.al/",
+      "publicationStatus": "url_supplied_by_owner_review_content",
+      "featuredImage": {
+        "path": "/images/projects/gjecaj-menu-online.jpg",
+        "alt": "Menuja online Gjeçaj me kategori, foto pjatash dhe çmime.",
+        "status": "included_review_before_publish",
+        "ogPath": "/images/og/projektet--gjecaj-menu-online.png",
+        "width": 1348,
+        "height": 926,
+        "ogWidth": 1200,
+        "ogHeight": 630,
+        "ogAlt": "Gjeçaj — Menu online — LB STUDIO"
+      },
+      "cta": {
+        "label": "Flasim për një projekt të ngjashëm",
+        "href": "/kontakt"
+      },
+      "externalUrlConfirmed": true,
+      "portfolioApproved": false,
+      "relatedServices": [
+        {
+          "slug": "menu-online-qr",
+          "href": "/sherbimet/menu-online-qr"
+        },
+        {
+          "slug": "faqe-shumegjuheshe",
+          "href": "/sherbimet/faqe-shumegjuheshe"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "path": "/kontakt",
+    "title": "Diskuto projektin tënd web | Kontakt LB STUDIO",
+    "description": "Na trego për biznesin dhe faqen që dëshiron të ndërtosh. Kontakto LB STUDIO për dizajn web, rezervime, menu online dhe zgjidhje digjitale.",
+    "h1": "Flasim për projektin tënd.",
+    "intro": "Na trego për biznesin, nevojën dhe materialet që ke. Fillojmë nga një përshkrim i qartë, që të kuptojmë çfarë duhet të ndërtojmë.",
+    "keywordTargets": [
+      "kontakt LB STUDIO",
+      "kerkese faqe web"
+    ],
+    "featuredImage": {
+      "path": "/images/og/kontakt.png",
+      "alt": "Kartë LB STUDIO me titullin: Flasim për projektin tënd.",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/kontakt.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Flasim për projektin tënd. — LB STUDIO"
+    },
+    "sections": [
+      {
+        "heading": "Çfarë na ndihmon të dimë",
+        "items": [
+          "Çfarë bën biznesi dhe kujt i shërben.",
+          "Lidhja e faqes ekzistuese, nëse ka.",
+          "Shërbimet ose funksionet që kërkon.",
+          "Afati i dëshiruar dhe buxheti orientues, nëse i ke përcaktuar."
+        ]
+      },
+      {
+        "heading": "Punojmë online",
+        "body": "Bashkëpunojmë në distancë me biznese në Shqipëri, Itali, Mbretërinë e Bashkuar dhe SHBA. Hapat, materialet dhe miratimet organizohen gjatë projektit."
+      }
+    ],
+    "form": {
+      "fields": [
+        {
+          "name": "name",
+          "label": "Emri",
+          "required": true
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "required": true
+        },
+        {
+          "name": "service",
+          "label": "Shërbimi i kërkuar",
+          "required": false
+        },
+        {
+          "name": "message",
+          "label": "Mesazhi",
+          "required": true
+        }
+      ],
+      "submit": "Dërgo kërkesën",
+      "success": "Kërkesa u dërgua. Faleminderit që na tregove për projektin.",
+      "error": "Kërkesa nuk u dërgua. Provo përsëri ose përdor mënyrën tjetër të kontaktit.",
+      "privacy": "Të dhënat e formularit përdoren për të trajtuar kërkesën tënde.",
+      "note": "Publiko success vetëm pas konfirmimit të dorëzimit. Nuk ka afat përgjigjeje të premtuar. Lidhja e privatësisë dhe kontakti alternativ duhen plotësuar.",
+      "privacyHref": "/privatesia",
+      "endpoint": null,
+      "recipient": null,
+      "deliveryMode": "disabled_until_configured",
+      "privacyReady": false,
+      "successRule": "Show success only after backend confirms accepted delivery; no synthetic success.",
+      "errors": {
+        "name": "Shkruaj emrin.",
+        "email": "Shkruaj një adresë email të vlefshme.",
+        "message": "Na trego pak për projektin.",
+        "server": "Kërkesa nuk u dërgua. Provo përsëri."
+      }
+    }
+  },
+  "privacy": {
+    "path": "/privatesia",
+    "title": "Politika e privatësisë | LB STUDIO",
+    "description": "Informacion për të dhënat e kontaktit, përdorimin e formularit dhe privatësinë në LB STUDIO. Politika plotësohet sipas shërbimeve të konfiguruara.",
+    "h1": "Politika e privatësisë",
+    "intro": "Ky tekst është draft për plotësim dhe rishikim para publikimit.",
+    "keywordTargets": [],
+    "draftOnly": true,
+    "sections": [
+      {
+        "heading": "Kush i përpunon të dhënat",
+        "body": "Kontrolluesi: [EMËRTIMI LIGJOR I KONFIRMUAR]. Kontakt privatësie: [EMAIL PUBLIK]. LB STUDIO është marka e prezantuar në këtë website. Identiteti ligjor duhet të plotësohet saktë; përdorimi i markës nuk e zëvendëson këtë informacion."
+      },
+      {
+        "heading": "Formulari i kontaktit",
+        "body": "Kur na shkruan, marrim emrin, email-in, shërbimin e përzgjedhur dhe përmbajtjen e mesazhit. I përdorim për të trajtuar kërkesën dhe komunikimin për projektin. Fushat e shënuara janë të nevojshme për të dërguar formularin. Mos dërgo dokumente ose të dhëna të ndjeshme në mesazh."
+      },
+      {
+        "heading": "Qëllimet dhe baza e përpunimit",
+        "body": "Për çdo qëllim përcaktohet baza ligjore e zbatueshme: [BAZA PËR KËRKESAT PARAKONTRAKTORE / KOMUNIKIMIN E KONFIRMUAR]. Nëse përdoret interesi legjitim, shpjegohet interesi. Kërkesa për kontakt nuk shërben automatikisht si abonim marketingu."
+      },
+      {
+        "heading": "Ofruesit dhe transferimet",
+        "body": "Hostimi: [OFRUESI DHE VENDI]. Formulari dhe email-i: [OFRUESIT]. Mjetet e matjes: [MJETET OSE ASNJË]. Përshkruhen marrësit, rolet, përpunimi jashtë juridiksionit përkatës dhe masat për transferime, kur zbatohen: [DETAJE REALE]."
+      },
+      {
+        "heading": "Ruajtja e të dhënave",
+        "body": "Kërkesat ruhen për [AFATI OSE KRITERI I KONFIRMUAR]. Nëse fillon një marrëdhënie kontraktuale, mund të zbatohen afate të veçanta për dokumentet e projektit dhe detyrimet ligjore. Konfirmohen veçmas afatet e email-eve, log-eve dhe backup-eve."
+      },
+      {
+        "heading": "Cookies dhe matja",
+        "body": "Lista reale: [EMRI, QËLLIMI, OFRUESI, AFATI]. Nëse nuk përdoret analytics, shkruhet qartë. Kur kërkohet pëlqim, mjetet përkatëse aktivizohen pas zgjedhjes së vizitorit dhe zgjedhja mund të ndryshohet te [KONTROLLI I COOKIES]."
+      },
+      {
+        "heading": "Të drejtat dhe kërkesat",
+        "body": "Sipas ligjit të zbatueshëm, mund të kërkosh akses, korrigjim, fshirje, kufizim, kundërshtim ose portabilitet kur zbatohet. Nëse përpunimi bazohet në pëlqim, mund ta tërheqësh atë. Kontakti për kërkesat: [EMAIL]. Mund të ankohesh pranë autoritetit kompetent: [AUTORITETI SIPAS JURIDIKSIONIT]."
+      },
+      {
+        "heading": "Vendimmarrja automatike dhe përditësimet",
+        "body": "Konfirmo nëse përdoret vendimmarrje automatike ose profilizim dhe përshkruaje kur zbatohet: [GJENDJA REALE]. Përditësimi i fundit: [DATA E MIRATIMIT]."
+      }
+    ],
+    "featuredImage": {
+      "path": "/images/og/privatesia.png",
+      "alt": "Kartë LB STUDIO me titullin: Politika e privatësisë",
+      "status": "included_review_before_publish",
+      "ogPath": "/images/og/privatesia.png",
+      "width": 1200,
+      "height": 630,
+      "ogWidth": 1200,
+      "ogHeight": 630,
+      "ogAlt": "Politika e privatësisë — LB STUDIO"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import content from '../../data/content.sq.json';
+import routes from '../../data/routes.seo.json';
+
+const projektetHub = (content as any).hubs.find((h: any) => h.path === '/projektet');
+const routeMeta = (routes as any[]).find((r: any) => r.path === '/projektet');
+const projects = (content as any).projects as any[];
+---
+<Base
+  title={routeMeta.title}
+  description={routeMeta.description}
+  robots="noindex,nofollow"
+  ogImage={routeMeta.featuredImage.ogPath}
+  ogImageAlt={routeMeta.featuredImage.ogAlt}
+  ogImageWidth={routeMeta.featuredImage.ogWidth}
+  ogImageHeight={routeMeta.featuredImage.ogHeight}
+>
+  <div class="container">
+    <div class="page-header">
+      <h1>{routeMeta.h1}</h1>
+      <p>{projektetHub.intro}</p>
+    </div>
+    <div class="grid-3">
+      {projects.map((p: any) => (
+        <a href={`/projektet/${p.slug}`} class="card" style="text-decoration:none">
+          <div class="card-image">
+            <img
+              src={p.featuredImage.path}
+              alt={p.featuredImage.alt}
+              width={p.featuredImage.width}
+              height={p.featuredImage.height}
+              loading="lazy"
+            />
+          </div>
+          <h3>{p.name}</h3>
+          <p>{p.intro}</p>
+        </a>
+      ))}
+    </div>
+  </div>
+</Base>

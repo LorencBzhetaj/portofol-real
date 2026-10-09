@@ -1,0 +1,90 @@
+{
+  "siteUrl": null,
+  "brand": "LB STUDIO",
+  "brandDescription": "LB STUDIO ofron dizajn dhe zhvillim web, rezervime, menu online dhe zgjidhje digjitale për biznese.",
+  "defaultLanguage": "sq",
+  "publicEmail": null,
+  "publicPhone": "+355697536334",
+  "logoPath": null,
+  "socialProfiles": [],
+  "areaServed": [
+    {
+      "name": "Shqipëri",
+      "code": "AL"
+    },
+    {
+      "name": "Itali",
+      "code": "IT"
+    },
+    {
+      "name": "Mbretëria e Bashkuar",
+      "code": "GB"
+    },
+    {
+      "name": "Shtetet e Bashkuara",
+      "code": "US"
+    }
+  ],
+  "primaryMarket": "AL",
+  "businessMode": "online",
+  "physicalAddress": null,
+  "geo": null,
+  "productionReady": false,
+  "confirmedAssets": [],
+  "publishablePaths": [],
+  "languagesPublished": [
+    "sq"
+  ],
+  "languageAlternates": {},
+  "domainCandidates": [
+    "lbstudio.com",
+    "lbsutdio.al"
+  ],
+  "domainSpellingNeedsConfirmation": true,
+  "trailingSlash": false,
+  "openGraphLocale": "sq_AL",
+  "formRecipient": null,
+  "formEndpoint": null,
+  "privacyReady": false,
+  "formDeliveryVerified": false,
+  "includedAssetPaths": [
+    "/images/lb-studio-hero-corrected.png",
+    "/images/og/home.png",
+    "/images/og/kontakt.png",
+    "/images/og/privatesia.png",
+    "/images/og/projektet--aleks-bzhetaj.png",
+    "/images/og/projektet--baby-gifts-albania.png",
+    "/images/og/projektet--gjecaj-guesthouse-restaurant.png",
+    "/images/og/projektet--gjecaj-menu-online.png",
+    "/images/og/projektet--gjecaj-rezervime.png",
+    "/images/og/projektet--mb-cartongesso.png",
+    "/images/og/projektet--thethi-guide.png",
+    "/images/og/projektet.png",
+    "/images/og/sherbimet--chatbot-custom.png",
+    "/images/og/sherbimet--dizajn-zhvillim-web.png",
+    "/images/og/sherbimet--dyqane-online.png",
+    "/images/og/sherbimet--faqe-shumegjuheshe.png",
+    "/images/og/sherbimet--integrime-automatizime.png",
+    "/images/og/sherbimet--landing-pages.png",
+    "/images/og/sherbimet--menu-online-qr.png",
+    "/images/og/sherbimet--rezervime-web-apps.png",
+    "/images/og/sherbimet--seo-mirembajtje.png",
+    "/images/og/sherbimet.png",
+    "/images/projects/aleks-bzhetaj.jpg",
+    "/images/projects/baby-gifts-albania.jpg",
+    "/images/projects/gjecaj-guesthouse-restaurant.jpg",
+    "/images/projects/gjecaj-menu-online.jpg",
+    "/images/projects/gjecaj-rezervime.jpg",
+    "/images/projects/mb-cartongesso.jpg",
+    "/images/projects/thethi-guide.jpg",
+    "/images/services/chatbot-custom.jpg",
+    "/images/services/dizajn-zhvillim-web.svg",
+    "/images/services/dyqane-online.png",
+    "/images/services/faqe-shumegjuheshe.svg",
+    "/images/services/integrime-automatizime.svg",
+    "/images/services/landing-pages.jpg",
+    "/images/services/seo-mirembajtje.svg"
+  ],
+  "publicPhoneDisplay": "069 753 6334",
+  "logoStagingPath": "/images/brand/lb-studio-logo.svg"
+}

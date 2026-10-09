@@ -1,0 +1,122 @@
+---
+import Base from '../layouts/Base.astro';
+import ContactForm from '../components/ContactForm.astro';
+import content from '../data/content.sq.json';
+
+const home = content.home;
+const projects = content.projects as any[];
+const services = content.services as any[];
+
+const featuredProjectSlugs = ['thethi-guide', 'gjecaj-rezervime', 'aleks-bzhetaj'];
+const featuredServiceSlugs = ['dizajn-zhvillim-web', 'dyqane-online', 'rezervime-web-apps', 'menu-online-qr', 'chatbot-custom', 'seo-mirembajtje'];
+
+const featuredProjects = featuredProjectSlugs.map(slug => projects.find((p: any) => p.slug === slug)).filter(Boolean);
+const featuredServices = featuredServiceSlugs.map(slug => services.find((s: any) => s.slug === slug)).filter(Boolean);
+const howWeWork = home.sections[3];
+const valueProps = home.sections[0];
+---
+<Base
+  title={home.title}
+  description={home.description}
+  robots="noindex,nofollow"
+  ogImage={home.featuredImage.ogPath}
+  ogImageAlt={home.featuredImage.ogAlt}
+  ogImageWidth={home.featuredImage.ogWidth}
+  ogImageHeight={home.featuredImage.ogHeight}
+>
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>{home.h1}</h1>
+    <p class="hero-intro">{home.intro}</p>
+    <div class="btn-group">
+      <a href="/projektet" class="btn btn-primary">Shiko projektet</a>
+      <a href="/kontakt" class="btn btn-secondary">Na kontakto</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src={home.featuredImage.path}
+        alt={home.featuredImage.alt}
+        width={home.featuredImage.width}
+        height={home.featuredImage.height}
+      />
+    </div>
+  </section>
+
+  <!-- Value props -->
+  <section class="section container">
+    <h2 class="section-heading">{valueProps.heading}</h2>
+    <p class="section-intro">{valueProps.body}</p>
+    <div class="value-props">
+      {(valueProps.items as [string, string][]).map(([title, body]) => (
+        <div class="value-prop">
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Featured projects -->
+  <section class="section container">
+    <h2 class="section-heading">{home.sections[1].heading}</h2>
+    <p class="section-intro">{(home.sections[1] as any).body}</p>
+    <div class="grid-3">
+      {(featuredProjects as any[]).map((p) => (
+        <a href={`/projektet/${p.slug}`} class="card" style="text-decoration:none">
+          <div class="card-image">
+            <img
+              src={p.featuredImage.path}
+              alt={p.featuredImage.alt}
+              width={p.featuredImage.width}
+              height={p.featuredImage.height}
+              loading="lazy"
+            />
+          </div>
+          <h3>{p.name}</h3>
+          <p>{p.intro}</p>
+        </a>
+      ))}
+    </div>
+    <div style="margin-top:2rem">
+      <a href="/projektet" class="btn btn-secondary">Shiko të gjitha projektet</a>
+    </div>
+  </section>
+
+  <!-- Featured services -->
+  <section class="section container">
+    <h2 class="section-heading">{home.sections[2].heading}</h2>
+    <p class="section-intro">{(home.sections[2] as any).body}</p>
+    <div class="grid-3">
+      {(featuredServices as any[]).map((s) => (
+        <a href={`/sherbimet/${s.slug}`} class="card" style="text-decoration:none">
+          <h3>{s.name}</h3>
+          <p>{s.intro}</p>
+        </a>
+      ))}
+    </div>
+    <div style="margin-top:2rem">
+      <a href="/sherbimet" class="btn btn-secondary">Shiko të gjitha shërbimet</a>
+    </div>
+  </section>
+
+  <!-- How we work -->
+  <section class="section container" id="si-punojme">
+    <h2 class="section-heading">{howWeWork.heading}</h2>
+    <div class="steps">
+      {((howWeWork as any).items as [string, string][]).map(([title, body], i) => (
+        <div class="step">
+          <div class="step-num">Hapi {i + 1}</div>
+          <h3>{title}</h3>
+          <p>{body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Contact form -->
+  <section class="section container">
+    <h2 class="section-heading">{home.sections[5].heading}</h2>
+    <p class="section-intro">{(home.sections[5] as any).body}</p>
+    <ContactForm />
+  </section>
+</Base>

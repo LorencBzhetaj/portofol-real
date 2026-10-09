@@ -1,0 +1,98 @@
+---
+import Base from '../../layouts/Base.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import content from '../../data/content.sq.json';
+import routes from '../../data/routes.seo.json';
+
+export function getStaticPaths() {
+  const slugs = [
+    'thethi-guide',
+    'gjecaj-guesthouse-restaurant',
+    'gjecaj-rezervime',
+    'baby-gifts-albania',
+    'aleks-bzhetaj',
+    'mb-cartongesso',
+    'gjecaj-menu-online',
+  ];
+  return slugs.map(slug => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const project = ((content as any).projects as any[]).find((p: any) => p.slug === slug);
+const routeMeta = (routes as any[]).find((r: any) => r.path === `/projektet/${slug}`);
+
+if (!project || !routeMeta) {
+  return Astro.redirect('/projektet');
+}
+
+const relatedServices = ((content as any).services as any[]).filter((s: any) =>
+  (project.relatedServiceSlugs || []).includes(s.slug)
+);
+---
+<Base
+  title={routeMeta.title}
+  description={routeMeta.description}
+  robots="noindex,nofollow"
+  ogImage={routeMeta.featuredImage.ogPath}
+  ogImageAlt={routeMeta.featuredImage.ogAlt}
+  ogImageWidth={routeMeta.featuredImage.ogWidth}
+  ogImageHeight={routeMeta.featuredImage.ogHeight}
+>
+  <div class="container">
+    <Breadcrumb items={[
+      { label: 'Home', href: '/' },
+      { label: 'Projektet', href: '/projektet' },
+      { label: project.name },
+    ]} />
+
+    <div class="page-header">
+      <h1>{project.name}</h1>
+      {project.intro && <p>{project.intro}</p>}
+    </div>
+
+    <img
+      src={project.featuredImage.path}
+      alt={project.featuredImage.alt}
+      width={project.featuredImage.width}
+      height={project.featuredImage.height}
+      style="border-radius:4px; margin-bottom: 2rem;"
+    />
+
+    {project.paragraphs && (
+      <div class="service-content">
+        {(project.paragraphs as [string, string][]).map(([title, body]) => (
+          <div class="service-section">
+            <h2>{title}</h2>
+            <p>{body}</p>
+          </div>
+        ))}
+      </div>
+    )}
+
+    {project.whatWasBuilt && (
+      <div class="service-content" style="margin-top:2rem">
+        <p>{project.whatWasBuilt}</p>
+      </div>
+    )}
+
+    {relatedServices.length > 0 && (
+      <div class="related-section">
+        <h2 class="section-heading">Shërbime të lidhura</h2>
+        <div class="grid-3">
+          {relatedServices.map((s: any) => (
+            <a href={`/sherbimet/${s.slug}`} class="card" style="text-decoration:none">
+              <h3>{s.name}</h3>
+              <p>{s.intro}</p>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="related-section">
+      <h2 class="section-heading">Fillo një projekt</h2>
+      <p style="margin-bottom:1.5rem">Na trego çfarë dëshiron të ndërtosh.</p>
+      <a href="/kontakt" class="btn btn-primary">Na kontakto</a>
+    </div>
+  </div>
+</Base>

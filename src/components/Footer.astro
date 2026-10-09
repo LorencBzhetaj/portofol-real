@@ -1,0 +1,16 @@
+---
+import siteConfig from '../data/site-config.json';
+---
+<footer class="site-footer">
+  <div class="container">
+    <span class="footer-brand">{siteConfig.brand}</span>
+    <ul class="footer-links">
+      <li>
+        <a href={`tel:${siteConfig.publicPhone}`}>{siteConfig.publicPhoneDisplay}</a>
+      </li>
+      <li>
+        <a href="/privatesia">Privatësia</a>
+      </li>
+    </ul>
+  </div>
+</footer>
