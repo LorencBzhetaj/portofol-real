@@ -33,19 +33,22 @@ const relatedServices = ((content as any).services as any[]).filter((s: any) =>
   title={routeMeta.title}
   description={routeMeta.description}
   robots="noindex,nofollow"
-  ogImage={routeMeta.featuredImage.ogPath}
-  ogImageAlt={routeMeta.featuredImage.ogAlt}
-  ogImageWidth={routeMeta.featuredImage.ogWidth}
-  ogImageHeight={routeMeta.featuredImage.ogHeight}
+  ogImage={routeMeta.featuredImage?.ogPath}
+  ogImageAlt={routeMeta.featuredImage?.ogAlt}
+  ogImageWidth={routeMeta.featuredImage?.ogWidth}
+  ogImageHeight={routeMeta.featuredImage?.ogHeight}
 >
   <div class="container">
     <Breadcrumb items={[
-      { label: 'Home', href: '/' },
+      { label: 'Kreu', href: '/' },
       { label: 'Projektet', href: '/projektet' },
       { label: project.name },
     ]} />
 
     <div class="page-header">
+      {project.visibleStatusLabel && (
+        <span class="status-label">{project.visibleStatusLabel}</span>
+      )}
       <h1>{project.name}</h1>
       {project.intro && <p>{project.intro}</p>}
     </div>
@@ -55,25 +58,39 @@ const relatedServices = ((content as any).services as any[]).filter((s: any) =>
       alt={project.featuredImage.alt}
       width={project.featuredImage.width}
       height={project.featuredImage.height}
-      style="border-radius:4px; margin-bottom: 2rem;"
+      class="feature-image"
     />
 
-    {project.paragraphs && (
-      <div class="service-content">
-        {(project.paragraphs as [string, string][]).map(([title, body]) => (
-          <div class="service-section">
-            <h2>{title}</h2>
-            <p>{body}</p>
-          </div>
-        ))}
-      </div>
+    {project.visibleImageNotice && (
+      <p style="font-size:13px; color:var(--muted); margin-bottom:2rem">{project.visibleImageNotice}</p>
     )}
 
-    {project.whatWasBuilt && (
-      <div class="service-content" style="margin-top:2rem">
-        <p>{project.whatWasBuilt}</p>
-      </div>
-    )}
+    <div class="service-content">
+      {project.context && (
+        <div class="service-section">
+          <h2>Nevoja</h2>
+          <p>{project.context}</p>
+        </div>
+      )}
+
+      {project.solution && (
+        <div class="service-section">
+          <h2>Zgjidhja</h2>
+          <p>{project.solution}</p>
+        </div>
+      )}
+
+      {project.features && (project.features as string[]).length > 0 && (
+        <div class="service-section">
+          <h2>Çfarë u ndërtua</h2>
+          <ul class="service-list">
+            {(project.features as string[]).map((f: string) => (
+              <li>{f}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
 
     {relatedServices.length > 0 && (
       <div class="related-section">
@@ -89,10 +106,11 @@ const relatedServices = ((content as any).services as any[]).filter((s: any) =>
       </div>
     )}
 
-    <div class="related-section">
-      <h2 class="section-heading">Fillo një projekt</h2>
-      <p style="margin-bottom:1.5rem">Na trego çfarë dëshiron të ndërtosh.</p>
-      <a href="/kontakt" class="btn btn-primary">Na kontakto</a>
+    <div class="related-section" style="display:flex; gap:1rem; flex-wrap:wrap; align-items:center">
+      {project.externalUrl && project.externalUrlConfirmed && (
+        <a href={project.externalUrl} class="btn btn-secondary" target="_blank" rel="noopener">Vizito faqen</a>
+      )}
+      <a href="/kontakt" class="btn btn-primary">Fillo një projekt</a>
     </div>
   </div>
 </Base>
