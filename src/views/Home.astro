@@ -7,6 +7,7 @@ import ServiceCard from '../components/ServiceCard.astro';
 import Faq from '../components/Faq.astro';
 import ContactForm from '../components/ContactForm.astro';
 import { anchors, getContent, localize, projectBySlug, serviceBySlug, ui, type Lang } from '../lib/site';
+import { getCollection } from 'astro:content';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -17,6 +18,14 @@ const [value, projectsSec, servicesSec, processSec, onlineSec, contactSec] = hom
 const projects = (projectsSec.projectSlugs as string[]).map((s) => projectBySlug(s, lang));
 const services = (servicesSec.serviceSlugs as string[]).map((s) => serviceBySlug(s, lang));
 const hero = home.featuredImage;
+const featuredBlogSlugs = [
+  'sa-kushton-nje-faqe-interneti-per-biznes',
+  'instagram-apo-website-per-biznes',
+  'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti',
+];
+const allBlogPosts = await getCollection('blog');
+const featuredPosts = featuredBlogSlugs.map((s) => allBlogPosts.find((p) => p.id === s)).filter(Boolean);
+
 const stepIcons = [
   'M4 5h16v11H8l-4 4z', // chat
   'M4 20l4-1 11-11-3-3L5 16l-1 4zM14 6l3 3', // pencil
@@ -129,6 +138,37 @@ const stepIcons = [
     </div>
   </section>
 
+  {featuredPosts.length > 0 && (
+    <section class="section blog-home" aria-labelledby="blog-home-title">
+      <div class="wrap">
+        <header class="sec-head center">
+          <span class="eyebrow">Blog</span>
+          <h2 id="blog-home-title">Burime dhe këshilla</h2>
+          <p class="lede">Pyetje të zakonshme dhe orientim praktik për praninë online të biznesit.</p>
+        </header>
+        <ul class="grid-3 blog-home-grid">
+          {featuredPosts.map((post) => post && (
+            <li class="card blog-home-card">
+              <a href={`/blog/${post.id}`} class="blog-home-link">
+                <div class="blog-home-body">
+                  <span class="tag">{post.data.category}</span>
+                  <h3>{post.data.title}</h3>
+                  <p class="blog-home-excerpt">{post.data.excerpt}</p>
+                </div>
+                <span class="blog-home-read">
+                  {post.data.readingTimeMinutes} min <Arrow dir="right" />
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div class="btn-row more-row">
+          <a class="btn btn--ghost" href="/blog">Të gjithë artikujt <Arrow /></a>
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="section faq-wrap">
     <div class="wrap narrow-faq">
       <Faq items={home.faq} heading={t.faq} headingId="pyetje-home" />
@@ -240,4 +280,15 @@ const stepIcons = [
     .steps { grid-template-columns: 1fr; gap: 24px; }
     .contact-box { border-radius: 22px; }
   }
+
+  .blog-home-grid { list-style: none; padding: 0; margin: 0; }
+  .blog-home-card { overflow: hidden; }
+  .blog-home-link { display: flex; flex-direction: column; height: 100%; padding: 24px 24px 18px; text-decoration: none; color: inherit; transition: box-shadow 0.18s; }
+  .blog-home-link:hover { box-shadow: 0 2px 4px rgb(17 17 17 / 6%), 0 16px 40px -12px rgb(17 17 17 / 22%); }
+  .blog-home-body { flex: 1; }
+  .blog-home-body .tag { margin-bottom: 12px; }
+  .blog-home-body h3 { font-size: 1.1rem; margin: 10px 0 8px; }
+  .blog-home-excerpt { color: var(--muted); font-size: 0.93rem; margin: 0; line-height: 1.55; }
+  .blog-home-read { display: inline-flex; align-items: center; gap: 5px; margin-top: 18px; font-size: 0.82rem; color: var(--accent); font-weight: 600; }
+  .blog-home-read :global(.arrow) { width: 13px; height: 13px; }
 </style>

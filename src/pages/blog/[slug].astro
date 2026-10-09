@@ -1,0 +1,118 @@
+---
+import BlogBase from '../../layouts/BlogBase.astro';
+import Arrow from '../../components/Arrow.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Related posts from manifest
+const relatedSlugs: Record<string, string[]> = {
+  'sa-kushton-nje-faqe-interneti-per-biznes': ['instagram-apo-website-per-biznes', 'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti'],
+  'instagram-apo-website-per-biznes': ['sa-kushton-nje-faqe-interneti-per-biznes', 'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti'],
+  'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti': ['sa-kushton-nje-faqe-interneti-per-biznes', 'instagram-apo-website-per-biznes'],
+  'si-funksionon-nje-sistem-rezervimesh-online': ['sa-kushton-nje-faqe-interneti-per-biznes', 'instagram-apo-website-per-biznes'],
+};
+const allPosts = await getCollection('blog');
+const related = (relatedSlugs[post.id] ?? []).map((s) => allPosts.find((p) => p.id === s)).filter(Boolean);
+---
+<BlogBase title={post.data.seoTitle} description={post.data.description}>
+  <article class="wrap article-wrap">
+    <header class="article-head">
+      <a class="back-link" href="/blog"><Arrow dir="left" /> Të gjithë artikujt</a>
+      <span class="tag">{post.data.category}</span>
+      <h1>{post.data.title}</h1>
+      <p class="article-excerpt">{post.data.excerpt}</p>
+      <div class="article-meta">
+        <span>{post.data.author}</span>
+        <span aria-hidden="true">·</span>
+        <span>{post.data.readingTimeMinutes} min lexim</span>
+      </div>
+    </header>
+
+    <div class="article-body prose">
+      <Content />
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="section--tight related-wrap">
+      <div class="wrap">
+        <h2 class="related-title">Artikuj të lidhur</h2>
+        <ul class="related-list">
+          {related.map((r) => r && (
+            <li class="related-card card">
+              <a href={`/blog/${r.id}`} class="related-link">
+                <span class="tag">{r.data.category}</span>
+                <h3>{r.data.title}</h3>
+                <p>{r.data.excerpt}</p>
+                <span class="related-read" aria-hidden="true">{r.data.readingTimeMinutes} min <Arrow dir="right" /></span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
+
+  <section class="section--tight article-cta">
+    <div class="wrap article-cta-box card">
+      <div>
+        <h2>Kemi diçka të ngjashme për biznesin tënd?</h2>
+        <p>Na trego çfarë po ndërton ose çfarë po kërkon të zgjidhësh. Do të identifikojmë çfarë ka kuptim për fazën ku je.</p>
+      </div>
+      <a class="btn" href="/kontakt">Na kontakto <Arrow /></a>
+    </div>
+  </section>
+</BlogBase>
+
+<style>
+  .article-wrap { padding-top: clamp(32px, 5vw, 64px); padding-bottom: clamp(40px, 7vw, 80px); max-width: 780px; }
+
+  .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 500; color: var(--muted); text-decoration: none; margin-bottom: 24px; }
+  .back-link:hover { color: var(--ink); }
+  .back-link :global(.arrow) { width: 14px; height: 14px; }
+
+  .article-head .tag { margin-bottom: 16px; }
+  .article-head h1 { margin-top: 12px; font-size: clamp(1.75rem, 4vw, 2.6rem); }
+  .article-excerpt { font-size: clamp(1.05rem, 1.6vw, 1.2rem); color: var(--muted); margin-top: 14px; max-width: 60ch; line-height: 1.6; }
+  .article-meta { display: flex; align-items: center; gap: 8px; margin-top: 18px; font-size: 0.85rem; color: var(--muted); font-weight: 500; padding-top: 18px; border-top: 1px solid var(--line); }
+
+  .article-body { margin-top: clamp(32px, 5vw, 52px); }
+
+  /* Prose styles */
+  .prose :global(h2) { font-size: clamp(1.25rem, 2.5vw, 1.65rem); margin-top: 2.4em; margin-bottom: 0.6em; }
+  .prose :global(h3) { font-size: 1.1rem; margin-top: 1.8em; margin-bottom: 0.5em; }
+  .prose :global(p) { max-width: 68ch; line-height: 1.72; margin-bottom: 1.1em; }
+  .prose :global(ul), .prose :global(ol) { max-width: 68ch; padding-left: 1.4em; margin-bottom: 1.1em; }
+  .prose :global(li) { margin-bottom: 0.35em; line-height: 1.65; }
+  .prose :global(a) { color: var(--accent); text-underline-offset: 3px; }
+  .prose :global(a:hover) { text-decoration: none; }
+  .prose :global(strong) { font-weight: 700; }
+
+  /* Related */
+  .related-wrap { border-top: 1px solid var(--line); }
+  .related-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 20px; }
+  .related-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 600px) { .related-list { grid-template-columns: 1fr; } }
+  .related-card { overflow: hidden; }
+  .related-link { display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; text-decoration: none; color: inherit; height: 100%; }
+  .related-link:hover { background: var(--sand); border-radius: var(--radius-lg); }
+  .related-link .tag { align-self: flex-start; }
+  .related-link h3 { font-size: 1rem; margin: 0; }
+  .related-link p { font-size: 0.9rem; color: var(--muted); margin: 0; line-height: 1.5; flex: 1; }
+  .related-read { font-size: 0.82rem; color: var(--accent); font-weight: 600; display: inline-flex; align-items: center; gap: 4px; margin-top: 4px; }
+  .related-read :global(.arrow) { width: 13px; height: 13px; }
+
+  /* CTA */
+  .article-cta { padding-top: 0; }
+  .article-cta-box { display: grid; grid-template-columns: 1fr auto; gap: 32px; padding: clamp(24px, 4vw, 48px); align-items: center; }
+  .article-cta-box h2 { font-size: clamp(1.1rem, 2vw, 1.45rem); margin-bottom: 10px; }
+  .article-cta-box p { color: var(--muted); font-size: 0.97rem; margin: 0; max-width: 54ch; }
+  @media (max-width: 680px) { .article-cta-box { grid-template-columns: 1fr; } }
+</style>

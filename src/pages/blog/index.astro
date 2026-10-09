@@ -1,0 +1,66 @@
+---
+import BlogBase from '../../layouts/BlogBase.astro';
+import Arrow from '../../components/Arrow.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const ordered = [
+  'sa-kushton-nje-faqe-interneti-per-biznes',
+  'instagram-apo-website-per-biznes',
+  'cfare-duhet-te-kete-faqja-e-nje-bujtine-ose-restoranti',
+  'si-funksionon-nje-sistem-rezervimesh-online',
+].map((slug) => posts.find((p) => p.id === slug)).filter(Boolean);
+---
+<BlogBase
+  title="Blog — Burime dhe këshilla për praninë online | LB STUDIO"
+  description="Artikuj praktikë mbi ndërtimin e faqeve web, praninë online dhe sistemet dixhitale për bizneset në Shqipëri."
+>
+  <section class="section blog-list">
+    <div class="wrap">
+      <header class="blog-head center">
+        <span class="eyebrow">Blog</span>
+        <h1>Burime dhe këshilla</h1>
+        <p class="lede">Pyetje të zakonshme, shpjegime praktike dhe orientim për praninë online të biznesit tënd.</p>
+      </header>
+      <ul class="post-grid">
+        {ordered.map((post) => post && (
+          <li class="post-card card">
+            <a class="post-card-link" href={`/blog/${post.id}`}>
+              <div class="post-card-body">
+                <span class="tag">{post.data.category}</span>
+                <h2>{post.data.title}</h2>
+                <p class="post-excerpt">{post.data.excerpt}</p>
+              </div>
+              <div class="post-card-foot">
+                <span class="read-time">{post.data.readingTimeMinutes} min lexim</span>
+                <span class="post-arrow" aria-hidden="true"><Arrow dir="right" /></span>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BlogBase>
+
+<style>
+  .blog-head { margin-bottom: clamp(40px, 6vw, 64px); }
+  .blog-head h1 { margin-top: 14px; }
+  .post-grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 24px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 680px) { .post-grid { grid-template-columns: 1fr; } }
+
+  .post-card { overflow: hidden; }
+  .post-card-link {
+    display: flex; flex-direction: column; height: 100%;
+    padding: 28px 28px 22px; text-decoration: none; color: inherit;
+    transition: box-shadow 0.18s;
+  }
+  .post-card-link:hover { box-shadow: 0 2px 4px rgb(17 17 17 / 6%), 0 16px 40px -12px rgb(17 17 17 / 22%); }
+  .post-card-body { flex: 1; }
+  .post-card-body .tag { margin-bottom: 14px; }
+  .post-card-body h2 { font-size: clamp(1.15rem, 2.2vw, 1.45rem); margin: 12px 0 10px; }
+  .post-excerpt { color: var(--muted); font-size: 0.97rem; margin: 0; line-height: 1.55; }
+  .post-card-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 24px; }
+  .read-time { font-size: 0.82rem; color: var(--muted); font-weight: 500; }
+  .post-arrow :global(svg) { width: 18px; height: 18px; color: var(--accent); }
+</style>

@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { production, formEndpoint, ui } from '../lib/site';
+
+interface Props {
+  title: string;
+  description: string;
+  robots?: string;
+}
+const { title, description, robots = 'noindex,follow' } = Astro.props;
+const t = ui['sq'];
+---
+<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f7f3ec" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.skip}</a>
+    {!production && (
+      <div class="staging-note" role="note">{t.staging}{formEndpoint ? '.' : t.stagingNoForm}</div>
+    )}
+    <Header lang="sq" />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer lang="sq" />
+  </body>
+</html>
+<style>
+  .staging-note { padding: 7px var(--gutter); background: var(--ink); color: var(--ivory-2); font-size: 0.8rem; text-align: center; line-height: 1.4; }
+  main:focus { outline: none; }
+</style>
