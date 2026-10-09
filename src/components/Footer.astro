@@ -1,16 +1,45 @@
 ---
-import siteConfig from '../data/site-config.json';
+import { content } from '../lib/site';
+const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
-  <div class="inner">
-    <span class="footer-brand">{siteConfig.brand}</span>
-    <ul class="footer-links">
-      <li>
-        <a href={`tel:${siteConfig.publicPhone}`}>{siteConfig.publicPhoneDisplay}</a>
-      </li>
-      <li>
-        <a href="/privatesia">Privatësia</a>
-      </li>
-    </ul>
+  <div class="wrap grid">
+    <div class="about">
+      <a href="/" aria-label="LB STUDIO — Kreu"><img src="/images/brand/lb-studio-lockup.svg" alt="LB STUDIO" width="356" height="100" loading="lazy" /></a>
+      <p>Dizajn dhe zhvillim web, rezervime, menu online dhe zgjidhje digjitale për biznese. Punojmë online me klientë në Shqipëri, Itali, Mbretërinë e Bashkuar dhe SHBA.</p>
+    </div>
+    <nav aria-label="Faqet">
+      <h2>Faqet</h2>
+      <ul>
+        <li><a href="/projektet">Projektet</a></li>
+        <li><a href="/sherbimet">Shërbimet</a></li>
+        <li><a href="/#si-punojme">Si punojmë</a></li>
+        <li><a href="/kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Shërbimet në fund të faqes">
+      <h2>Shërbimet</h2>
+      <ul>
+        {content.services.map((s) => <li><a href={s.path}>{s.name}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap legal">
+    <p>© {year} LB STUDIO</p>
+    <a href="/privatesia">Privatësia</a>
   </div>
 </footer>
+<style>
+  .site-footer { border-top: 1px solid var(--line); padding: 56px 0 28px; background: var(--ivory); }
+  .grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+  .about img { width: 150px; height: auto; margin-bottom: 18px; }
+  .about p { color: var(--muted); max-width: 42ch; font-size: 0.95rem; }
+  h2 { font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 14px; font-weight: 600; }
+  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+  ul a { text-decoration: none; font-size: 0.97rem; display: inline-block; padding: 2px 0; }
+  ul a:hover { text-decoration: underline; text-underline-offset: 3px; }
+  .legal { display: flex; justify-content: space-between; gap: 16px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.88rem; color: var(--muted); }
+  .legal p { margin: 0; }
+  .legal a { color: var(--ink-2); }
+  @media (max-width: 720px) { .grid { grid-template-columns: 1fr 1fr; gap: 32px; } .about { grid-column: 1 / -1; } }
+</style>

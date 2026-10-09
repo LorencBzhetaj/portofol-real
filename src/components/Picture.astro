@@ -1,0 +1,38 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  sizes: string;
+  priority?: boolean;
+  class?: string;
+}
+const { src, alt, width, height, sizes, priority = false, class: className } = Astro.props;
+
+// Variants come from scripts/build-images.mjs; SVG and unknown files are served as-is.
+const manifestPath = path.resolve('src/data/image-variants.json');
+const manifest: Record<string, { width: number; height: number; widths: number[]; base: string }> = fs.existsSync(manifestPath)
+  ? JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+  : {};
+const entry = manifest[src];
+if (entry && (entry.width !== width || entry.height !== height)) {
+  throw new Error(`Dimensionet e ${src} (${entry.width}x${entry.height}) nuk përputhen me të dhënat (${width}x${height}).`);
+}
+const srcset = (fmt: string) => entry!.widths.map((w) => `${entry!.base}-${w}.${fmt} ${w}w`).join(', ');
+const fallback = entry ? `${entry.base}-${entry.widths.find((w) => w >= 1200) ?? entry.width}.webp` : src;
+const loading = priority ? 'eager' : 'lazy';
+const fetchpriority = priority ? 'high' : undefined;
+---
+{entry ? (
+  <picture class={className}>
+    <source type="image/avif" srcset={srcset('avif')} sizes={sizes} />
+    <source type="image/webp" srcset={srcset('webp')} sizes={sizes} />
+    <img src={fallback} alt={alt} width={width} height={height} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+  </picture>
+) : (
+  <img class={className} src={src} alt={alt} width={width} height={height} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+)}

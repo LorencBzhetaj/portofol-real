@@ -1,25 +1,190 @@
 ---
+import Arrow from './Arrow.astro';
+import { content, formEndpoint } from '../lib/site';
+
+interface Props {
+  id: string;
+  heading?: string;
+  headingLevel?: 'h2' | 'h3';
+  selectedService?: string | null;
+  /** /kontakt?service=slug preselects the service on the client (canonical stays /kontakt). */
+  readServiceParam?: boolean;
+  tone?: 'light' | 'dark';
+}
+const { id, heading, headingLevel = 'h2', selectedService = null, readServiceParam = false, tone = 'light' } = Astro.props;
+const form = content.contact.form;
+const H = headingLevel;
+const field = (name: string) => form.fields.find((f) => f.name === name)!;
+const enabled = Boolean(formEndpoint);
 ---
-<section class="contact-form-section">
-  <h2 style="font-size:28px; margin-bottom:1.5rem">Dërgo një kërkesë</h2>
-  <div class="form-wrapper">
-    <form id="kerkese-projekti" novalidate>
-      <fieldset disabled>
-        <div class="form-group">
-          <label for="emri">Emri <span aria-hidden="true">*</span></label>
-          <input type="text" id="emri" name="emri" autocomplete="name" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input type="email" id="email" name="email" autocomplete="email" required />
-        </div>
-        <div class="form-group">
-          <label for="mesazhi">Mesazhi <span aria-hidden="true">*</span></label>
-          <textarea id="mesazhi" name="mesazhi" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Dërgo kërkesën</button>
-      </fieldset>
-    </form>
-    <p class="form-note">Formulari është i çaktivizuar gjatë staging.</p>
-  </div>
-</section>
+<div class:list={['contact-form', tone]}>
+  {heading && <H class="form-heading" id={`${id}-title`}>{heading}</H>}
+  <form
+    id={id}
+    method="post"
+    action={formEndpoint ?? undefined}
+    novalidate
+    data-contact-form
+    data-endpoint={formEndpoint ?? ''}
+    data-read-param={readServiceParam ? 'true' : undefined}
+    data-msg-success={form.success}
+    data-msg-error={form.error}
+    data-msg-disabled="Dërgimi i formularit nuk është aktivizuar ende në këtë version prove. Asnjë e dhënë nuk u dërgua."
+    aria-labelledby={heading ? `${id}-title` : undefined}
+    aria-label={heading ? undefined : 'Formulari i kërkesës'}
+  >
+    <div class="row">
+      <div class="field">
+        <label for={`${id}-name`}>{field('name').label} <span class="req" aria-hidden="true">*</span></label>
+        <input id={`${id}-name`} name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby={`${id}-name-err`} />
+        <p class="err" id={`${id}-name-err`} data-msg={form.errors.name} hidden></p>
+      </div>
+      <div class="field">
+        <label for={`${id}-email`}>{field('email').label} <span class="req" aria-hidden="true">*</span></label>
+        <input id={`${id}-email`} name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" aria-describedby={`${id}-email-err`} />
+        <p class="err" id={`${id}-email-err`} data-msg={form.errors.email} hidden></p>
+      </div>
+    </div>
+    <div class="field">
+      <label for={`${id}-service`}>{field('service').label}</label>
+      <select id={`${id}-service`} name="service">
+        <option value="" selected={!selectedService}>Zgjidh një shërbim (opsionale)</option>
+        {content.services.map((s) => <option value={s.slug} selected={s.slug === selectedService}>{s.name}</option>)}
+        <option value="tjeter">Tjetër / nuk jam i sigurt</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for={`${id}-message`}>{field('message').label} <span class="req" aria-hidden="true">*</span></label>
+      <textarea id={`${id}-message`} name="message" rows="5" required minlength="10" maxlength="4000" aria-describedby={`${id}-message-err`} placeholder="Na trego për biznesin dhe çfarë dëshiron të ndërtosh."></textarea>
+      <p class="err" id={`${id}-message-err`} data-msg={form.errors.message} hidden></p>
+    </div>
+    <!-- Honeypot: hidden from people, ignored by the server-side handler when filled. -->
+    <div class="hp" aria-hidden="true">
+      <label for={`${id}-website`}>Website</label>
+      <input id={`${id}-website`} name="website" type="text" tabindex="-1" autocomplete="off" />
+    </div>
+    <p class="privacy">{form.privacy} <a href={form.privacyHref}>Politika e privatësisë</a>.</p>
+    <p class="fields-note"><span aria-hidden="true">*</span> Fushë e detyrueshme</p>
+    <div class="actions">
+      <button class="btn" type="submit" disabled={!enabled} data-submit>
+        <span data-label>{form.submit}</span> <Arrow />
+      </button>
+    </div>
+    <div class="status" role="status" aria-live="polite" data-status hidden></div>
+  </form>
+</div>
+
+<script>
+  const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  for (const form of document.querySelectorAll<HTMLFormElement>('form[data-contact-form]')) {
+    const submit = form.querySelector<HTMLButtonElement>('[data-submit]')!;
+    const label = submit.querySelector<HTMLElement>('[data-label]')!;
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const endpoint = form.dataset.endpoint || '';
+    const originalLabel = label.textContent;
+    submit.disabled = false; // enhanced: validation works even while delivery is disabled
+
+    if (form.dataset.readParam) {
+      const slug = new URLSearchParams(location.search).get('service');
+      const select = form.querySelector<HTMLSelectElement>('select[name="service"]');
+      if (slug && select && [...select.options].some((o) => o.value === slug)) select.value = slug;
+    }
+
+    const showStatus = (kind: 'success' | 'error' | 'info', text: string) => {
+      status.hidden = false;
+      status.className = `status ${kind}`;
+      status.textContent = text;
+    };
+    const setError = (input: HTMLInputElement | HTMLTextAreaElement, bad: boolean) => {
+      const err = form.querySelector<HTMLElement>(`#${input.id}-err`);
+      input.setAttribute('aria-invalid', String(bad));
+      if (err) { err.hidden = !bad; err.textContent = bad ? err.dataset.msg ?? '' : ''; }
+      return bad;
+    };
+    const validate = () => {
+      const name = form.elements.namedItem('name') as HTMLInputElement;
+      const email = form.elements.namedItem('email') as HTMLInputElement;
+      const message = form.elements.namedItem('message') as HTMLTextAreaElement;
+      const bad = [
+        setError(name, name.value.trim().length < 2) && name,
+        setError(email, !EMAIL.test(email.value.trim())) && email,
+        setError(message, message.value.trim().length < 10) && message,
+      ].filter(Boolean) as HTMLElement[];
+      bad[0]?.focus();
+      return bad.length === 0;
+    };
+    form.addEventListener('input', (e) => {
+      const t = e.target as HTMLInputElement;
+      if (t.getAttribute('aria-invalid') === 'true') setError(t, false);
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.hidden = true;
+      if (!validate()) return;
+      if (!endpoint) {
+        // No backend configured: never pretend the request was sent.
+        showStatus('info', form.dataset.msgDisabled!);
+        return;
+      }
+      const data = Object.fromEntries(new FormData(form).entries());
+      submit.disabled = true;
+      form.setAttribute('aria-busy', 'true');
+      label.textContent = 'Duke dërguar…';
+      const ctrl = new AbortController();
+      const timer = setTimeout(() => ctrl.abort(), 15000);
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({ ...data, page: location.pathname }),
+          signal: ctrl.signal,
+        });
+        const body = await res.json().catch(() => null);
+        // Success only when the backend explicitly confirms accepted delivery.
+        if (res.ok && body && body.ok === true) {
+          form.reset();
+          showStatus('success', form.dataset.msgSuccess!);
+        } else {
+          showStatus('error', form.dataset.msgError!);
+        }
+      } catch {
+        showStatus('error', form.dataset.msgError!);
+      } finally {
+        clearTimeout(timer);
+        submit.disabled = false;
+        form.removeAttribute('aria-busy');
+        label.textContent = originalLabel;
+      }
+    });
+  }
+</script>
+
+<style>
+  .contact-form { width: 100%; }
+  .form-heading { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 20px; }
+  form { display: grid; gap: 16px; padding: clamp(20px, 3vw, 32px); border-radius: var(--radius-lg); background: var(--ivory-2); border: 1px solid var(--line); color: var(--ink); }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field { display: grid; gap: 6px; min-width: 0; }
+  label { font-weight: 600; font-size: 0.93rem; }
+  .req { color: var(--accent); }
+  input, select, textarea {
+    width: 100%; min-height: 48px; padding: 12px 14px;
+    border: 1.5px solid #cfc5b4; border-radius: 12px; background: var(--white); color: var(--ink);
+    font: inherit; font-size: 1rem;
+  }
+  textarea { resize: vertical; min-height: 130px; }
+  input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; border-color: var(--ink); }
+  [aria-invalid='true'] { border-color: #b3261e; }
+  .err { margin: 0; color: #b3261e; font-size: 0.88rem; font-weight: 500; }
+  .hp { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+  .privacy, .fields-note { margin: 0; color: var(--muted); font-size: 0.88rem; }
+  .privacy a { color: var(--ink); }
+  .actions .btn { width: 100%; }
+  .status { padding: 14px 16px; border-radius: 12px; font-weight: 500; font-size: 0.95rem; }
+  .status.success { background: #e6f2e8; color: #1d5b2a; }
+  .status.error { background: #fbe9e7; color: #8c1d18; }
+  .status.info { background: var(--sand); color: var(--ink-2); }
+  .dark .form-heading { color: var(--ivory-2); }
+  @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+</style>

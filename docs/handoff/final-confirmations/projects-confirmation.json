@@ -1,0 +1,194 @@
+{
+  "internalOnly": true,
+  "instruction": "Plotëso rolin/faktet dhe evidencën. approved=true vetëm pasi roli, funksionet, statusi dhe lejet janë konfirmuar. URL-ja e dërguar nuk është provë e këtyre lejeve.",
+  "projects": [
+    {
+      "slug": "thethi-guide",
+      "name": "Thethi Guide",
+      "url": "https://thethi-guide.com/",
+      "proposedRoleStatement": "Dizajn/zhvillim i ridizajnimit dhe funksionet që konfirmohen nga pronari",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Organizim i destinacioneve dhe përmbajtjes turistike.",
+        "Hartë me kategori dhe pika interesi.",
+        "Asistent AI me pyetje të sugjeruara dhe lidhje kontakti."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-guesthouse-restaurant",
+      "name": "Gjeçaj — Guesthouse & Restaurant",
+      "url": "https://gjecaj.al/",
+      "proposedRoleStatement": "Dizajn dhe zhvillim i prezantimit të bujtinës/restorantit",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Prezantim i bujtinës dhe restorantit.",
+        "Faqe të veçanta për qëndrimin dhe kuzhinën.",
+        "Lidhje drejt kërkesës së dhomës dhe rezervimit të tavolinës."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-rezervime",
+      "name": "Gjeçaj — Sistemi i rezervimeve",
+      "url": "https://booking.gjecaj.al/",
+      "proposedRoleStatement": "Zhvillim i formularit dhe sistemit të rezervimit",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Zgjedhje e numrit të vizitorëve, datës dhe orarit.",
+        "Zgjedhje Indoor, Outdoor ose pa preferencë.",
+        "Përmbledhje e zgjedhjeve para hapit të të dhënave të kontaktit."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "baby-gifts-albania",
+      "name": "Baby Gifts Albania",
+      "url": "https://www.dhurataperbebe.com/",
+      "proposedRoleStatement": "Dizajn dhe zhvillim i katalogut me porosi WhatsApp",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Katalog produktesh me pamje dhe çmime.",
+        "Informacion për personalizimin e dhuratave.",
+        "Porosi dhe kontakt përmes WhatsApp."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "aleks-bzhetaj",
+      "name": "Av. Aleks Bzhetaj",
+      "url": "https://www.aleksbzhetaj.com/",
+      "proposedRoleStatement": "Dizajn dhe zhvillim i website-it të shërbimeve ligjore",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Faqe të dedikuara për shërbimet ligjore.",
+        "Prezantim i zyrës dhe mënyrave të kontaktit."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "mb-cartongesso",
+      "name": "M.B Cartongesso",
+      "url": "https://www.mbcartongesso.com/",
+      "proposedRoleStatement": "Dizajn dhe zhvillim i prezantimit të shërbimeve/punimeve",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Prezantim i shërbimeve.",
+        "Galeri punimesh dhe pamje interierësh.",
+        "Kontakt për kërkesë preventivi."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-menu-online",
+      "name": "Gjeçaj — Menu online",
+      "url": "https://menu.gjecaj.al/",
+      "proposedRoleStatement": "Dizajn dhe zhvillim i menusë online",
+      "confirmedRoleStatement": null,
+      "roleConfirmed": false,
+      "featuresToConfirm": [
+        "Kategori dhe nënndarje të menusë.",
+        "Foto, përshkrime dhe çmime.",
+        "Zgjedhje shqip / anglisht dhe pamje për telefon."
+      ],
+      "featuresConfirmed": false,
+      "publicationStatusConfirmed": false,
+      "portfolioPermission": {
+        "granted": false,
+        "by": null,
+        "date": null,
+        "scope": null,
+        "evidenceReference": null
+      },
+      "imagesAndBrandPermission": {
+        "granted": false,
+        "evidenceReference": null
+      },
+      "approved": false
+    }
+  ]
+}

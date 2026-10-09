@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Arrow from '../components/Arrow.astro';
+import { content } from '../lib/site';
+
+const hub = content.hubs.find((h) => h.path === '/sherbimet')!;
+const services = hub.items.map((path) => content.services.find((s) => s.path === path)!);
+---
+<Base routePath={hub.path}>
+  <Breadcrumbs items={[{ label: 'Kreu', href: '/' }, { label: 'Shërbimet' }]} />
+  <section class="section hub-head">
+    <div class="wrap">
+      <span class="eyebrow">Shërbimet</span>
+      <h1>{hub.h1}</h1>
+      <p class="lede">{hub.intro}</p>
+    </div>
+  </section>
+  <section class="hub-list" aria-label="Të gjitha shërbimet">
+    <div class="wrap grid-3">
+      {services.map((s) => <ServiceCard service={s} headingLevel="h2" />)}
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap end-cta card">
+      <h2>Nuk je i sigurt cili shërbim të përshtatet?</h2>
+      <p class="muted">Na trego për biznesin dhe çfarë dëshiron të arrish. Zgjidhjen e përcaktojmë bashkë.</p>
+      <a class="btn" href="/kontakt">Flasim për projektin <Arrow /></a>
+    </div>
+  </section>
+</Base>
+<style>
+  .hub-head { padding-bottom: 40px; }
+  .hub-head h1 { max-width: 18ch; }
+  .end-cta { padding: clamp(28px, 5vw, 56px); text-align: center; display: grid; justify-items: center; gap: 14px; }
+  .end-cta h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+  .end-cta p { margin: 0 0 8px; max-width: 56ch; }
+</style>

@@ -4,8 +4,8 @@
   "brandDescription": "LB STUDIO ofron dizajn dhe zhvillim web, rezervime, menu online dhe zgjidhje digjitale për biznese.",
   "defaultLanguage": "sq",
   "publicEmail": null,
-  "publicPhone": "+355697536334",
-  "logoPath": null,
+  "publicPhone": null,
+  "logoPath": "/images/brand/lb-studio-logo.svg",
   "socialProfiles": [],
   "areaServed": [
     {
@@ -83,8 +83,14 @@
     "/images/services/faqe-shumegjuheshe.svg",
     "/images/services/integrime-automatizime.svg",
     "/images/services/landing-pages.jpg",
-    "/images/services/seo-mirembajtje.svg"
-  ],
-  "publicPhoneDisplay": "069 753 6334",
-  "logoStagingPath": "/images/brand/lb-studio-logo.svg"
+    "/images/services/seo-mirembajtje.svg",
+    "/images/brand/lb-studio-logo.svg",
+    "/images/project-cards/thethi-guide.png",
+    "/images/project-cards/gjecaj-guesthouse-restaurant.png",
+    "/images/project-cards/gjecaj-rezervime.png",
+    "/images/project-cards/baby-gifts-albania.png",
+    "/images/project-cards/aleks-bzhetaj.png",
+    "/images/project-cards/mb-cartongesso.png",
+    "/images/project-cards/gjecaj-menu-online.png"
+  ]
 }

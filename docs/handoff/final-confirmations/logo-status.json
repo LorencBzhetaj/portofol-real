@@ -1,0 +1,17 @@
+{
+  "requested": "Original approved logo as vector SVG",
+  "originalSvgProvided": false,
+  "path": "/images/brand/lb-studio-logo.svg",
+  "rasterReference": "Logo visible in the supplied PNG/mockup",
+  "reconstructionIsOriginal": false,
+  "stagingFallback": "Use the included reconstructed vector SVG",
+  "acceptedForProduction": false,
+  "checks": [
+    "real vector paths, not embedded PNG",
+    "no scripts or external resources",
+    "viewBox and scaling",
+    "black version for ivory background",
+    "visual identity matches approved mark"
+  ],
+  "reconstructedSvgProvided": true
+}

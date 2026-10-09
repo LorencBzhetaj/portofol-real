@@ -1,0 +1,103 @@
+{
+  "status": "draft_requires_owner_data",
+  "publishable": false,
+  "controller": {
+    "brand": "LB STUDIO",
+    "legalName": null,
+    "legalForm": null,
+    "registrationId": null,
+    "establishmentCountry": null,
+    "legalContactAddress": null,
+    "publicEmail": null,
+    "privacyContact": null
+  },
+  "providers": [
+    {
+      "purpose": "hosting and server endpoint",
+      "proposedProvider": "Vercel",
+      "confirmedProvider": null,
+      "selected": false,
+      "processingLocations": null,
+      "agreementAndTransfersReviewed": false
+    },
+    {
+      "purpose": "transactional form email",
+      "proposedProvider": "Resend",
+      "confirmedProvider": null,
+      "selected": false,
+      "processingLocations": null,
+      "agreementAndTransfersReviewed": false
+    },
+    {
+      "purpose": "recipient mailbox",
+      "proposedProvider": null,
+      "confirmedProvider": null,
+      "selected": false,
+      "processingLocations": null,
+      "agreementAndTransfersReviewed": false
+    }
+  ],
+  "processing": [
+    {
+      "purpose": "Respond to requested quote/project enquiry",
+      "data": [
+        "name",
+        "email",
+        "selected service",
+        "message"
+      ],
+      "proposedBasisIfGDPRApplicable": "Article 6(1)(b), only for necessary pre-contractual steps requested by the individual",
+      "confirmedBasis": null,
+      "proposedRetentionDaysAfterLastContact": 90,
+      "retentionApproved": false
+    },
+    {
+      "purpose": "General business correspondence",
+      "data": [
+        "name",
+        "email",
+        "message"
+      ],
+      "proposedBasisIfGDPRApplicable": "Article 6(1)(f) only after necessity and balancing assessment; not automatic",
+      "confirmedBasis": null,
+      "proposedRetentionDaysAfterLastContact": 90,
+      "retentionApproved": false
+    },
+    {
+      "purpose": "Technical security logs",
+      "data": [
+        "minimal request metadata",
+        "possibly IP address if provider logs it"
+      ],
+      "proposedBasisIfGDPRApplicable": "Article 6(1)(f) subject to documented assessment",
+      "confirmedBasis": null,
+      "proposedRetentionDays": 14,
+      "retentionApproved": false
+    }
+  ],
+  "backupRetention": {
+    "proposedDays": 30,
+    "actualProviderBehaviour": null,
+    "approved": false
+  },
+  "contractualAndAccountingRetention": {
+    "period": null,
+    "applicableNationalObligation": null,
+    "approved": false
+  },
+  "analytics": {
+    "recommendation": "none for initial staging; add later after choosing tool and updating privacy",
+    "enabled": false,
+    "confirmedPublicPlan": false
+  },
+  "jurisdiction": {
+    "establishmentCountry": null,
+    "applicableNationalLaw": null,
+    "GDPRApplicabilityAssessed": false,
+    "supervisoryAuthority": null,
+    "additionalTargetMarketRequirementsReviewed": false
+  },
+  "approved": false,
+  "approvedBy": null,
+  "approvedAt": null
+}

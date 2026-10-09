@@ -1,0 +1,28 @@
+{
+  "internalOnly": true,
+  "conceptOrigin": null,
+  "createdBy": null,
+  "commissionedBy": null,
+  "isOwnerConcept": null,
+  "isClientProject": null,
+  "brandOwner": null,
+  "brandUsePermission": {
+    "granted": false,
+    "by": null,
+    "date": null,
+    "evidenceReference": null
+  },
+  "modelPhotos": {
+    "source": null,
+    "photographerOrLicensor": null,
+    "license": null,
+    "portfolioUseAllowed": false,
+    "modelOrLikenessPermissionScope": null,
+    "evidenceReference": null
+  },
+  "aiEditedDerivative": "Current v3 screenshot was edited with imagegen to remove browser edges; that does not establish rights to the source imagery.",
+  "externalUrl": null,
+  "publicLabel": "Koncept",
+  "approved": false,
+  "fallback": "If rights cannot be confirmed, replace with an independently created neutral shop illustration; do not publish the current brand/models."
+}

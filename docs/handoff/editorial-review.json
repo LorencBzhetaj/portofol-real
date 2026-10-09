@@ -1,0 +1,76 @@
+{
+  "internalOnly": true,
+  "projects": [
+    {
+      "slug": "thethi-guide",
+      "externalUrl": "https://thethi-guide.com/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-guesthouse-restaurant",
+      "externalUrl": "https://gjecaj.al/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-rezervime",
+      "externalUrl": "https://booking.gjecaj.al/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "baby-gifts-albania",
+      "externalUrl": "https://www.dhurataperbebe.com/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "aleks-bzhetaj",
+      "externalUrl": "https://www.aleksbzhetaj.com/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "mb-cartongesso",
+      "externalUrl": "https://www.mbcartongesso.com/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    },
+    {
+      "slug": "gjecaj-menu-online",
+      "externalUrl": "https://menu.gjecaj.al/",
+      "review": [
+        "Confirm role and portfolio permission.",
+        "Confirm presented functions and current public status."
+      ],
+      "approved": false
+    }
+  ],
+  "domainCandidates": [
+    "lbstudio.com",
+    "lbsutdio.al"
+  ],
+  "bogdani": {
+    "externalUrl": null,
+    "usage": "Concept visual only; not an eighth project."
+  }
+}

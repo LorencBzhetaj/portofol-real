@@ -1,62 +1,48 @@
 ---
+import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
-import siteConfig from '../data/site-config.json';
+import { seoFor, production, formEndpoint } from '../lib/site';
 
-interface Props {
-  title: string;
-  description: string;
-  robots?: string;
-  ogImage?: string;
-  ogImageAlt?: string;
-  ogImageWidth?: number;
-  ogImageHeight?: number;
-}
-
-const {
-  title,
-  description,
-  robots = 'noindex,nofollow',
-  ogImage,
-  ogImageAlt = '',
-  ogImageWidth = 1200,
-  ogImageHeight = 630,
-} = Astro.props;
-
-const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+interface Props { routePath?: string }
+const { routePath } = Astro.props;
+const head = routePath
+  ? seoFor(routePath)
+  : { title: 'Faqja nuk u gjet | LB STUDIO', description: 'Faqja që kërkon nuk ekziston.', robots: 'noindex,follow', headHtml: null };
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sq">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content={robots} />
-    <title>{title}</title>
-    <meta name="description" content={description} />
-    <link rel="canonical" href={canonicalUrl} />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content={title} />
-    <meta property="og:description" content={description} />
-    <meta property="og:locale" content="sq_AL" />
-    <meta property="og:site_name" content={siteConfig.brand} />
-    {ogImage && <meta property="og:image" content={new URL(ogImage, Astro.site)} />}
-    {ogImage && <meta property="og:image:alt" content={ogImageAlt} />}
-    {ogImage && <meta property="og:image:width" content={String(ogImageWidth)} />}
-    {ogImage && <meta property="og:image:height" content={String(ogImageHeight)} />}
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {head.headHtml ? (
+      <Fragment set:html={head.headHtml} />
+    ) : (
+      <>
+        <title>{head.title}</title>
+        <meta name="description" content={head.description} />
+        <meta name="robots" content={head.robots} />
+      </>
+    )}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f7f3ec" />
+    <slot name="head" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Kalo te përmbajtja</a>
+    {!production && (
+      <div class="staging-note" role="note">Version prove (staging) — jo për publikim. Faqet janë noindex{formEndpoint ? "." : " dhe formulari nuk dërgon ende."}</div>
+    )}
     <Header />
-    <main>
+    <main id="main" tabindex="-1">
       <slot />
     </main>
     <Footer />
   </body>
 </html>
+<style>
+  .staging-note { padding: 7px var(--gutter); background: var(--ink); color: var(--ivory-2); font-size: 0.8rem; text-align: center; line-height: 1.4; }
+  main:focus { outline: none; }
+</style>
