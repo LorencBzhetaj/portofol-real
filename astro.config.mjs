@@ -9,7 +9,7 @@ export default defineConfig({
   site,
   output: 'static',
   trailingSlash: 'never',
-  build: { format: 'file' },
+  build: { format: 'directory' },
   compressHTML: true,
   devToolbar: { enabled: false },
 });
