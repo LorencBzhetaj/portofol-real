@@ -161,7 +161,7 @@ export const projectBySlug = (slug: string, lang: Lang = 'sq') => {
   return p;
 };
 export const projectPanel = (slug: string, lang: Lang) =>
-  (cardsPanel as unknown as Record<string, Record<Lang, { category: string; summary: string; tags: string[] }>>)[slug][lang];
+  (cardsPanel as unknown as Record<string, Record<Lang, { group: string; category: string; summary: string; tags: string[] }>>)[slug][lang];
 
 /* ---------- SEO ---------- */
 

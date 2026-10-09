@@ -1,31 +1,31 @@
 {
   "_source": "Category, summary and tags transcribed from the bottom panel of the original card compositions (design-original/03-projektet). The new compositions have no panel; this text is rendered as HTML outside the image.",
   "thethi-guide": {
-    "sq": { "category": "Website turistik", "summary": "Destinacione, hartë interaktive dhe asistent AI për Alpet Shqiptare.", "tags": ["Website turistik", "Hartë interaktive", "Chatbot custom"] },
-    "en": { "category": "Tourism website", "summary": "Destinations, an interactive map and an AI assistant for the Albanian Alps.", "tags": ["Tourism website", "Interactive map", "Custom chatbot"] }
+    "sq": { "group": "Turizëm & mikpritje", "category": "Website turistik", "summary": "Destinacione, hartë interaktive dhe asistent AI për Alpet Shqiptare.", "tags": ["Website turistik", "Hartë interaktive", "Chatbot custom"] },
+    "en": { "group": "Tourism & hospitality", "category": "Tourism website", "summary": "Destinations, an interactive map and an AI assistant for the Albanian Alps.", "tags": ["Tourism website", "Interactive map", "Custom chatbot"] }
   },
   "gjecaj-guesthouse-restaurant": {
-    "sq": { "category": "Website · Bujtinë & restorant", "summary": "Një faqe për mikpritjen, qëndrimin dhe kuzhinën tradicionale në Theth.", "tags": ["Homepage", "Bujtina", "Restoranti"] },
-    "en": { "category": "Website · Guesthouse & restaurant", "summary": "A website for hospitality, the stay and traditional cuisine in Theth.", "tags": ["Homepage", "Guesthouse", "Restaurant"] }
+    "sq": { "group": "Turizëm & mikpritje", "category": "Website · Bujtinë & restorant", "summary": "Një faqe për mikpritjen, qëndrimin dhe kuzhinën tradicionale në Theth.", "tags": ["Homepage", "Bujtina", "Restoranti"] },
+    "en": { "group": "Tourism & hospitality", "category": "Website · Guesthouse & restaurant", "summary": "A website for hospitality, the stay and traditional cuisine in Theth.", "tags": ["Homepage", "Guesthouse", "Restaurant"] }
   },
   "gjecaj-rezervime": {
-    "sq": { "category": "Web app · Rezervime online", "summary": "Nga rezervimi i tavolinës te menaxhimi dhe konfirmimi me email.", "tags": ["Rezervime", "Dashboard", "Email konfirmimi"] },
-    "en": { "category": "Web app · Online bookings", "summary": "From the table booking to management and email confirmation.", "tags": ["Bookings", "Dashboard", "Email confirmation"] }
+    "sq": { "group": "Aplikacione web", "category": "Web app · Rezervime online", "summary": "Nga rezervimi i tavolinës te menaxhimi dhe konfirmimi me email.", "tags": ["Rezervime", "Dashboard", "Email konfirmimi"] },
+    "en": { "group": "Web apps", "category": "Web app · Online bookings", "summary": "From the table booking to management and email confirmation.", "tags": ["Bookings", "Dashboard", "Email confirmation"] }
   },
   "baby-gifts-albania": {
-    "sq": { "category": "Website · Dhurata të personalizuara", "summary": "Një faqe për dhurata të punuara me dorë dhe të personalizuara për bebe.", "tags": ["Web design", "Produkte", "Kontakt"] },
-    "en": { "category": "Website · Personalised gifts", "summary": "A website for handmade, personalised baby gifts.", "tags": ["Web design", "Products", "Contact"] }
+    "sq": { "group": "Faqe biznesi", "category": "Website · Dhurata të personalizuara", "summary": "Një faqe për dhurata të punuara me dorë dhe të personalizuara për bebe.", "tags": ["Web design", "Produkte", "Kontakt"] },
+    "en": { "group": "Business websites", "category": "Website · Personalised gifts", "summary": "A website for handmade, personalised baby gifts.", "tags": ["Web design", "Products", "Contact"] }
   },
   "aleks-bzhetaj": {
-    "sq": { "category": "Website · Zyrë avokatie", "summary": "Një faqe profesionale për shërbime ligjore dhe konsultime.", "tags": ["Web design", "Faqe shërbimesh", "Shqip / English"] },
-    "en": { "category": "Website · Law office", "summary": "A professional website for legal services and consultations.", "tags": ["Web design", "Service pages", "Albanian / English"] }
+    "sq": { "group": "Faqe biznesi", "category": "Website · Zyrë avokatie", "summary": "Një faqe profesionale për shërbime ligjore dhe konsultime.", "tags": ["Web design", "Faqe shërbimesh", "Shqip / English"] },
+    "en": { "group": "Business websites", "category": "Website · Law office", "summary": "A professional website for legal services and consultations.", "tags": ["Web design", "Service pages", "Albanian / English"] }
   },
   "mb-cartongesso": {
-    "sq": { "category": "Website · Artizanat & interier", "summary": "Një faqe për punime në kartongesso, ndriçim LED dhe prezantimin e projekteve.", "tags": ["Web design", "Galeri projektesh", "Italisht / English"] },
-    "en": { "category": "Website · Craft & interiors", "summary": "A website for plasterboard work, LED lighting and project presentation.", "tags": ["Web design", "Project gallery", "Italian / English"] }
+    "sq": { "group": "Faqe biznesi", "category": "Website · Artizanat & interier", "summary": "Një faqe për punime në kartongesso, ndriçim LED dhe prezantimin e projekteve.", "tags": ["Web design", "Galeri projektesh", "Italisht / English"] },
+    "en": { "group": "Business websites", "category": "Website · Craft & interiors", "summary": "A website for plasterboard work, LED lighting and project presentation.", "tags": ["Web design", "Project gallery", "Italian / English"] }
   },
   "gjecaj-menu-online": {
-    "sq": { "category": "Web app · Menu online", "summary": "Pjatat, përshkrimet dhe çmimet në një menu të përshtatur për telefon.", "tags": ["Menu digjitale", "Kategori", "Shqip / English"] },
-    "en": { "category": "Web app · Online menu", "summary": "Dishes, descriptions and prices in a menu designed for mobile.", "tags": ["Digital menu", "Categories", "Albanian / English"] }
+    "sq": { "group": "Aplikacione web", "category": "Web app · Menu online", "summary": "Pjatat, përshkrimet dhe çmimet në një menu të përshtatur për telefon.", "tags": ["Menu digjitale", "Kategori", "Shqip / English"] },
+    "en": { "group": "Web apps", "category": "Web app · Online menu", "summary": "Dishes, descriptions and prices in a menu designed for mobile.", "tags": ["Digital menu", "Categories", "Albanian / English"] }
   }
 }

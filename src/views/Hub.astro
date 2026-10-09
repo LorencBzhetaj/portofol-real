@@ -4,7 +4,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ServiceCard from '../components/ServiceCard.astro';
 import ProjectCard from '../components/ProjectCard.astro';
 import Arrow from '../components/Arrow.astro';
-import { getContent, localize, ui, type Lang } from '../lib/site';
+import { getContent, localize, projectPanel, ui, type Lang } from '../lib/site';
 
 interface Props { lang: Lang; kind: 'services' | 'projects' }
 const { lang, kind } = Astro.props;
@@ -15,6 +15,15 @@ const hub = c.hubs.find((h) => h.path === localize(sqPath, lang))!;
 const services = hub.items.map((p) => c.services.find((x) => x.path === p)!).filter(Boolean);
 const projects = hub.items.map((p) => c.projects.find((x) => x.path === p)!).filter(Boolean);
 const label = kind === 'services' ? t.services : t.projects;
+
+// Build unique groups in manifest order (for projects only)
+const groups: string[] = [];
+if (kind === 'projects') {
+  for (const p of projects) {
+    const g = projectPanel(p.slug, lang).group;
+    if (!groups.includes(g)) groups.push(g);
+  }
+}
 ---
 <Base sqPath={sqPath} lang={lang}>
   <Breadcrumbs lang={lang} items={[{ label: t.home, href: localize('/', lang) }, { label }]} />
@@ -25,13 +34,30 @@ const label = kind === 'services' ? t.services : t.projects;
       <p class="lede">{hub.intro}</p>
     </div>
   </section>
+
+  {kind === 'projects' && groups.length > 1 && (
+    <div class="wrap filter-bar" role="group" aria-label={lang === 'sq' ? 'Filtro sipas llojit' : 'Filter by type'}>
+      <button class="filter-btn active" data-group="all">
+        {lang === 'sq' ? 'Të gjitha' : 'All'}
+      </button>
+      {groups.map((g) => (
+        <button class="filter-btn" data-group={g}>{g}</button>
+      ))}
+    </div>
+  )}
+
   <section class="hub-list" aria-label={kind === 'services' ? t.allServicesLabel : t.allProjectsLabel}>
-    <div class="wrap grid-3">
+    <div class="wrap grid-3" id="projects-grid">
       {kind === 'services'
         ? services.map((s) => <ServiceCard service={s} lang={lang} headingLevel="h2" />)
-        : projects.map((p) => <ProjectCard project={p} lang={lang} headingLevel="h2" />)}
+        : projects.map((p) => (
+            <div data-group={projectPanel(p.slug, lang).group}>
+              <ProjectCard project={p} lang={lang} headingLevel="h2" />
+            </div>
+          ))}
     </div>
   </section>
+
   <section class="section">
     <div class="wrap end-cta card">
       <h2>{kind === 'services' ? t.unsureTitle : t.projectIdeaTitle}</h2>
@@ -40,9 +66,54 @@ const label = kind === 'services' ? t.services : t.projects;
     </div>
   </section>
 </Base>
+
+{kind === 'projects' && (
+  <script>
+    const btns = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+    const items = document.querySelectorAll<HTMLElement>('#projects-grid > [data-group]');
+
+    btns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const group = btn.dataset.group!;
+        btns.forEach((b) => b.classList.toggle('active', b === btn));
+        items.forEach((item) => {
+          const show = group === 'all' || item.dataset.group === group;
+          item.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  </script>
+)}
+
 <style>
   .hub-head { padding-bottom: 40px; }
   .hub-head h1 { max-width: 18ch; }
+
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-bottom: clamp(24px, 4vw, 40px);
+  }
+  .filter-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 16px;
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius-pill);
+    background: var(--ivory-2);
+    color: var(--ink-2);
+    font: inherit;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+  }
+  .filter-btn:hover { border-color: var(--ink); }
+  .filter-btn.active { background: var(--ink); color: var(--ivory-2); border-color: var(--ink); }
+
+  #projects-grid > [data-group] { display: contents; }
+
   .end-cta { padding: clamp(28px, 5vw, 56px); text-align: center; display: grid; justify-items: center; gap: 14px; }
   .end-cta h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
   .end-cta p { margin: 0 0 8px; max-width: 56ch; }
