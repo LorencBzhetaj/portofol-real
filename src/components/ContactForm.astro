@@ -1,6 +1,6 @@
 ---
 import Arrow from './Arrow.astro';
-import { content, formEndpoint } from '../lib/site';
+import { getContent, formEndpoint, ui, type Lang } from '../lib/site';
 
 interface Props {
   id: string;
@@ -10,9 +10,12 @@ interface Props {
   /** /kontakt?service=slug preselects the service on the client (canonical stays /kontakt). */
   readServiceParam?: boolean;
   tone?: 'light' | 'dark';
+  lang?: Lang;
 }
-const { id, heading, headingLevel = 'h2', selectedService = null, readServiceParam = false, tone = 'light' } = Astro.props;
-const form = content.contact.form;
+const { id, heading, headingLevel = 'h2', selectedService = null, readServiceParam = false, tone = 'light', lang = 'sq' } = Astro.props;
+const c = getContent(lang);
+const form = c.contact.form;
+const t = ui[lang].form;
 const H = headingLevel;
 const field = (name: string) => form.fields.find((f) => f.name === name)!;
 const enabled = Boolean(formEndpoint);
@@ -29,9 +32,10 @@ const enabled = Boolean(formEndpoint);
     data-read-param={readServiceParam ? 'true' : undefined}
     data-msg-success={form.success}
     data-msg-error={form.error}
-    data-msg-disabled="Dërgimi i formularit nuk është aktivizuar ende në këtë version prove. Asnjë e dhënë nuk u dërgua."
+    data-msg-disabled={t.disabled}
+    data-msg-sending={t.sending}
     aria-labelledby={heading ? `${id}-title` : undefined}
-    aria-label={heading ? undefined : 'Formulari i kërkesës'}
+    aria-label={heading ? undefined : t.label}
   >
     <div class="row">
       <div class="field">
@@ -48,14 +52,14 @@ const enabled = Boolean(formEndpoint);
     <div class="field">
       <label for={`${id}-service`}>{field('service').label}</label>
       <select id={`${id}-service`} name="service">
-        <option value="" selected={!selectedService}>Zgjidh një shërbim (opsionale)</option>
-        {content.services.map((s) => <option value={s.slug} selected={s.slug === selectedService}>{s.name}</option>)}
-        <option value="tjeter">Tjetër / nuk jam i sigurt</option>
+        <option value="" selected={!selectedService}>{t.choose}</option>
+        {c.services.map((s) => <option value={s.slug} selected={s.slug === selectedService}>{s.name}</option>)}
+        <option value="tjeter">{t.other}</option>
       </select>
     </div>
     <div class="field">
       <label for={`${id}-message`}>{field('message').label} <span class="req" aria-hidden="true">*</span></label>
-      <textarea id={`${id}-message`} name="message" rows="5" required minlength="10" maxlength="4000" aria-describedby={`${id}-message-err`} placeholder="Na trego për biznesin dhe çfarë dëshiron të ndërtosh."></textarea>
+      <textarea id={`${id}-message`} name="message" rows="5" required minlength="10" maxlength="4000" aria-describedby={`${id}-message-err`} placeholder={t.placeholder}></textarea>
       <p class="err" id={`${id}-message-err`} data-msg={form.errors.message} hidden></p>
     </div>
     <!-- Honeypot: hidden from people, ignored by the server-side handler when filled. -->
@@ -63,8 +67,8 @@ const enabled = Boolean(formEndpoint);
       <label for={`${id}-website`}>Website</label>
       <input id={`${id}-website`} name="website" type="text" tabindex="-1" autocomplete="off" />
     </div>
-    <p class="privacy">{form.privacy} <a href={form.privacyHref}>Politika e privatësisë</a>.</p>
-    <p class="fields-note"><span aria-hidden="true">*</span> Fushë e detyrueshme</p>
+    <p class="privacy">{form.privacy} <a href={form.privacyHref}>{ui[lang].privacyPolicy}</a>.</p>
+    <p class="fields-note"><span aria-hidden="true">*</span> {t.required}</p>
     <div class="actions">
       <button class="btn" type="submit" disabled={!enabled} data-submit>
         <span data-label>{form.submit}</span> <Arrow />
@@ -130,7 +134,7 @@ const enabled = Boolean(formEndpoint);
       const data = Object.fromEntries(new FormData(form).entries());
       submit.disabled = true;
       form.setAttribute('aria-busy', 'true');
-      label.textContent = 'Duke dërguar…';
+      label.textContent = form.dataset.msgSending ?? '';
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 15000);
       try {

@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import Arrow from '../components/Arrow.astro';
+import { getContent, localize, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang; kind: 'services' | 'projects' }
+const { lang, kind } = Astro.props;
+const t = ui[lang];
+const c = getContent(lang);
+const sqPath = kind === 'services' ? '/sherbimet' : '/projektet';
+const hub = c.hubs.find((h) => h.path === localize(sqPath, lang))!;
+const services = hub.items.map((p) => c.services.find((x) => x.path === p)!).filter(Boolean);
+const projects = hub.items.map((p) => c.projects.find((x) => x.path === p)!).filter(Boolean);
+const label = kind === 'services' ? t.services : t.projects;
+---
+<Base sqPath={sqPath} lang={lang}>
+  <Breadcrumbs lang={lang} items={[{ label: t.home, href: localize('/', lang) }, { label }]} />
+  <section class="section hub-head">
+    <div class="wrap">
+      <span class="eyebrow">{label}</span>
+      <h1>{hub.h1}</h1>
+      <p class="lede">{hub.intro}</p>
+    </div>
+  </section>
+  <section class="hub-list" aria-label={kind === 'services' ? t.allServicesLabel : t.allProjectsLabel}>
+    <div class="wrap grid-3">
+      {kind === 'services'
+        ? services.map((s) => <ServiceCard service={s} lang={lang} headingLevel="h2" />)
+        : projects.map((p) => <ProjectCard project={p} lang={lang} headingLevel="h2" />)}
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap end-cta card">
+      <h2>{kind === 'services' ? t.unsureTitle : t.projectIdeaTitle}</h2>
+      <p class="muted">{kind === 'services' ? t.unsureBody : t.projectIdeaBody}</p>
+      <a class="btn" href={localize('/kontakt', lang)}>{t.talkProject} <Arrow /></a>
+    </div>
+  </section>
+</Base>
+<style>
+  .hub-head { padding-bottom: 40px; }
+  .hub-head h1 { max-width: 18ch; }
+  .end-cta { padding: clamp(28px, 5vw, 56px); text-align: center; display: grid; justify-items: center; gap: 14px; }
+  .end-cta h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+  .end-cta p { margin: 0 0 8px; max-width: 56ch; }
+  @media (max-width: 680px) { .hub-head { padding-top: 28px; } }
+</style>

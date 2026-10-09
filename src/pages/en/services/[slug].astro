@@ -1,0 +1,11 @@
+---
+import Service from '../../../views/Service.astro';
+import { content, localize } from '../../../lib/site';
+
+export function getStaticPaths() {
+  // English URL slug → Albanian content key.
+  return content.services.map((s) => ({ params: { slug: localize(s.path, 'en').split('/').pop()! }, props: { key: s.slug } }));
+}
+const { key } = Astro.props;
+---
+<Service lang="en" slug={key} />

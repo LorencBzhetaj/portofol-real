@@ -19,7 +19,8 @@ function assertConfig(c,production){
   if(production&&(u.hostname.endsWith('.invalid')||u.hostname==='example.com'||!c.productionReady))throw new Error('Konfigurim prove ose publikim i pakonfirmuar.');
   if(c.businessMode!=='online')throw new Error('Modeli aktual është online. Ndryshimi kërkon rishikim të schema-s.');
   if(c.physicalAddress||c.geo)throw new Error('Mos shto adresë/koordinata për modelin online të konfirmuar.');
-  if(c.languagesPublished.some(l=>l!=='sq'))throw new Error('Kjo paketë përmban vetëm tekst shqip. Gjuhët shtesë kërkojnë tekst dhe metadata reale.');
+  // English (src/data/content.en.json) was added as a full translation; other languages still need real text.
+  if(c.languagesPublished.some(l=>!['sq','en'].includes(l)))throw new Error('Gjuhët e mbështetura janë sq dhe en. Gjuhët shtesë kërkojnë tekst dhe metadata reale.');
   if(production&&(!c.privacyReady||!c.formDeliveryVerified))throw new Error('Plotëso privatësinë dhe verifiko dërgimin real të formularit para publikimit.');
   if(production&&c.publishablePaths.some(p=>!routes.some(r=>r.path===p)))throw new Error('publishablePaths përmban URL të panjohur.');
   if(production&&c.publishablePaths.includes('/privatesia')&&content.privacy.draftOnly)throw new Error('Privatësia është ende draft në përmbajtje.');

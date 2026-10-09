@@ -1,0 +1,407 @@
+{
+  "home": {
+    "title": "Web design and online solutions for businesses | LB STUDIO",
+    "description": "LB STUDIO builds websites, online stores, booking systems and QR menus. See our projects and discuss a solution for your business in Albania or abroad.",
+    "h1": "Websites designed around your business.",
+    "intro": "We design and build websites, from your presentation to online bookings.",
+    "alt": "Visual composition with the Thethi Guide and Gjeçaj screens and the clinic concept marked DEMO.",
+    "ogAlt": "Websites designed around your business. — LB STUDIO",
+    "heroCtas": ["See projects", "Let’s talk about your project"],
+    "sections": [
+      {
+        "heading": "A website that works for your business.",
+        "body": "Customers need to understand what you offer, find the service they are looking for and know how to get in touch. We organise the site around these steps and connect bookings or work tools when the business needs them.",
+        "items": [
+          ["Clear presentation", "We organise services and projects so customers find the information they are looking for."],
+          ["Content organised for search", "We create dedicated pages for services, with titles, descriptions and links that help visitors and search engines understand the offer."],
+          ["Contact and bookings", "We define the steps that connect visitors with the business, from the first enquiry to the booking."],
+          ["Tools for everyday work", "When needed, we connect the website with the dashboard, email and tools the business uses."]
+        ]
+      },
+      { "heading": "Work that speaks for itself.", "body": "A selection of websites and digital solutions for different needs.", "cta": "See all projects" },
+      { "heading": "What we can build for you.", "body": "We choose the solution based on your offer, your content and the way your business works.", "cta": "See all services" },
+      {
+        "heading": "From idea to live website.",
+        "items": [
+          ["We talk", "We understand the business, its needs and what the website has to achieve."],
+          ["We design", "We define the structure, content and look for desktop and mobile."],
+          ["We build", "We develop the agreed features and check how they are used."],
+          ["We launch", "We run the final checks and explain how to manage the website."]
+        ]
+      },
+      {
+        "heading": "Online collaboration, with clear steps.",
+        "body": "LB STUDIO works online with businesses in Albania, Italy, the United Kingdom and the USA. Discussions, materials and approvals are handled remotely. Albania is our main market."
+      },
+      {
+        "heading": "Let’s turn your idea into a website.",
+        "body": "Tell us what your business does, whether you already have a website and what you would like to build. This helps us define the steps and the right solution.",
+        "cta": "Send a request"
+      }
+    ],
+    "faq": [
+      { "question": "How long does it take to build a website?", "answer": "It depends on the number of pages, the content and the features. The timeline is set once we have a clear description of the project and the materials needed." },
+      { "question": "What should I prepare to get started?", "answer": "We need information about the business, your services or products, your logo and the materials you have. If you have an existing website, send the link and explain what you want to change." },
+      { "question": "Can I update the website myself?", "answer": "Yes, when the project includes a dashboard or a way to manage content. We define which parts you will change and how you will manage them." },
+      { "question": "Do you redesign existing websites?", "answer": "Yes. We review the current content and structure, decide what to keep and plan the changes." },
+      { "question": "Are domain and hosting included?", "answer": "These are defined in the proposal and may have separate costs. We can also use the services the business already has." },
+      { "question": "Do you offer maintenance after launch?", "answer": "We can define a maintenance plan based on the platform and your needs. Updates, backups and content changes are specified in the agreement." }
+    ]
+  },
+  "hubs": {
+    "/sherbimet": {
+      "title": "Web services and digital solutions | LB STUDIO",
+      "description": "Explore LB STUDIO’s services: websites, online stores, bookings, chatbots, SEO, integrations, multilingual sites, landing pages and QR menus.",
+      "h1": "Web solutions for the way your business works.",
+      "intro": "Every service starts from a concrete need. See what it includes, who it suits and how it can connect to your project.",
+      "alt": "LB STUDIO card titled: Web solutions for the way your business works."
+    },
+    "/projektet": {
+      "title": "Web projects and applications | LB STUDIO portfolio",
+      "description": "See LB STUDIO’s projects: tourism, law and interior websites, gifts, bookings and online menus. Screens and descriptions for each one.",
+      "h1": "Work built around business needs.",
+      "intro": "Presentation websites and solutions that support bookings, information and management. Each project shows a different part of our work.",
+      "alt": "LB STUDIO card titled: Work built around business needs."
+    }
+  },
+  "services": {
+    "dizajn-zhvillim-web": {
+      "enSlug": "web-design-development",
+      "name": "Web design & development",
+      "title": "Website design and development | LB STUDIO",
+      "description": "Websites for businesses, with a clear structure, mobile-first design and content that helps visitors get in touch. See LB STUDIO’s work.",
+      "h1": "Web design and development for your business.",
+      "intro": "We build websites that explain what your business offers and make the next step easy: a contact, an enquiry or a booking.",
+      "paragraphs": [
+        ["A presentation that starts from the customer’s needs", "A visitor wants to understand your services, see examples and find a way to get in touch. The site structure should answer these questions in a clear order. First we define what the visitor needs to find and which action we want to make easier. On that basis we build the pages, the navigation and the content."],
+        ["From content to design", "We organise the texts and visuals that present the business. We define the heading hierarchy, where projects sit and the contact buttons. The design follows the identity of the business and the way the site will be used. The mobile view is considered from the start, with readable text and controls that are easy to use."],
+        ["A base for future updates", "The website can grow with more services, projects or languages. How content gets updated is decided at the start: through a content dashboard or through agreed maintenance. The technical choice depends on how often the content changes and who will manage it."],
+        ["Redesigning an existing website", "If you already have a website, we review its content, links and the paths visitors use. We identify what should be kept and what should be improved. When URLs change, we plan redirects so old links lead to the matching content. Launch includes checking the navigation and the agreed features."]
+      ],
+      "audience": ["Service businesses that need a professional presentation.", "Guesthouses, restaurants and tour operators.", "Professional studios and businesses that want to redesign their current website."],
+      "included": ["Page structure and navigation based on your offer.", "Design adapted for desktop, tablet and mobile.", "Dedicated pages for services and contact.", "Forms and contact links as needed.", "Metadata, titles, internal links and a technical SEO foundation.", "Check of the main features before launch."],
+      "optional": ["Dashboard for updating content.", "Additional languages, bookings or integrations.", "Hosting, domain and maintenance as agreed."],
+      "process": ["We define the audience, content and pages.", "We approve the structure and the design.", "We build the site and check it on different devices.", "We launch and explain how to manage it."],
+      "faq": [
+        { "question": "How much does a website cost?", "answer": "The cost depends on the number of pages, the content, the languages and the features. After discussing your needs we define what is included and prepare a proposal for the project." },
+        { "question": "Can I update it myself?", "answer": "Yes, if the project includes a way to manage the content. We define which parts you will update and choose the matching solution." },
+        { "question": "Can you use my domain?", "answer": "Yes. We check the configuration and the access needed to connect it to the new website. Changes to email or other services are planned separately." }
+      ],
+      "imageCaption": "Web design illustration; not a screenshot of another project.",
+      "alt": "Illustration of a website structure on desktop and phone.",
+      "formHeading": "Let’s talk about web design & development."
+    },
+    "dyqane-online": {
+      "enSlug": "online-stores",
+      "name": "Online stores",
+      "title": "Online store development | LB STUDIO",
+      "description": "We build online stores with products, categories and an ordering process tailored to the business. Discuss payments and management with LB STUDIO.",
+      "h1": "Your online store, from product to order.",
+      "intro": "We organise the products and the buying process so customers understand the offer and complete the order in clear steps.",
+      "paragraphs": [
+        ["Products customers can understand", "An online store needs photos, descriptions and clear information about product variants. We define the categories and how customers search for products. The product page should explain the features, the price and the information that supports the buying decision. Content is prepared from the business’s real catalogue."],
+        ["Ordering that fits how the business works", "The process is adapted to deliveries, the areas you sell to and the payment methods you can use. It can include online payment, cash on delivery or an order request, as agreed. Before integrating, we check whether the payment provider supports the business’s country, entity and account."],
+        ["Managing the catalogue and orders", "We define who will add products, change prices and follow up on orders. The admin dashboard is organised around these tasks. Variations, stock and order notifications are included when they are part of the project. Connections with inventory or other software are assessed based on the documentation and access they provide."],
+        ["Information before launch", "Shipping, returns and privacy policies must reflect how the business really operates. You confirm the prices and terms; we place them in the relevant parts of the store. We test orders in a test environment and the behaviour on mobile. Payment and shipping services may have their own fees."]
+      ],
+      "audience": ["Businesses with a product catalogue.", "Brands selling clothing, gifts or personalised products.", "Businesses that want to move from orders by message to an organised process."],
+      "included": ["Organisation of products and categories.", "Product pages with photos, descriptions and agreed variants.", "Cart and ordering process based on the chosen solution.", "Configuration of supported payment and delivery methods.", "Management dashboard and order notifications.", "Order flow check in a test environment."],
+      "optional": ["Connection to inventory or a management system.", "Coupons, additional languages and currencies.", "Product migration from an existing platform."],
+      "process": ["We define the catalogue and ordering rules.", "We design the product, categories and buying process.", "We configure payments and administration.", "We test orders and prepare the launch."],
+      "faq": [
+        { "question": "Which payment methods can I use?", "answer": "It depends on the country where the business is registered and the services available to you. We check suitability before choosing the integration." },
+        { "question": "Can I manage stock?", "answer": "Yes, if it is included in the project. We decide whether stock is updated from the dashboard or connected to another system." },
+        { "question": "Are payment fees included?", "answer": "Fees for payment, shipping and other services are set by those providers. The project proposal separates development costs from external services." }
+      ],
+      "imageCaption": "Bogdani concept — demonstration view with no public link. Use of the brand and photos remains to be confirmed before publication.",
+      "alt": "Concept of an online store with the Bogdani brand, a clothing catalogue and models.",
+      "formHeading": "Let’s talk about online stores."
+    },
+    "rezervime-web-apps": {
+      "enSlug": "bookings-web-apps",
+      "name": "Bookings & web apps",
+      "title": "Booking systems and web apps | LB STUDIO",
+      "description": "Booking systems and web applications with forms, availability rules and a management dashboard. See the Gjeçaj example and discuss your project.",
+      "h1": "Bookings and management that follow the way you work.",
+      "intro": "We build web applications that connect the customer’s request with your business rules and processes.",
+      "paragraphs": [
+        ["Business rules come first", "A booking form has to rely on clear rules. We define opening times, capacity, duration and how bookings are confirmed. For a restaurant this may be tables and seating areas; for another service it may be the people or resources available. These rules determine what the customer can choose."],
+        ["The customer’s and the staff’s experience", "The customer chooses the date, time and the information required. Staff use the dashboard to view and manage requests. Possible actions, such as changing or cancelling, are defined in the project. Notifications should distinguish a received request from a confirmed booking, so communication reflects the real status."],
+        ["Applications for other tasks", "Web apps can also organise requests, internal forms or data that is currently kept in several places. We start from the tasks to be done and the user roles. Then we define the dashboard, access and integrations. Additional features are planned based on how the system is actually used."],
+        ["Checks for the cases that matter", "For bookings we check capacity limits, simultaneous requests and status changes. We define how the system behaves when an external service does not respond. Backups, access and maintenance are discussed before launch. The Gjeçaj example shows the link between the booking, the dashboard and the email confirmation."]
+      ],
+      "audience": ["Restaurants and businesses that take bookings.", "Service businesses with schedules and limited capacity.", "Teams that need a dashboard to organise requests."],
+      "included": ["Analysis of the business flow and rules.", "Form or interface for the customer.", "Dashboard for the agreed actions.", "Data validation and availability checks.", "Notifications for the relevant statuses.", "Tests of the main use cases."],
+      "optional": ["Online payment or deposit.", "Automatic reminders and calendar integration.", "Table plans, reports and additional roles."],
+      "process": ["We document the rules and use cases.", "We design the form and the dashboard.", "We build the features and test the limits.", "We prepare access and the launch."],
+      "faq": [
+        { "question": "Is the booking confirmed automatically?", "answer": "It can be confirmed automatically or after staff approval. The choice depends on the rules we define for the business." },
+        { "question": "Can it be connected to my existing website?", "answer": "Yes, after we check how the website is built and the integration limits. The way it connects is defined during the analysis." },
+        { "question": "Is every feature of the Gjeçaj system included?", "answer": "Not every project has the same needs. The example is for presentation; the features and limits of your solution are defined in the proposal." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "The public Gjeçaj table booking form.",
+      "formHeading": "Let’s talk about bookings & web apps."
+    },
+    "seo-mirembajtje": {
+      "enSlug": "seo-maintenance",
+      "name": "SEO & maintenance",
+      "title": "Technical SEO and website maintenance | LB STUDIO",
+      "description": "Review and improvement of your website’s structure, indexing and performance. Technical SEO and maintenance based on your business needs with LB STUDIO.",
+      "h1": "A website that is clear, checked and maintained.",
+      "intro": "We review the structure, content and functioning of the website to identify what helps users and what holds back search.",
+      "paragraphs": [
+        ["We start from the current state of the site", "Before making changes we review the public pages, navigation, indexing and reported issues. When Search Console data is available, we use it to understand the searches and pages that bring visitors. We separate technical problems from content needs, so the work follows a sensible order."],
+        ["Content and structure with a purpose", "Each page should address an understandable service or need. We define the titles, descriptions and links that help visitors reach the relevant information. Keywords are used naturally. Metadata and structured data must match the visible content and the business’s real details."],
+        ["Performance and technical checks", "We look at image loading, elements that shift while the page opens and how the site works on mobile. We check URLs, redirects, canonicals and the sitemap. Changes are chosen based on the problem found and its impact. Results from a single test are considered together with real usage data, when available."],
+        ["Clearly defined maintenance", "Updates, backups and content work depend on the platform and the agreement. We define what is monitored, how often checks are done and how issues are reported. SEO is work that is evaluated over time and with data. We do not promise a specific position on Google; we document the changes and follow the results that can be measured."]
+      ],
+      "audience": ["Businesses with an existing website that want to identify problems.", "Websites being redesigned or changing URLs.", "Businesses that need ongoing technical care."],
+      "included": ["Review of structure and indexing.", "Review of titles and meta descriptions.", "Check of links, redirects and the sitemap.", "Assessment of images and performance.", "Structured data where it matches the content.", "Report of the agreed interventions."],
+      "optional": ["Periodic maintenance plan.", "New content and additional pages.", "Technical migration or platform change."],
+      "process": ["We review the current state and access.", "We set the priorities.", "We apply the changes and verify them.", "We follow indexing and the available data."],
+      "faq": [
+        { "question": "Do you guarantee first place on Google?", "answer": "No. Rankings depend on many factors, including competition and content. Our work defines concrete improvements and how they are measured." },
+        { "question": "How quickly are changes visible?", "answer": "Some technical improvements are visible on the website immediately. Google has to recrawl the content, and the effect on search can take time." },
+        { "question": "Does maintenance include adding pages?", "answer": "It depends on the agreement. Content changes, new development and technical care should be separated in the maintenance plan." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "Illustration of content, structure and technical checks.",
+      "formHeading": "Let’s talk about SEO & maintenance."
+    },
+    "chatbot-custom": {
+      "enSlug": "custom-chatbot",
+      "name": "Custom chatbot",
+      "title": "AI chatbot for your business website | LB STUDIO",
+      "description": "A custom chatbot that answers from your business content and guides visitors to services or contact. See the Thethi Guide example.",
+      "h1": "A chatbot that knows your business content.",
+      "intro": "We build an assistant for your website that helps visitors find information and reach the right person when needed.",
+      "paragraphs": [
+        ["Answers are based on approved information", "We start from the questions visitors ask and the materials the business uses to answer them. These can be services, opening hours, product pages or instructions. We define which sources the assistant uses and how they are updated. Content must be accurate before the chatbot uses it."],
+        ["A short path to information", "Visitors can ask in their own words, while the assistant points them to the relevant pages. Suggested questions help start the conversation. When a request needs personal attention, the interface can show how to contact the business. This hand-over is defined based on the channels you use."],
+        ["Clear limits on what it can do", "The chatbot must not invent prices, availability or terms. Data that changes in real time requires a connection to the relevant source. Actions such as booking or changing an order are separate integrations. For uncertain cases we define answers that explain the limit and point to the staff."],
+        ["Testing and care after launch", "We test common questions, unclear questions and requests outside the content. We define what data is stored and what should be avoided. The costs of the model or external provider depend on usage. The Thethi Guide example presents an assistant that guides visitors to tourist information and contact."]
+      ],
+      "audience": ["Websites with a lot of content or repeated questions.", "Tourism and service businesses.", "Businesses that want to guide visitors to pages and contact."],
+      "included": ["Definition of questions and sources.", "Chat interface adapted to the website.", "Configuration of limits and answers when information is missing.", "Links to content and contact channels.", "Tests with agreed scenarios.", "Guidance for updating the information."],
+      "optional": ["Additional languages and sources.", "Connection to bookings, catalogue or CRM.", "Usage reports as needed and in line with the privacy policy."],
+      "process": ["We define the purpose and the content.", "We build the interface and connect the sources.", "We test the questions and the limits.", "We launch and plan the updates."],
+      "faq": [
+        { "question": "Does it always answer correctly?", "answer": "An AI system can make mistakes. Limits, sources and tests help reduce errors, and the interface should show when confirmation from the business is needed." },
+        { "question": "Can it make bookings?", "answer": "Yes, when it is connected to a booking system and the permissions are defined. A chatbot that provides information does not automatically include this feature." },
+        { "question": "Are there monthly costs?", "answer": "There may be costs for the AI provider, hosting and maintenance. They depend on the solution and usage and are kept separate from development." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "The AI assistant in the Thethi Guide redesign.",
+      "formHeading": "Let’s talk about a custom chatbot."
+    },
+    "integrime-automatizime": {
+      "enSlug": "integrations-automation",
+      "name": "Integrations & automation",
+      "title": "Integrations and automation for businesses | LB STUDIO",
+      "description": "We connect forms, email, calendars and business tools. Automations defined around your process and the real integration options available.",
+      "h1": "Your business tools, connected through a clear process.",
+      "intro": "We organise how information moves between the website and your work tools, so requests end up where they should.",
+      "paragraphs": [
+        ["We identify the repeated steps", "A request from the website may need to be recorded, notified and followed up. We define what happens today, who does each step and where the information is stored. Then we choose which actions can be automated and which need confirmation. The goal is a process that is understandable and controllable."],
+        ["Integration depends on the tools you use", "We check the documentation, APIs and permissions each platform offers. A form can be connected to email, a spreadsheet, a calendar or a CRM, if the tool allows it. Before development we separate what is possible from what requires a process change. We do not assume every program can be connected automatically."],
+        ["What happens when a step fails", "An automation also has to handle failures. We define notifications, retries and how to review requests that did not go through. When data could be sent twice, we plan protection against duplicates. Access is limited to what the integration needs."],
+        ["A process you can follow", "We document the inputs, outputs and actions performed. You should understand when the automation is working and when staff need to step in. Changes to external platforms may require updates. Tool fees and usage limits are checked before the solution becomes part of daily work."]
+      ],
+      "audience": ["Businesses copying data between several tools.", "Teams receiving requests from forms.", "Businesses that need links between the website, bookings and communication."],
+      "included": ["Analysis of the workflow.", "Check of the technical integration options.", "Connections between the agreed tools.", "Validation and error handling.", "Necessary notifications and checks.", "Process documentation."],
+      "optional": ["Data migration or clean-up.", "Control panel showing the status of integrations.", "Flows across several systems and additional authorisations."],
+      "process": ["We define the process and the tools.", "We check access and limitations.", "We build and test the flow.", "We hand over the documentation and how to monitor it."],
+      "faq": [
+        { "question": "Can every platform be connected?", "answer": "Not always. It depends on the APIs, permissions and terms of the platform. The options are checked before the final proposal." },
+        { "question": "What happens if a service does not respond?", "answer": "We define error handling and notifications. Critical processes may require a manual check or an alternative path." },
+        { "question": "Are separate accounts needed?", "answer": "Accounts or plans that provide integration access may be required. Access and fees are confirmed for each tool." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "Illustration of the flow from a form to a system and a notification.",
+      "formHeading": "Let’s talk about integrations & automation."
+    },
+    "faqe-shumegjuheshe": {
+      "enSlug": "multilingual-websites",
+      "name": "Multilingual websites",
+      "title": "Multilingual websites | LB STUDIO",
+      "description": "Websites in several languages with clear navigation, separate URLs and hreflang configuration. For local and international customers with LB STUDIO.",
+      "h1": "Your business, understood in your customer’s language.",
+      "intro": "We build versions of your website in several languages, with content and navigation organised for each audience.",
+      "paragraphs": [
+        ["Each language needs complete content", "Translation must keep the meaning of the offer, the service names and the information customers look for. We define which pages will have other versions and who will review the translation. Titles, forms and system messages must be part of the same process."],
+        ["Clear navigation between versions", "The language switch should be visible and lead to the matching page. Versions are organised with separate URLs. If a page has no translation, the behaviour is defined clearly and no empty version is created. Visitors should be able to choose a language without being redirected repeatedly based on location."],
+        ["Content and SEO for each language", "Each version has a title and description in its language. We configure hreflang links between equivalent pages and canonicals for each version. The words customers use can differ between markets; translating a phrase directly does not replace researching local searches."],
+        ["Updates must stay in sync", "When a service, price or contact method changes, the matching versions must be updated. We define a way of managing content that makes this task visible. Professional translation and language review can be organised separately. We do not automatically publish unreviewed versions."]
+      ],
+      "audience": ["Businesses working with local and foreign customers.", "Guesthouses, restaurants and tour operators.", "Businesses that want to present themselves in other markets."],
+      "included": ["Language and URL structure.", "Language switch in the navigation.", "Content and forms organised for each version.", "Titles and meta descriptions per language.", "Hreflang and links between equivalent pages.", "Check of navigation and translated content."],
+      "optional": ["Translation and review by language professionals.", "Content adapted to specific markets.", "Migration from an existing language system."],
+      "process": ["We define the languages and pages.", "We prepare and review the content.", "We build the navigation and technical configuration.", "We verify the links and versions before launch."],
+      "faq": [
+        { "question": "Is translation included?", "answer": "Translation and language review are defined in the proposal. We can use content you prepare or organise its preparation." },
+        { "question": "Can we add languages later?", "answer": "Yes, if the website structure supports it. We plan the content and links needed for the new version." },
+        { "question": "Must every language have the same pages?", "answer": "Not necessarily. Hreflang is used between pages that are matching versions; pages without an equivalent are handled separately." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "Illustration of content in Albanian, English and Italian.",
+      "formHeading": "Let’s talk about multilingual websites."
+    },
+    "landing-pages": {
+      "enSlug": "landing-pages",
+      "name": "Landing pages",
+      "title": "Landing pages for products and campaigns | LB STUDIO",
+      "description": "Landing pages with one clear message and a main action for products, services or launches. Mobile-first design and measurement based on the goal.",
+      "h1": "A page focused on the offer and the next step.",
+      "intro": "We build landing pages for a product, service or campaign, with content that guides visitors towards the chosen action.",
+      "paragraphs": [
+        ["A goal that defines the page", "Before designing, we define what the visitor should do: get in touch, request information, sign up or view an offer. The page message should match where the visitor comes from, such as an ad, an email or a social profile. This goal helps us choose the content that belongs on the page."],
+        ["Content that supports the decision", "The headline explains the offer, while the following sections give the information needed to evaluate it. They can include features, how it works and the main questions. Examples, testimonials or results are used only when they are true and confirmed. The call to action stays clear throughout the page."],
+        ["Different formats for different needs", "A landing page can present a service, support a campaign or announce a launch. The Ora e Maleve view in the visual portfolio is a Coming Soon page. Such a page has a different role from a page that takes requests or orders. Structure and measurement are defined based on that role."],
+        ["Checks and measurement based on the goal", "The page is checked on mobile and other devices. If it includes a form, we verify that the request is received and the confirmation message appears. Analytics events can measure clicks or completed requests, depending on the configuration and the consent required. After launch, changes are evaluated from visitor behaviour and the quality of requests."]
+      ],
+      "audience": ["Businesses promoting a specific offer.", "Products or services being launched.", "Campaigns that need a dedicated page."],
+      "included": ["Definition of the message and main action.", "Structure and copy for the offer.", "Mobile-friendly design.", "Form or link for the chosen action.", "Metadata and images for social sharing.", "Check of the flow and agreed events."],
+      "optional": ["Connection to email marketing or CRM.", "Versions for different offers and languages.", "Experiments with page variants when there is enough traffic."],
+      "process": ["We define the audience and the goal.", "We write the message and organise the content.", "We build the page and the links.", "We check and follow the main action."],
+      "faq": [
+        { "question": "How is it different from a full website?", "answer": "A landing page focuses on one offer and one goal. A full website organises several services, pages and navigation paths." },
+        { "question": "Can it be used for ads?", "answer": "Yes. The message and the form are adapted to the campaign. Ad management and budget are not automatically included in building the page." },
+        { "question": "Should every landing page be indexed?", "answer": "Not always. We decide whether it has lasting, distinct content for search or serves a temporary campaign." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "The Ora e Maleve Coming Soon page.",
+      "formHeading": "Let’s talk about landing pages."
+    },
+    "menu-online-qr": {
+      "enSlug": "online-menu-qr",
+      "name": "Online menu & QR",
+      "title": "Online menus and QR codes for restaurants | LB STUDIO",
+      "description": "Digital menus for restaurants with categories, photos, descriptions and prices. Designed for mobile and opened with a QR code. See the Gjeçaj example.",
+      "h1": "Your restaurant menu, opened from the phone.",
+      "intro": "We build online menus that present dishes and prices with a clear structure. Customers open the menu from a link or a QR code.",
+      "paragraphs": [
+        ["The information customers look for at the table", "The menu is organised by the categories the restaurant uses. Each dish can have its name, description, price and photo. Navigation should help customers move between dishes, drinks and other parts of the menu. The mobile view is a central part of the project."],
+        ["A stable link for the QR code", "The QR code opens the menu address. If the content is updated at the same address, printed material can keep being used. That is why we define the URL and the way it is managed before printing. The working code is tested on different devices; illustrative mockup images are not used as the final QR."],
+        ["Languages and updates as needed", "The menu can have versions in the languages the restaurant’s customers use. Names and descriptions must be checked by the business. Updating prices or hiding a dish can be done from the dashboard, if that feature is included. How it is managed depends on how often things change."],
+        ["The limits of a digital menu", "A menu that displays dishes does not automatically include ordering, payments or a connection to the POS. These require separate flows and integrations. Information about ingredients and allergens is confirmed by the restaurant before publication. The Gjeçaj example shows categories, photos, descriptions, prices and a language switch."]
+      ],
+      "audience": ["Restaurants and guesthouses with a restaurant.", "Bars and cafés.", "Businesses that want to update their menu online."],
+      "included": ["Categories and menu structure.", "Dishes with text, price and available photos.", "Mobile design.", "Stable URL and a working QR code.", "The agreed languages.", "Check of the link and the material before printing."],
+      "optional": ["Dashboard for prices and availability.", "Online ordering or payments.", "Connection to restaurant systems where integration is allowed."],
+      "process": ["We receive the menu and the confirmed information.", "We organise the categories and the design.", "We build the versions and generate the QR code.", "We test on mobile and hand over the material."],
+      "faq": [
+        { "question": "Is an app needed to open it?", "answer": "The web menu opens in the browser. On many phones the QR code can be scanned with the camera, without installing a separate app for the menu." },
+        { "question": "Does the QR code change when I change prices?", "answer": "If the address stays the same, updating the content does not require a new QR code. A change of domain or URL needs to be planned." },
+        { "question": "Can it take orders?", "answer": "It can be built as an additional feature. An information menu and an ordering system have different needs and are defined separately." }
+      ],
+      "imageCaption": "Visual example of the service; features are defined per project.",
+      "alt": "The public Gjeçaj menu with categories, dishes and prices.",
+      "formHeading": "Let’s talk about online menus & QR."
+    }
+  },
+  "projects": {
+    "thethi-guide": {
+      "title": "Thethi Guide | LB STUDIO project",
+      "description": "The Thethi Guide presentation: destinations, an interactive map and an AI assistant for the Albanian Alps. See the project’s structure and screens.",
+      "intro": "A website that organises information about destinations and travel in the Albanian Alps.",
+      "context": "Visitors look for places to explore and information that helps them plan their trip. The content connects destinations, experiences and places on the map.",
+      "solution": "The redesign presentation brings together the destinations, the map and the AI assistant. The screens come from the newly prepared version; the external button opens the public domain, whose look may change until the redesign is published.",
+      "features": ["Organisation of destinations and tourism content.", "Map with categories and points of interest.", "AI assistant with suggested questions and a contact link."],
+      "visibleStatusLabel": "Redesign presentation",
+      "visibleImageNotice": "Redesign presentation. The external link opens the public website, which may still show the previous design.",
+      "alt": "Thethi Guide screens with destinations, a map and an AI assistant."
+    },
+    "gjecaj-guesthouse-restaurant": {
+      "title": "Gjeçaj — Guesthouse & Restaurant | LB STUDIO project",
+      "description": "The Gjeçaj website in Theth, presenting the guesthouse and the restaurant. See the screens and content organisation in the LB STUDIO portfolio.",
+      "intro": "A website presenting the stay and the cuisine in Theth.",
+      "context": "The guesthouse and the restaurant have related offers, but visitors may look for information about one or the other. Navigation must separate them while keeping a shared identity.",
+      "solution": "The homepage presents the hospitality and points towards the restaurant or the guesthouse. The dedicated pages use photos of the place and links to request a room or book a table.",
+      "features": ["Presentation of the guesthouse and the restaurant.", "Separate pages for the stay and the cuisine.", "Links to room requests and table bookings."],
+      "alt": "The Gjeçaj homepage and views of the restaurant and guesthouse."
+    },
+    "gjecaj-rezervime": {
+      "name": "Gjeçaj — Booking system",
+      "title": "Gjeçaj — Booking system | LB STUDIO project",
+      "description": "The Gjeçaj booking system with date, time, party size and area selection. See the web application presentation in the LB STUDIO portfolio.",
+      "intro": "From choosing the date and time to managing the booking.",
+      "context": "A booking connects the customer’s request with the times, seats and status that staff need to follow. The experience must be clear on both sides.",
+      "solution": "The public page lets customers choose the number of guests, the area, the date and the time. The presentation separates the public form from the admin dashboard; dashboard screens use demonstration data only.",
+      "features": ["Choice of number of guests, date and time.", "Indoor, Outdoor or no-preference selection.", "Summary of the choices before the contact details step."],
+      "alt": "The public Gjeçaj form with date, time, area and party size selection."
+    },
+    "baby-gifts-albania": {
+      "title": "Baby Gifts Albania | LB STUDIO project",
+      "description": "The Baby Gifts Albania website with a catalogue of personalised baby gifts, prices and ordering via WhatsApp. See the presentation in the LB STUDIO portfolio.",
+      "intro": "A presentation of handmade, personalised baby gifts.",
+      "context": "Product photos and information about personalisation are a central part of the offer. Visitors need to understand what is presented and how to ask for information.",
+      "solution": "The website presents personalised gifts, a catalogue with prices and a link to order on WhatsApp. It is not presented as a store with a cart, checkout or online payment.",
+      "features": ["Product catalogue with photos and prices.", "Information about gift personalisation.", "Ordering and contact via WhatsApp."],
+      "alt": "Baby Gifts Albania view with gift baskets and boxes."
+    },
+    "aleks-bzhetaj": {
+      "title": "Av. Aleks Bzhetaj | LB STUDIO project",
+      "description": "A website for the legal services of Av. Aleks Bzhetaj, with service pages and contact for consultations. A project in the LB STUDIO portfolio.",
+      "intro": "A website that organises legal services and the path to a consultation.",
+      "context": "Visitors need to understand which matters the office handles and where to find information about the service they need.",
+      "solution": "The structure includes the homepage, the service pages and contact. The portfolio screens present the homepage and the family law page, with serif typography and dark and gold tones.",
+      "features": ["Dedicated pages for legal services.", "Presentation of the office and contact options."],
+      "alt": "The homepage and a service page of the Av. Aleks Bzhetaj website."
+    },
+    "mb-cartongesso": {
+      "title": "M.B Cartongesso | LB STUDIO project",
+      "description": "The M.B Cartongesso website with plasterboard services, LED lighting and a gallery of work. See the project screens in the LB STUDIO portfolio.",
+      "intro": "A presentation of plasterboard and LED lighting services and work.",
+      "context": "Photos of completed work help visitors understand the kinds of solutions the business offers. Services and the gallery need to connect with the quote request.",
+      "solution": "The website uses views of interiors and LED lighting, service categories and a gallery. Contact links lead visitors to a request for their own project.",
+      "features": ["Presentation of services.", "Gallery of work and interior views.", "Contact for a quote request."],
+      "alt": "The M.B Cartongesso website with services and LED lighting work."
+    },
+    "gjecaj-menu-online": {
+      "name": "Gjeçaj — Online menu",
+      "title": "Gjeçaj — Online menu | LB STUDIO project",
+      "description": "The Gjeçaj online menu with categories, photos, descriptions and prices, in Albanian and English. See the project’s desktop and mobile views.",
+      "intro": "Dishes, descriptions and prices in a menu designed for mobile.",
+      "context": "Customers need to find dishes and the related information while moving easily between categories. For a restaurant with foreign visitors, a language choice is also necessary.",
+      "solution": "The menu presents categories, dish photos, descriptions and prices. The screens show the Albanian / English switch. Opening with a QR code can be linked to the final confirmed URL.",
+      "features": ["Menu categories and subsections.", "Photos, descriptions and prices.", "Albanian / English switch and mobile view."],
+      "alt": "The Gjeçaj online menu with categories, dish photos and prices."
+    }
+  },
+  "contact": {
+    "title": "Discuss your web project | Contact LB STUDIO",
+    "description": "Tell us about your business and the website you want to build. Contact LB STUDIO for web design, bookings, online menus and digital solutions.",
+    "h1": "Let’s talk about your project.",
+    "intro": "Tell us about your business, your needs and the materials you have. We start from a clear description so we understand what we need to build.",
+    "sections": [
+      { "heading": "What helps us to know", "items": ["What the business does and who it serves.", "The link to your current website, if you have one.", "The services or features you are looking for.", "Your preferred timeline and an indicative budget, if you have set them."] },
+      { "heading": "We work online", "body": "We collaborate remotely with businesses in Albania, Italy, the United Kingdom and the USA. Steps, materials and approvals are organised during the project." }
+    ],
+    "alt": "LB STUDIO card titled: Let’s talk about your project."
+  },
+  "privacy": {
+    "title": "Privacy policy | LB STUDIO",
+    "description": "Information about contact data, use of the form and privacy at LB STUDIO. The policy is completed based on the configured services.",
+    "h1": "Privacy policy",
+    "intro": "This text is a draft to be completed and reviewed before publication.",
+    "sections": [
+      { "heading": "Who processes the data", "body": "Controller: [CONFIRMED LEGAL NAME]. Privacy contact: [PUBLIC EMAIL]. LB STUDIO is the brand presented on this website. The legal identity must be filled in accurately; using the brand does not replace this information." },
+      { "heading": "The contact form", "body": "When you write to us, we receive your name, email, the selected service and the content of your message. We use them to handle your request and communicate about the project. Marked fields are required to send the form. Do not send documents or sensitive data in the message." },
+      { "heading": "Purposes and legal basis", "body": "For each purpose the applicable legal basis is defined: [BASIS FOR PRE-CONTRACTUAL REQUESTS / CONFIRMED COMMUNICATION]. If legitimate interest is used, the interest is explained. A contact request does not automatically act as a marketing subscription." },
+      { "heading": "Providers and transfers", "body": "Hosting: [PROVIDER AND LOCATION]. Form and email: [PROVIDERS]. Measurement tools: [TOOLS OR NONE]. Recipients, roles, processing outside the relevant jurisdiction and transfer safeguards are described where they apply: [REAL DETAILS]." },
+      { "heading": "Data retention", "body": "Requests are kept for [CONFIRMED PERIOD OR CRITERION]. If a contractual relationship starts, separate periods may apply for project documents and legal obligations. Retention for emails, logs and backups is confirmed separately." },
+      { "heading": "Cookies and measurement", "body": "Actual list: [NAME, PURPOSE, PROVIDER, DURATION]. If no analytics is used, this is stated clearly. Where consent is required, the relevant tools are activated after the visitor’s choice, and the choice can be changed at [COOKIE CONTROL]." },
+      { "heading": "Your rights and requests", "body": "Under the applicable law, you can request access, rectification, erasure, restriction, objection or portability where applicable. If processing is based on consent, you can withdraw it. Contact for requests: [EMAIL]. You can lodge a complaint with the competent authority: [AUTHORITY BY JURISDICTION]." },
+      { "heading": "Automated decision-making and updates", "body": "Confirm whether automated decision-making or profiling is used and describe it where it applies: [ACTUAL STATUS]. Last updated: [APPROVAL DATE]." }
+    ]
+  },
+  "form": {
+    "labels": { "name": "Name", "email": "Email", "service": "Service requested", "message": "Message" },
+    "submit": "Send request",
+    "success": "Your request was sent. Thank you for telling us about your project.",
+    "error": "Your request was not sent. Please try again or use another way to contact us.",
+    "privacy": "Form data is used to handle your request.",
+    "errors": { "name": "Please enter your name.", "email": "Please enter a valid email address.", "message": "Tell us a little about your project." }
+  }
+}

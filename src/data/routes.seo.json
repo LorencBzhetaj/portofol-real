@@ -141,7 +141,7 @@
       "zhvillim web app"
     ],
     "featuredImage": {
-      "path": "/images/projects/gjecaj-rezervime.jpg",
+      "path": "/images/services/rezervime-web-apps.jpg",
       "alt": "Formulari publik i rezervimit të tavolinës Gjeçaj.",
       "status": "included_review_before_publish",
       "ogPath": "/images/og/sherbimet--rezervime-web-apps.png",
@@ -297,7 +297,7 @@
       "krijim menu online"
     ],
     "featuredImage": {
-      "path": "/images/projects/gjecaj-menu-online.jpg",
+      "path": "/images/services/menu-online-qr.jpg",
       "alt": "Menuja publike Gjeçaj me kategori, pjata dhe çmime.",
       "status": "included_review_before_publish",
       "ogPath": "/images/og/sherbimet--menu-online-qr.png",
@@ -323,7 +323,7 @@
     "featuredImage": {
       "path": "/images/project-cards/thethi-guide.png",
       "alt": "Pamjet e Thethi Guide me destinacione, hartë dhe asistent AI.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--thethi-guide.png",
       "width": 1524,
       "height": 1032,
@@ -347,9 +347,9 @@
     "featuredImage": {
       "path": "/images/project-cards/gjecaj-guesthouse-restaurant.png",
       "alt": "Kryefaqja e Gjeçaj dhe pamjet e restorantit e bujtinës.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--gjecaj-guesthouse-restaurant.png",
-      "width": 1513,
+      "width": 1512,
       "height": 1040,
       "ogWidth": 1200,
       "ogHeight": 630,
@@ -371,7 +371,7 @@
     "featuredImage": {
       "path": "/images/project-cards/gjecaj-rezervime.png",
       "alt": "Formulari publik Gjeçaj me zgjedhje date, orari, zone dhe numri vizitorësh.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--gjecaj-rezervime.png",
       "width": 1512,
       "height": 1040,
@@ -395,7 +395,7 @@
     "featuredImage": {
       "path": "/images/project-cards/baby-gifts-albania.png",
       "alt": "Pamje e Baby Gifts Albania me shporta dhe kuti dhuratash.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--baby-gifts-albania.png",
       "width": 1512,
       "height": 1040,
@@ -419,7 +419,7 @@
     "featuredImage": {
       "path": "/images/project-cards/aleks-bzhetaj.png",
       "alt": "Kryefaqja dhe një faqe shërbimi e website-it të Av. Aleks Bzhetaj.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--aleks-bzhetaj.png",
       "width": 1512,
       "height": 1040,
@@ -443,7 +443,7 @@
     "featuredImage": {
       "path": "/images/project-cards/mb-cartongesso.png",
       "alt": "Website-i M.B Cartongesso me shërbime dhe punime ndriçimi LED.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--mb-cartongesso.png",
       "width": 1512,
       "height": 1040,
@@ -467,9 +467,9 @@
     "featuredImage": {
       "path": "/images/project-cards/gjecaj-menu-online.png",
       "alt": "Menuja online Gjeçaj me kategori, foto pjatash dhe çmime.",
-      "status": "original_designed_composite_review_before_publish",
+      "status": "original_composite_no_text_panel_review_before_publish",
       "ogPath": "/images/og/projektet--gjecaj-menu-online.png",
-      "width": 1512,
+      "width": 1513,
       "height": 1040,
       "ogWidth": 1200,
       "ogHeight": 630,

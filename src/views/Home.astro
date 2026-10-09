@@ -1,0 +1,213 @@
+---
+import Base from '../layouts/Base.astro';
+import Picture from '../components/Picture.astro';
+import Arrow from '../components/Arrow.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Faq from '../components/Faq.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { anchors, getContent, localize, projectBySlug, serviceBySlug, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const a = anchors[lang];
+const home = getContent(lang).home;
+const [value, projectsSec, servicesSec, processSec, onlineSec, contactSec] = home.sections as any[];
+const projects = (projectsSec.projectSlugs as string[]).map((s) => projectBySlug(s, lang));
+const services = (servicesSec.serviceSlugs as string[]).map((s) => serviceBySlug(s, lang));
+const hero = home.featuredImage;
+const stepIcons = [
+  'M4 5h16v11H8l-4 4z', // chat
+  'M4 20l4-1 11-11-3-3L5 16l-1 4zM14 6l3 3', // pencil
+  'M9 7l-5 5 5 5M15 7l5 5-5 5', // code
+  'M3 11l18-8-8 18-2-8z', // send
+];
+---
+<Base sqPath="/" lang={lang}>
+  <section class="hero">
+    <!-- DOM order = mobile order (title, intro, image, CTAs); desktop moves the CTAs above the image. -->
+    <div class="wrap hero-inner">
+      <span class="eyebrow hero-eyebrow">{t.eyebrowHero}</span>
+      <h1>{home.h1}</h1>
+      <p class="lede">{home.intro}</p>
+      <div class="hero-media">
+        <Picture src={hero.path} alt={hero.alt} width={hero.width} height={hero.height} sizes="(max-width: 1240px) 96vw, 1200px" priority />
+      </div>
+      <div class="btn-row hero-ctas">
+        <a class="btn" href={home.heroCtas[0].href}>{home.heroCtas[0].label} <Arrow /></a>
+        <a class="btn btn--ghost" href={home.heroCtas[1].href}>{home.heroCtas[1].label}</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section value" aria-labelledby="vlera">
+    <div class="wrap value-grid">
+      <div>
+        <h2 id="vlera">{value.heading}</h2>
+        <p class="lede">{value.body}</p>
+      </div>
+      <ul class="value-items">
+        {value.items.map(([title, d]: [string, string], i: number) => (
+          <li class="card">
+            <span class="num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+            <h3>{title}</h3>
+            <p>{d}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section id={a.projects} class="section projects" aria-labelledby="projekte-title">
+    <div class="wrap">
+      <header class="sec-head center">
+        <span class="eyebrow">{t.eyebrowProjects}</span>
+        <h2 id="projekte-title">{projectsSec.heading}</h2>
+        <p class="lede">{projectsSec.body}</p>
+      </header>
+      <div class="grid-3">
+        {projects.map((p) => <ProjectCard project={p} lang={lang} />)}
+      </div>
+      <div class="btn-row more-row">
+        <a class="btn" href={projectsSec.cta.href}>{projectsSec.cta.label} <Arrow /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" aria-labelledby="sherbime-title">
+    <div class="wrap">
+      <header class="sec-head center">
+        <span class="eyebrow">{t.eyebrowServices}</span>
+        <h2 id="sherbime-title">{servicesSec.heading}</h2>
+        <p class="lede">{servicesSec.body}</p>
+      </header>
+      <div class="grid-3">
+        {services.map((s) => <ServiceCard service={s} lang={lang} />)}
+      </div>
+      <div class="btn-row more-row">
+        <a class="btn btn--ghost" href={servicesSec.cta.href}>{servicesSec.cta.label} <Arrow /></a>
+      </div>
+    </div>
+  </section>
+
+  <section id={a.how} class="section process" aria-labelledby="si-punojme-title">
+    <div class="wrap">
+      <header class="sec-head center">
+        <span class="eyebrow">{t.howWeWork}</span>
+        <h2 id="si-punojme-title">{processSec.heading}</h2>
+      </header>
+      <ol class="steps">
+        {processSec.items.map(([title, d]: [string, string], i: number) => (
+          <li>
+            <div class="step-top" aria-hidden="true">
+              <span class="step-num">{String(i + 1).padStart(2, '0')}</span>
+              <span class="step-icon">
+                <svg viewBox="0 0 24 24"><path d={stepIcons[i]} fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </span>
+            </div>
+            <h3>{title}</h3>
+            <p>{d}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section--tight online" aria-labelledby="online-title">
+    <div class="wrap online-box card">
+      <div>
+        <span class="eyebrow">{t.online}</span>
+        <h2 id="online-title">{onlineSec.heading}</h2>
+      </div>
+      <div>
+        <p class="lede">{onlineSec.body}</p>
+        <ul class="markets" aria-label={t.marketsLabel}>
+          {t.markets.map((m) => <li class="tag">{m}</li>)}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section faq-wrap">
+    <div class="wrap narrow-faq">
+      <Faq items={home.faq} heading={t.faq} headingId="pyetje-home" />
+    </div>
+  </section>
+
+  <section id={a.contact} class="section--tight contact" aria-labelledby="kontakt-title">
+    <div class="wrap contact-box">
+      <div class="contact-copy">
+        <span class="eyebrow">{t.eyebrowContact}</span>
+        <h2 id="kontakt-title">{contactSec.heading}</h2>
+        <p>{contactSec.body}</p>
+        <a class="btn btn--light" href={localize('/kontakt', lang)}>{t.contactPage} <Arrow /></a>
+      </div>
+      <ContactForm id="kerkese-home" tone="dark" lang={lang} />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { padding-top: clamp(40px, 7vw, 80px); }
+  .hero-inner { display: flex; flex-direction: column; align-items: center; text-align: center; }
+  .hero-inner h1 { max-width: 17ch; }
+  .hero-ctas { order: 4; justify-content: center; margin-top: 28px; }
+  .hero-media { order: 5; width: 100%; margin-top: clamp(24px, 4vw, 48px); }
+  /* Feather the composition's near-white backdrop into the ivory page (edges are empty backdrop, nothing is cut). */
+  .hero-media :global(img) {
+    width: 100%; height: auto;
+    --fade: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent), linear-gradient(to bottom, transparent, #000 6%, #000 94%, transparent);
+    -webkit-mask-image: var(--fade); mask-image: var(--fade);
+    -webkit-mask-composite: source-in; mask-composite: intersect;
+  }
+
+  .value-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 5vw, 72px); align-items: start; }
+  .value-items { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .value-items li { padding: 24px; box-shadow: none; }
+  .value-items h3 { margin: 12px 0 8px; }
+  .value-items p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  .num { font-size: 0.85rem; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; }
+
+  .sec-head { margin-bottom: clamp(32px, 5vw, 52px); }
+  .more-row { justify-content: center; margin-top: 40px; }
+
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .step-top { display: flex; align-items: center; gap: 14px; }
+  .step-num { color: var(--accent); font-size: 1.6rem; font-weight: 500; line-height: 1; }
+  .step-icon { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: var(--ivory-2); }
+  .step-icon svg { width: 20px; height: 20px; }
+  .steps h3 { margin: 16px 0 6px; }
+  .steps p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+
+  .online-box { display: grid; grid-template-columns: 1fr 1.2fr; gap: 32px; padding: clamp(28px, 5vw, 56px); align-items: center; }
+  .online-box .lede { margin-top: 0; }
+  .markets { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 16px 0 0; }
+
+  .narrow-faq { max-width: 860px; }
+
+  .contact-box { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(28px, 5vw, 64px); padding: clamp(28px, 5vw, 64px); border-radius: 28px; background: var(--ink); color: var(--ivory-2); align-items: center; }
+  .contact-copy .eyebrow { color: #e0a56f; }
+  .contact-copy h2 { color: var(--ivory-2); }
+  .contact-copy p { color: #d8d2c7; margin: 16px 0 24px; max-width: 46ch; }
+
+  @media (max-width: 1020px) {
+    .value-grid, .online-box, .contact-box { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+  }
+  /* Mobile hero: title → intro → centred image → stacked CTAs. */
+  @media (max-width: 680px) {
+    .hero { padding-top: 28px; }
+    .hero-eyebrow { display: none; }
+    .hero-inner h1 { font-size: clamp(2.1rem, 9.6vw, 2.75rem); max-width: 100%; overflow-wrap: anywhere; }
+    .hero-inner .lede { margin-top: 14px; }
+    .hero-media { order: 3; margin: 24px 0 0; }
+    .hero-ctas { order: 4; width: 100%; flex-direction: column; gap: 12px; margin-top: 24px; }
+    .hero-ctas .btn { width: 100%; min-height: 52px; }
+  }
+  @media (max-width: 600px) {
+    .value-items { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr; gap: 24px; }
+    .contact-box { border-radius: 22px; }
+  }
+</style>

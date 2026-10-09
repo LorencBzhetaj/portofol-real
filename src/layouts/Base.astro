@@ -2,16 +2,21 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { seoFor, production, formEndpoint } from '../lib/site';
+import { seoFor, production, formEndpoint, ui, type Lang } from '../lib/site';
 
-interface Props { routePath?: string }
-const { routePath } = Astro.props;
-const head = routePath
-  ? seoFor(routePath)
-  : { title: 'Faqja nuk u gjet | LB STUDIO', description: 'Faqja që kërkon nuk ekziston.', robots: 'noindex,follow', headHtml: null };
+interface Props {
+  /** Albanian path of the page (the content package key); omitted for the 404 page. */
+  sqPath?: string;
+  lang?: Lang;
+}
+const { sqPath, lang = 'sq' } = Astro.props;
+const t = ui[lang];
+const head = sqPath
+  ? seoFor(sqPath, lang)
+  : { title: `${t.notFoundTitle.replace(/\.$/, '')} | LB STUDIO`, description: t.notFoundBody, robots: 'noindex,follow', headHtml: null };
 ---
 <!doctype html>
-<html lang="sq">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,15 +36,15 @@ const head = routePath
     <slot name="head" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Kalo te përmbajtja</a>
+    <a class="skip-link" href="#main">{t.skip}</a>
     {!production && (
-      <div class="staging-note" role="note">Version prove (staging) — jo për publikim. Faqet janë noindex{formEndpoint ? "." : " dhe formulari nuk dërgon ende."}</div>
+      <div class="staging-note" role="note">{t.staging}{formEndpoint ? '.' : t.stagingNoForm}</div>
     )}
-    <Header />
+    <Header lang={lang} sqPath={sqPath} />
     <main id="main" tabindex="-1">
       <slot />
     </main>
-    <Footer />
+    <Footer lang={lang} />
   </body>
 </html>
 <style>

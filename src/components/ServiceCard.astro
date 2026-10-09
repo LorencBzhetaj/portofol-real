@@ -2,13 +2,15 @@
 import Picture from './Picture.astro';
 import Arrow from './Arrow.astro';
 import cards from '../data/cards.json';
-import type { Service } from '../lib/site';
+import { ui, type Lang, type Service } from '../lib/site';
 
-interface Props { service: Service; headingLevel?: 'h2' | 'h3' }
-const { service: s, headingLevel = 'h3' } = Astro.props;
+interface Props { service: Service; lang: Lang; headingLevel?: 'h2' | 'h3' }
+const { service: s, lang, headingLevel = 'h3' } = Astro.props;
 const H = headingLevel;
-const card = cards.find((c) => c.href === s.path);
-const label = card?.visibleStatusLabel ?? null;
+const t = ui[lang];
+// Status labels come from the package cards (keyed by the Albanian path).
+const card = cards.find((c) => c.href === '/sherbimet/' + s.slug);
+const label = card?.visibleStatusLabel ? (lang === 'sq' ? card.visibleStatusLabel : t.concept) : null;
 const img = s.featuredImage;
 ---
 <article class="card service-card">
@@ -19,7 +21,7 @@ const img = s.featuredImage;
   <div class="body">
     <H class="title"><a href={s.path}>{s.name}</a></H>
     <p>{s.intro}</p>
-    <span class="more" aria-hidden="true">Shiko shërbimin <Arrow dir="right" /></span>
+    <span class="more" aria-hidden="true">{t.seeService} <Arrow dir="right" /></span>
   </div>
 </article>
 <style>

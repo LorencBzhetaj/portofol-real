@@ -1,0 +1,54 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { anchors, config, getContent, localize, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const c = getContent(lang).contact;
+const [prepare, online] = c.sections as any[];
+const email: string | null = config.publicEmail;
+const phone: string | null = config.publicPhone;
+---
+<Base sqPath="/kontakt" lang={lang}>
+  <Breadcrumbs lang={lang} items={[{ label: t.home, href: localize('/', lang) }, { label: t.contact }]} />
+  <section class="section contact-page">
+    <div class="wrap grid">
+      <div class="copy">
+        <span class="eyebrow">{t.contact}</span>
+        <h1>{c.h1}</h1>
+        <p class="lede">{c.intro}</p>
+
+        <h2>{prepare.heading}</h2>
+        <ul class="check-list">{prepare.items.map((i: string) => <li>{i}</li>)}</ul>
+
+        <h2>{online.heading}</h2>
+        <p class="muted">{online.body}</p>
+
+        {(email || phone) && (
+          <>
+            <h2>{t.directContact}</h2>
+            <ul class="direct">
+              {email && <li><a href={`mailto:${email}`}>{email}</a></li>}
+              {phone && <li><a href={`tel:${phone.replace(/\s+/g, '')}`}>{phone}</a></li>}
+            </ul>
+          </>
+        )}
+      </div>
+      <div class="form-col">
+        <ContactForm id={anchors[lang].request} heading={t.sendRequest} readServiceParam lang={lang} />
+      </div>
+    </div>
+  </section>
+</Base>
+<style>
+  .contact-page { padding-top: 32px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+  .copy h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+  .copy h2 { font-size: 1.3rem; margin: 36px 0 14px; }
+  .direct { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; font-weight: 600; }
+  .form-col { position: sticky; top: 100px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .form-col { position: static; } }
+</style>

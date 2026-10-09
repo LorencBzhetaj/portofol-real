@@ -1,32 +1,38 @@
 ---
-import { content } from '../lib/site';
+import { getContent, localize, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+const L = (p: string) => localize(p, lang);
+const services = getContent(lang).services;
 const year = new Date().getFullYear();
 ---
 <footer class="site-footer">
   <div class="wrap grid">
     <div class="about">
-      <a href="/" aria-label="LB STUDIO — Kreu"><img src="/images/brand/lb-studio-lockup.svg" alt="LB STUDIO" width="356" height="100" loading="lazy" /></a>
-      <p>Dizajn dhe zhvillim web, rezervime, menu online dhe zgjidhje digjitale për biznese. Punojmë online me klientë në Shqipëri, Itali, Mbretërinë e Bashkuar dhe SHBA.</p>
+      <a href={L('/')} aria-label={t.brandHome}><img src="/images/brand/lb-studio-lockup.svg" alt="LB STUDIO" width="356" height="100" loading="lazy" /></a>
+      <p>{t.footerAbout}</p>
     </div>
-    <nav aria-label="Faqet">
-      <h2>Faqet</h2>
+    <nav aria-label={t.footerPages}>
+      <h2>{t.footerPages}</h2>
       <ul>
-        <li><a href="/projektet">Projektet</a></li>
-        <li><a href="/sherbimet">Shërbimet</a></li>
-        <li><a href="/#si-punojme">Si punojmë</a></li>
-        <li><a href="/kontakt">Kontakt</a></li>
+        <li><a href={L('/projektet')}>{t.projects}</a></li>
+        <li><a href={L('/sherbimet')}>{t.services}</a></li>
+        <li><a href={L('/#si-punojme')}>{t.howWeWork}</a></li>
+        <li><a href={L('/kontakt')}>{t.contact}</a></li>
       </ul>
     </nav>
-    <nav aria-label="Shërbimet në fund të faqes">
-      <h2>Shërbimet</h2>
+    <nav aria-label={t.footerServicesNav}>
+      <h2>{t.services}</h2>
       <ul>
-        {content.services.map((s) => <li><a href={s.path}>{s.name}</a></li>)}
+        {services.map((s) => <li><a href={s.path}>{s.name}</a></li>)}
       </ul>
     </nav>
   </div>
   <div class="wrap legal">
     <p>© {year} LB STUDIO</p>
-    <a href="/privatesia">Privatësia</a>
+    <a href={L('/privatesia')}>{t.privacy}</a>
   </div>
 </footer>
 <style>

@@ -13,7 +13,7 @@ npm run dev            # builds image variants, then http://localhost:4321
 npm run build          # image variants + astro check + static build to dist/
 npm run preview        # serve dist/
 npm run verify:package # handoff package checks (21 routes, copy/JSON parity, guards)
-npm run verify:site    # checks dist/: metadata, H1, noindex, links, assets, no internal notes
+npm run verify:site    # checks dist/ (sq + en): metadata, H1, noindex, links, assets, language switch, one title/link per project card
 ```
 
 Node ≥ 22.12. Versions are pinned in `package-lock.json`.
@@ -26,11 +26,22 @@ Node ≥ 22.12. Versions are pinned in `package-lock.json`.
 | `src/data/site-config.template.json` | Config template; copy to `site-config.json` with **confirmed** data only |
 | `scripts/seo-tools.mjs` | Package SEO generator (metadata, JSON-LD, sitemap, robots, publication guards), used by the layout |
 | `scripts/build-images.mjs` | AVIF/WebP variants from the PNG/JPG masters, no crop/upscale (output is git-ignored) |
-| `src/pages/` | 21 routes: `/`, `/sherbimet` + 9, `/projektet` + 7, `/kontakt`, `/privatesia`, plus 404, `sitemap.xml`, `robots.txt` |
-| `public/images/project-cards/` | The 7 original card compositions, byte-identical to `design-original/03-projektet` |
+| `src/data/content.en.json` | English translation of all content (merged onto the Albanian structure in `src/lib/site.ts`) |
+| `src/data/project-cards.json` | Category, summary and tags for each project card (sq/en), rendered as HTML outside the image |
+| `src/lib/i18n.ts` | Interface strings (sq/en) |
+| `src/views/` | Page templates shared by both languages |
+| `src/pages/` | 21 Albanian routes (`/`, `/sherbimet` + 9, `/projektet` + 7, `/kontakt`, `/privatesia`) and 21 English routes (`/en`, `/en/services` + 9, `/en/projects` + 7, `/en/contact`, `/en/privacy`), plus 404, `sitemap.xml`, `robots.txt` |
+| `public/images/project-cards/` | The 7 project compositions without the text panel (from LB-STUDIO-foto-pa-tekste.zip); name, category, summary, tags and button are HTML |
 | `public/images/brand/` | Reconstructed logo SVG + header lockup and monogram derived from the same paths (no redesign) |
 | `docs/handoff/` | Audit/handoff docs, confirmation registers, original mockups — never served |
-| `docs/screenshots/` | Rendered pages at 1440 / 768 / 390 px |
+| `docs/screenshots/` | Rendered pages (sq + en) at 1440 / 768 / 430 / 390 / 375 px, plus menu/submenu/form states |
+
+## Languages
+
+Every page exists in Albanian and English; the header has an EN/SQ switch to the equivalent page.
+With `SITE_URL` set, every page gets reciprocal `hreflang` (sq, en, x-default → sq) and its own
+canonical. English pages become indexable only in production when `languagesPublished` in
+`site-config.json` includes `"en"` (the English copy should be reviewed by the owner first).
 
 ## Environment
 
@@ -59,6 +70,7 @@ See `.env.example`.
    `editorial-review.json` — `approved` stays `false` until confirmed).
 6. **Bogdani concept** image rights (`bogdani-confirmation.json`); otherwise replace the
    `dyqane-online` image with a neutral illustration.
-7. **Logo**: reconstructed SVG, `acceptedForProduction: false` until approved against the original.
-8. Then fill `confirmedAssets` / `publishablePaths`, build with `PRODUCTION=true`, check
+7. **English copy**: translated in this repo, not yet reviewed by the owner; add `"en"` to `languagesPublished` after review.
+8. **Logo**: reconstructed SVG, `acceptedForProduction: false` until approved against the original.
+9. Then fill `confirmedAssets` / `publishablePaths`, build with `PRODUCTION=true`, check
    robots/sitemap/canonical, Search Console.

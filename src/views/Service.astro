@@ -1,0 +1,146 @@
+---
+import Base from '../layouts/Base.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Picture from '../components/Picture.astro';
+import Arrow from '../components/Arrow.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+import Faq from '../components/Faq.astro';
+import ContactForm from '../components/ContactForm.astro';
+import cards from '../data/cards.json';
+import { localize, projectBySlug, serviceBySlug, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang; slug: string }
+const { lang, slug } = Astro.props;
+const t = ui[lang];
+const s = serviceBySlug(slug, lang);
+const img = s.featuredImage;
+const card = cards.find((c) => c.href === '/sherbimet/' + slug);
+const statusLabel = card?.visibleStatusLabel ? (lang === 'sq' ? card.visibleStatusLabel : t.concept) : null;
+const relatedProjects = s.relatedProjectSlugs.map((p) => projectBySlug(p, lang));
+const relatedServices = s.relatedServiceSlugs.map((r) => serviceBySlug(r, lang));
+---
+<Base sqPath={'/sherbimet/' + slug} lang={lang}>
+  <Breadcrumbs lang={lang} items={[{ label: t.home, href: localize('/', lang) }, { label: t.services, href: localize('/sherbimet', lang) }, { label: s.name }]} />
+
+  <section class="section svc-hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">{s.name}</span>
+        <h1>{s.h1}</h1>
+        <p class="lede">{s.intro}</p>
+        <div class="btn-row">
+          <a class="btn" href={s.cta.href}>{s.cta.label} <Arrow dir="right" /></a>
+        </div>
+      </div>
+      <figure class="hero-fig">
+        <div class="media card">
+          <Picture src={img.path} alt={img.alt} width={img.width} height={img.height} sizes="(max-width: 900px) 92vw, 560px" priority />
+          {statusLabel && <span class="tag tag--status badge">{statusLabel}</span>}
+        </div>
+        {s.imageCaption && <figcaption>{s.imageCaption}</figcaption>}
+      </figure>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-label={t.aboutService}>
+    <div class="wrap prose">
+      {s.paragraphs.map(([h, p]) => (
+        <div class="block">
+          <h2>{h}</h2>
+          <p>{p}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap lists">
+      <div class="card list-card">
+        <h2>{t.audience}</h2>
+        <ul class="check-list">{s.audience.map((a) => <li>{a}</li>)}</ul>
+      </div>
+      <div class="card list-card">
+        <h2>{t.included}</h2>
+        <ul class="check-list">{s.included.map((a) => <li>{a}</li>)}</ul>
+      </div>
+      <div class="card list-card">
+        <h2>{t.optional}</h2>
+        <ul class="check-list">{s.optional.map((a) => <li>{a}</li>)}</ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight" aria-labelledby="procesi">
+    <div class="wrap">
+      <h2 id="procesi">{t.process}</h2>
+      <ol class="steps">
+        {s.process.map((p, i) => (
+          <li><span aria-hidden="true">{String(i + 1).padStart(2, '0')}</span><p>{p}</p></li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  {relatedProjects.length > 0 && (
+    <section class="section--tight" aria-labelledby="projekte-lidhura">
+      <div class="wrap">
+        <h2 id="projekte-lidhura" class="sec-title">{s.projectSectionHeading}</h2>
+        <div class="grid-3">{relatedProjects.map((p) => <ProjectCard project={p} lang={lang} />)}</div>
+      </div>
+    </section>
+  )}
+
+  <section class="section--tight" aria-labelledby="sherbime-lidhura">
+    <div class="wrap">
+      <h2 id="sherbime-lidhura" class="sec-title">{t.relatedServices}</h2>
+      <div class="grid-3">{relatedServices.map((r) => <ServiceCard service={r} lang={lang} />)}</div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="wrap faq-narrow"><Faq items={s.faq} heading={t.faq} /></div>
+  </section>
+
+  <section class="section form-sec" aria-label={t.projectRequest}>
+    <div class="wrap form-narrow">
+      <ContactForm id={s.form.id} heading={s.form.heading} selectedService={s.form.selectedService} lang={lang} />
+    </div>
+  </section>
+</Base>
+
+<style>
+  .svc-hero { padding-top: 32px; }
+  .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .hero-copy h1 { font-size: clamp(2.1rem, 4.6vw, 3.4rem); }
+  .hero-copy .btn-row { margin-top: 28px; }
+  .hero-fig { margin: 0; }
+  .media { position: relative; overflow: hidden; background: var(--sand); }
+  .media :global(img) { width: 100%; height: auto; }
+  .badge { position: absolute; left: 14px; top: 14px; background: var(--ivory-2); }
+  figcaption { margin-top: 10px; font-size: 0.88rem; color: var(--muted); }
+
+  .prose { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 56px; }
+  .block { max-width: 62ch; }
+  .block h2 { font-size: 1.45rem; margin-bottom: 12px; }
+  .block p { color: var(--ink-2); margin: 0; }
+
+  .lists { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .list-card { padding: 28px; box-shadow: none; }
+  .list-card h2 { font-size: 1.25rem; margin-bottom: 18px; }
+  .list-card li { font-size: 0.97rem; }
+
+  .steps { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .steps li { border-top: 2px solid var(--ink); padding-top: 14px; }
+  .steps span { font-weight: 700; color: var(--accent); }
+  .steps p { margin: 6px 0 0; }
+
+  .sec-title { margin-bottom: 28px; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+  .faq-narrow, .form-narrow { max-width: 860px; }
+
+  @media (max-width: 900px) {
+    .hero-grid, .prose, .lists { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+</style>

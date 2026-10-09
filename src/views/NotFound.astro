@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import Arrow from '../components/Arrow.astro';
+import { localize, ui, type Lang } from '../lib/site';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const t = ui[lang];
+---
+<Base lang={lang}>
+  <section class="section">
+    <div class="wrap center">
+      <span class="eyebrow">404</span>
+      <h1>{t.notFoundTitle}</h1>
+      <p class="lede">{t.notFoundBody}</p>
+      <div class="btn-row" style="margin-top:28px">
+        <a class="btn" href={localize('/', lang)}>{t.backHome} <Arrow /></a>
+        <a class="btn btn--ghost" href={localize('/projektet', lang)}>{t.seeProjects}</a>
+      </div>
+    </div>
+  </section>
+</Base>

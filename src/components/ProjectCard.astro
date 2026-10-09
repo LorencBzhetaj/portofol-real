@@ -1,44 +1,45 @@
 ---
 import Picture from './Picture.astro';
 import Arrow from './Arrow.astro';
-import { projectTags, type Project } from '../lib/site';
+import { projectPanel, ui, type Lang, type Project } from '../lib/site';
 
-interface Props { project: Project; headingLevel?: 'h2' | 'h3'; sizes?: string }
-const { project: p, headingLevel = 'h3', sizes = '(max-width: 680px) 92vw, (max-width: 1020px) 46vw, 380px' } = Astro.props;
+interface Props { project: Project; lang: Lang; headingLevel?: 'h2' | 'h3'; sizes?: string }
+const { project: p, lang, headingLevel = 'h3', sizes = '(max-width: 680px) 92vw, (max-width: 1020px) 46vw, 380px' } = Astro.props;
 const H = headingLevel;
 const img = p.featuredImage;
+const panel = projectPanel(p.slug, lang);
+const t = ui[lang];
 ---
 <article class="card project-card">
-  <!-- Original card composition, shown whole (object-fit: contain, never cropped). -->
-  <div class="media" style={`aspect-ratio: ${img.width} / ${img.height}`}>
+  <!-- Composition without text panel: shown whole (width 100%, height auto), never cropped. -->
+  <div class="media">
     <Picture src={img.path} alt={img.alt} width={img.width} height={img.height} sizes={sizes} />
   </div>
   <div class="body">
-    <div class="tags">
-      <span class="tag">{projectTags[p.slug]}</span>
-      {p.visibleStatusLabel && <span class="tag tag--status">{p.visibleStatusLabel}</span>}
-    </div>
-    <H class="title"><a href={p.path}>{p.name}</a></H>
-    <p>{p.intro}</p>
-    <span class="more" aria-hidden="true">Shiko projektin <Arrow dir="right" /></span>
+    <p class="category">{panel.category}</p>
+    <H class="title">{p.name}</H>
+    <p class="summary">{panel.summary}</p>
+    <ul class="tags" aria-label={lang === 'sq' ? 'Etiketat' : 'Tags'}>
+      {panel.tags.map((tag) => <li class="tag">{tag}</li>)}
+      {p.visibleStatusLabel && <li class="tag tag--status">{p.visibleStatusLabel}</li>}
+    </ul>
+    <a class="btn btn--sm link" href={p.path}>{t.seeProject}<span class="sr-only">: {p.name}</span> <Arrow /></a>
   </div>
 </article>
 <style>
   .project-card { display: flex; flex-direction: column; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
   .project-card:hover { transform: translateY(-3px); box-shadow: 0 1px 2px rgb(17 17 17 / 5%), 0 22px 40px -22px rgb(17 17 17 / 30%); }
   .media { background: var(--ivory-2); }
-  .media :global(picture) { height: 100%; }
-  .media :global(img) { width: 100%; height: 100%; object-fit: contain; }
-  .body { display: flex; flex-direction: column; gap: 10px; padding: 18px 22px 22px; border-top: 1px solid var(--line); flex: 1; }
-  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
-  .title { font-size: 1.3rem; }
-  .title a { text-decoration: none; }
-  /* The whole card is clickable through the title link. */
-  .title a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
-  .title a:focus-visible { outline: none; }
-  .project-card:has(.title a:focus-visible) { outline: 3px solid var(--focus); outline-offset: 3px; }
-  p { margin: 0; color: var(--muted); font-size: 0.97rem; }
-  .more { margin-top: auto; padding-top: 6px; display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.95rem; }
-  .more :global(.arrow) { width: 16px; height: 16px; }
+  .media :global(img) { width: 100%; height: auto; }
+  .body { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 6px 22px 22px; flex: 1; }
+  .category { margin: 0; color: var(--accent); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; }
+  .title { font-size: 1.4rem; }
+  .summary { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 4px 0 12px; }
+  .link { margin-top: auto; }
+  /* The whole card is clickable through its single link. */
+  .link::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+  .link:focus-visible { outline: none; }
+  .project-card:has(.link:focus-visible) { outline: 3px solid var(--focus); outline-offset: 3px; }
   @media (prefers-reduced-motion: reduce) { .project-card:hover { transform: none; } }
 </style>
