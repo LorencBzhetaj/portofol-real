@@ -43,6 +43,7 @@ const servicesHub = L('/sherbimet');
             <li class="sub-all"><a href={servicesHub}>{t.allServices} <Arrow dir="right" /></a></li>
           </ul>
         </li>
+        <li><a href="/blog" aria-current={isCurrent('/blog') ? 'page' : undefined}>Blog</a></li>
         <li><a href={L('/#si-punojme')}>{t.howWeWork}</a></li>
         <li class="lang-item"><a class="lang" href={switchHref} hreflang={otherLang} lang={otherLang} aria-label={t.switchLabel}>{t.switchShort}</a></li>
         <li class="cta"><a class="btn" href={L('/kontakt')} aria-current={current === L('/kontakt') ? 'page' : undefined}>{t.contact} <Arrow /></a></li>
